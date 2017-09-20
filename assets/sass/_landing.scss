@@ -1,0 +1,182 @@
+
+.nutshell-container {
+    position: relative;
+
+    .text-with-bg {
+        position: absolute;
+        opacity: 0;
+        &.center {
+            bottom: -500px;
+            left: 0;
+            z-index: 10;
+        }
+        &.top {
+            bottom: -550px;
+            left: 5%;
+            .main-text {
+                width: 170px;
+            }
+        }
+        &.left {
+            left: 5%;
+            bottom: -550px;
+        }
+        &.right {
+            left: 5%;
+            bottom: -550px;
+            .main-text {
+                width: 160px;
+            }
+        }
+        .main-text {
+            color: $black;
+            text-align: left;
+            font-family: $Montserrat-Regular;
+            position: absolute;
+            z-index: 2;
+            &-sm {
+                @extend .main-text;
+
+                font-size: 20px;
+            }
+            &-lg {
+                @extend .main-text;
+                font-size: 74.4px;
+                line-height: 0.9;
+                width: 275px;
+            }
+        }
+    }
+}
+
+//process
+
+
+.contact {
+
+    &-text {
+        margin-top: 30px;
+        color: $white;
+        max-width: 70%;
+        h2 {
+            font-size: 76px;
+            line-height: 0.95;
+            font-family: $PlayfairDisplay-Bold;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: 24px;
+            line-height: 3;
+            font-family: $OpenSans-Regular;
+        }
+        p {
+            font-size: 16px;
+            font-family: inherit;
+            line-height: 2.25;
+        }
+    }
+    &-form {
+        margin-top: 20px;
+        margin-left: -15px;
+    }
+    .material {
+        position: relative;
+        padding: 0;
+        margin: 1.2em 0;
+        border: none;
+        overflow: visible;
+        margin-top: 50px;
+        padding-right: 60px;
+        input,
+        textarea,
+        select {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 12px 10px;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            border-bottom: $white solid 1px;
+            font-size: 120%;
+            outline: none;
+            cursor: text;
+            background: none;
+            color: $white;
+            &:not(:focus) {
+                &::-webkit-input-placeholder {
+                    color: transparent;
+                }
+            }
+            &::-webkit-input-placeholder {
+                -webkit-transition: color 300ms ease;
+                transition: color 300ms ease;
+            }
+            &:focus~hr {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                visibility: visible;
+            }
+        }
+        input,
+        textarea,
+        select {
+            &:focus~label {
+                -webkit-transform: scale(0.6);
+                transform: scale(0.6);
+                top: 0px;
+            }
+        }
+        input,
+        textarea {
+            &:valid~label {
+                -webkit-transform: scale(0.6);
+                transform: scale(0.6);
+                top: 0px;
+            }
+        }
+        select {
+            padding: 24px 10px;
+        }
+        textarea {
+            height: 6em;
+            margin-bottom: -5.3px;
+        }
+        label {
+            position: absolute;
+            top: 10px;
+            color: $white;
+            -webkit-transform-origin: 0 -150%;
+            transform-origin: 0 -150%;
+            -webkit-transition: -webkit-transform 300ms ease;
+            transition: -webkit-transform 300ms ease;
+            transition: transform 300ms ease;
+            transition: transform 300ms ease, -webkit-transform 300ms ease;
+            pointer-events: none;
+            font-size: 20px;
+            span {
+                color: #acfbea;
+            }
+        }
+        hr {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            width: 87%;
+            height: 1.5px;
+            border: none;
+            background: $white;
+            font-size: 1px;
+            will-change: transform, visibility;
+            -webkit-transition: all 200ms ease-out;
+            transition: all 200ms ease-out;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            visibility: hidden;
+            z-index: 10;
+        }
+    }
+}

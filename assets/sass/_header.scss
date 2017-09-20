@@ -1,0 +1,28 @@
+.main-nav {
+    padding: 20px 50px 0;
+        position: relative;
+    z-index: 99;
+    .navbar-nav {
+        li {
+            a {
+                text-decoration: none;
+                font-family: $Montserrat-Regular;
+                font-size: 16px;
+                &:hover,
+                &.active,
+                &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .navTrigger {
+        position: fixed;
+        z-index: 55;
+        right: 100px;
+
+        span {
+            font-size: 50px;
+        }
+    }
+}
