@@ -1,23 +1,22 @@
 {% extends 'base.html' %}
-
-
+{% load static %}
 {% block content %}
 <div>
-        <nav class="nav navbar main-nav">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a href="index3.html" class="navbar-brand">
-              <img src="assets/images/logo.png" class="img-responsive">
-          </a>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li >
-                        <a href="#" class="navTrigger">
-                        <span class="icon ion-navicon"></span>
-                    </a>
-                    </li>
-                </ul>
+    <nav class="nav navbar main-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="{% url 'index' %}" class="navbar-brand">
+                    <img src="{% static 'images/logo.png' %}" class="img-responsive">
+                </a>
             </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a href="#" class="navTrigger">
+                    <span class="icon ion-navicon"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </div>
 <div class="ext-content service-page">
@@ -44,7 +43,7 @@
                                         <a href="#dsn-strategy" data-toggle="collapse" data-parent="#services-dsn" class="step-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
                                         <span class="line"></span>
                                         <span class="text">Product Strategy</span>
-                                </a>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="panel-collapse collapse in wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.7s" id="dsn-strategy">
@@ -61,7 +60,7 @@
                                         <a href="#dsn-ux" data-toggle="collapse" data-parent="#services-dsn" class="step-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
                                         <span class="line"></span>
                                         <span class="text">User Experience</span>
-                                </a>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="panel-collapse collapse" id="dsn-ux">
@@ -78,7 +77,7 @@
                                         <a href="#dsn-ui" data-toggle="collapse" data-parent="#services-dsn" class="step-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
                                         <span class="line"></span>
                                         <span class="text">User Interface Design</span>
-                                </a>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="panel-collapse collapse" id="dsn-ui">
@@ -95,7 +94,7 @@
                                         <a href="#dsn-responsive" data-toggle="collapse" data-parent="#services-dsn" class="step-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
                                         <span class="line"></span>
                                         <span class="text">Responsive Design</span>
-                                </a>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="panel-collapse collapse" id="dsn-responsive">
@@ -112,7 +111,7 @@
                                         <a href="#dsn-prototyping" data-toggle="collapse" data-parent="#services-dsn" class="step-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
                                         <span class="line"></span>
                                         <span class="text">Prototyping</span>
-                                </a>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="panel-collapse collapse wow" id="dsn-prototyping">
@@ -129,7 +128,7 @@
                                         <a href="#dsn-wireframes" data-toggle="collapse" data-parent="#services-dsn" class="step-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
                                         <span class="line"></span>
                                         <span class="text">Wireframes</span>
-                                </a>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="panel-collapse collapse wow" id="dsn-wireframes">
@@ -149,23 +148,21 @@
 </div>
 <div class="lower-nav">
     <div class="">
-        <a href="dev.html">
-            <span>DVT.</span>
-            <span>
-                <i class="ion-ios-arrow-thin-left">
-                    
-                </i>
-            </span>
+        <a href="{% url 'development' %}">
+        <span>DVT.</span>
+        <span>
+        <i class="ion-ios-arrow-thin-left">
+        </i>
+        </span>
         </a>
     </div>
     <div>
-        <a href="design.html" class="sty">
-            <span>DSN.</span>
-            <span>
-                <i class="ion-ios-arrow-thin-right">
-                    
-                </i>
-            </span>
+        <a href="{% url 'design' %}" class="sty">
+        <span>DSN.</span>
+        <span>
+        <i class="ion-ios-arrow-thin-right">
+        </i>
+        </span>
         </a>
     </div>
 </div>
@@ -174,32 +171,32 @@
     <div id="" class="carousel vertical slide pagelinks">
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <a href="#">
+                <a href="{% url 'works' %}">
                 <span>
-                    See our <strong>works</strong>
-                    <i class="icon ion-ios-arrow-thin-right"></i>
+                See our <strong>works</strong>
+                <i class="icon ion-ios-arrow-thin-right"></i>
                 </span>
-            </a>
+                </a>
             </div>
             <div class="item">
-                <a href="#">
+                <a href="{% url 'about' %}">
                 <span>
-                    Know our 
-                    <strong>
-                        story
-                        <span class="line"></span>
-                    </strong>
-                    <i class="icon ion-ios-arrow-thin-right"></i>
+                Know our
+                <strong>
+                story
+                <span class="line"></span>
+                </strong>
+                <i class="icon ion-ios-arrow-thin-right"></i>
                 </span>
-            </a>
+                </a>
             </div>
             <div class="item">
-                <a href="#">
+                <a href="{% url 'contact' %}">
                 <span>
-                    Talk to <strong>us</strong>
-                    <i class="icon ion-ios-arrow-thin-right"></i>
+                Talk to <strong>us</strong>
+                <i class="icon ion-ios-arrow-thin-right"></i>
                 </span>
-            </a>
+                </a>
             </div>
         </div>
     </div>
