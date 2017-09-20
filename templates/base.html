@@ -1,179 +1,171 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-
-<head>
-  {% include 'includes/meta.html' %}
-
-  <link rel="stylesheet" href="{% static 'css/hover.css' %}">
-  <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
-  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-  <link rel="stylesheet" href="{% static 'dist/owl-carousel/css/owl.carousel.min.css' %}">
-  <link rel="stylesheet" href="{% static 'dist/owl-carousel/css/owl.theme.default.css' %}">
-  <link rel="stylesheet" href="{% static 'dist/animejs/css/anime.css' %}">
-  <link rel="stylesheet" href="{% static 'dist/animate.css/animate.css' %}">
-  <link rel="stylesheet" href="{% static 'css/reset.min.css' %}">
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-
-<body class="page-wrapper">
-  <div class="main-content">
-    {% block content %}
-    {% endblock %}
-
-    <div class="footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-6">
-                  <div>
-                      <h2>Hello@swiftkind.com</h2>
-                      <p>(082) 225 - 1050</p>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <div class="row">
-                      <div class="col-md-8">
-                          <p><strong>WHAT'S NEW</strong></p>
-                          <div id="" class="carousel vertical slide pagelinks">
-                              <div class="carousel-inner" role="listbox">
-                                  <div class="item active">
-                                      <p>
-                                          Looking for a <a href="#">Full-Stack Developer</a>
-                                      </p>
-                                  </div>
-                                  <div class="item">
-                                      <p>Transferred to new office</p>
-                                  </div>
-                                  <div class="item">
-                                      <p>Builing a search engine</p>
-                                  </div>
-                                  <div class="item">
-                                      <p>Working with Safari Pages</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div id="" class="carousel vertical slide pagelinks">
-                              <div class="carousel-inner" role="listbox">
-                                  <div class="item active">
-                                      <p>Transferred to new office</p>
-                                  </div>
-                                  <div class="item">
-                                      <p>Builing a search engine</p>
-                                  </div>
-                                  <div class="item">
-                                      <p>Working with Safari Pages</p>
-                                  </div>
-                                  <div class="item ">
-                                      <p>
-                                          Looking for a <a href="#">Full-Stack Developer</a>
-                                      </p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div id="" class="carousel vertical slide pagelinks">
-                              <div class="carousel-inner" role="listbox">
-                                  <div class="item active">
-                                      <p>Builing a search engine</p>
-                                  </div>
-                                  <div class="item">
-                                      <p>Working with Safari Pages</p>
-                                  </div>
-                                  <div class="item ">
-                                      <p>
-                                          Looking for a <a href="#">Full-Stack Developer</a>
-                                      </p>
-                                  </div>
-                                  <div class="item">
-                                      <p>Transferred to new office</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-md-4 ">
-                          <p>
-                              <strong>
-                                  FOLLOW US
-                              </strong>
-                          </p>
-                          <p>
-                              <a href="#">Github</a>
-                          </p>
-                          <p>
-                              <a href="#">Behance</a>
-                          </p>
-                          <p>
-                              <a href="#">Facebook</a>
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="nav-content">
-    <ul class="nav-links">
-      <li>
-        <a href="about.html">
-          <span>ABOUT</span>
-          <div class="line"></div>
-        </a>
-      </li>
-      <li>
-        <a href="services.html">
-          <span> SERVICES</span>
-          <div class="line"></div>
-        </a>
-      </li>
-      <li>
-        <a href="works.html">
-          <span> WORK</span>
-          <div class="line"></div>
-        </a>
-      </li>
-      <li>
-        <a href="contact.html">
-          <span>CONTACT</span>
-          <div class="line"></div>
-        </a>
-      </li>
-    </ul>
-    <div class="bottom-link">
-      <div id="" class="carousel vertical slide pagelinks">
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <a href="works.html">
-              <span>
-                See our <strong>works</strong>  
-              </span>
-            </a>
-          </div>
-          <div class="item">
-            <a href="about.html">
-            <span>
-              Know our 
-              <strong>
-                story
-                <span class="line"></span>
-              </strong>
-            </span>
-          </a>
-          </div>
-          <div class="item">
-            <a href="contact.html">
-              <span>
-                Talk to <strong>us</strong> 
-              </span>
-            </a>
-          </div>
+    <head>
+        {% include 'includes/meta.html' %}
+        <link rel="stylesheet" href="{% static 'css/hover.css' %}">
+        <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'dist/owl-carousel/css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'dist/owl-carousel/css/owl.theme.default.css' %}">
+        <link rel="stylesheet" href="{% static 'dist/animejs/css/anime.css' %}">
+        <link rel="stylesheet" href="{% static 'dist/animate.css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'css/reset.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body class="page-wrapper">
+        <div class="main-content">
+            {% block content %}
+            {% endblock %}
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <h2>Hello@swiftkind.com</h2>
+                                <p>(082) 225 - 1050</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p><strong>WHAT'S NEW</strong></p>
+                                    <div id="" class="carousel vertical slide pagelinks">
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <p>
+                                                    Looking for a <a href="#">Full-Stack Developer</a>
+                                                </p>
+                                            </div>
+                                            <div class="item">
+                                                <p>Transferred to new office</p>
+                                            </div>
+                                            <div class="item">
+                                                <p>Builing a search engine</p>
+                                            </div>
+                                            <div class="item">
+                                                <p>Working with Safari Pages</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="" class="carousel vertical slide pagelinks">
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <p>Transferred to new office</p>
+                                            </div>
+                                            <div class="item">
+                                                <p>Builing a search engine</p>
+                                            </div>
+                                            <div class="item">
+                                                <p>Working with Safari Pages</p>
+                                            </div>
+                                            <div class="item ">
+                                                <p>
+                                                    Looking for a <a href="#">Full-Stack Developer</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="" class="carousel vertical slide pagelinks">
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <p>Builing a search engine</p>
+                                            </div>
+                                            <div class="item">
+                                                <p>Working with Safari Pages</p>
+                                            </div>
+                                            <div class="item ">
+                                                <p>
+                                                    Looking for a <a href="#">Full-Stack Developer</a>
+                                                </p>
+                                            </div>
+                                            <div class="item">
+                                                <p>Transferred to new office</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <p>
+                                        <strong>
+                                        FOLLOW US
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        <a href="#">Github</a>
+                                    </p>
+                                    <p>
+                                        <a href="#">Behance</a>
+                                    </p>
+                                    <p>
+                                        <a href="#">Facebook</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  {% include 'includes/scripts.html' %}
-</body>
-
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li>
+                    <a href="{% url 'about' %}">
+                        <span>ABOUT</span>
+                        <div class="line"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'services' %}">
+                        <span> SERVICES</span>
+                        <div class="line"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'works' %}">
+                        <span> WORK</span>
+                        <div class="line"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'contact' %}">
+                        <span>CONTACT</span>
+                        <div class="line"></div>
+                    </a>
+                </li>
+            </ul>
+            <div class="bottom-link">
+                <div id="" class="carousel vertical slide pagelinks">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a href="{% url 'works' %}">
+                            <span>
+                            See our <strong>works</strong>
+                            </span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'about' %}">
+                            <span>
+                            Know our
+                            <strong>
+                            story
+                            <span class="line"></span>
+                            </strong>
+                            </span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'contact' %}">
+                            <span>
+                            Talk to <strong>us</strong>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include 'includes/scripts.html' %}
+    </body>
 </html>
