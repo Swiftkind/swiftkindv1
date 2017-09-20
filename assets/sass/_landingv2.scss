@@ -4,16 +4,13 @@
         position: relative;
         padding: 0;
         color: $black;
-
         .contents {
-
             position: relative;
             width: 80%;
             margin: 0 auto;
             text-align: center;
             .text-content {
                 margin-top: 10em;
-
                 h2 {
                     font-family: $Larsseit-Regular;
                     font-size: 50px;
@@ -50,6 +47,9 @@
             line-height: 1.25;
             color: $black;
             margin-top: 40px;
+             @include mobile {
+                font-size: 32px;
+            }
         }
         h3 {
             font-family: $Montserrat-Regular;
@@ -64,6 +64,12 @@
             line-height: 1.79;
             margin: 40px 0;
             width: 80%;
+            @include tablet {
+                width: 100%;
+            }
+            @include mobile {
+                width: 100%;
+            }
         }
         .caption {
             width: 100%;
@@ -133,6 +139,9 @@
         text-align: center;
         h3 {
             font-size: 36px;
+            @include mobile {
+                font-size: 24px;
+            }
         }
         .pagelinks {
             position: absolute;
@@ -415,10 +424,18 @@
         background: $black;
         padding-top: 50px;
         padding-bottom: 50px;
+        @include tablet{
+            padding: 50px;
+        }
+        .contact-email {
+            margin-bottom: 50px;
+        }
         h2 {
             font-family: $OpenSans-Bold;
             font-size: 36px;
-            margin-top: 15px;
+            @include mobile {
+                font-size: 24px;
+            }
         }
         p {
             font-size: 14px;
@@ -434,6 +451,9 @@
         }
 
         .carousel {
+            @include mobile {
+                margin-bottom: 50px;
+            }
             .carousel-inner {
 
                 .item {
@@ -453,6 +473,9 @@
         width: 100%;
         -webkit-transition: 0.6s ease-in-out top;
         transition: 0.6s ease-in-out top;
+         @include mobile {
+            text-align: center;
+        }
     }
     @media all and (transform-3d),
     (-webkit-transform-3d) {
@@ -497,6 +520,7 @@
         position: absolute;
         width: 100%;
         display: block;
+        background: #fff;
     }
     .nav-content {
         width: 100%;
@@ -519,6 +543,9 @@
                     font-family: $Larsseit-Bold;
                     position: relative;
                     text-decoration: none;
+                    @include mobile {
+                            font-size: 40px;
+                    }
                     span {
                         z-index: 1;
                     }

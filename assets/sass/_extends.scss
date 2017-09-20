@@ -71,16 +71,6 @@ a {
         text-align: justify;
         text-align-last: left;
     }
-
-    &.gradient-bg {
-        .section-text-lg {
-
-            color: rgba($white, 0.1);
-        }
-        background-image: linear-gradient(49deg,
-        #34d7b5,
-        #27c792);
-    }
 }
 
 .section-text-lg {
@@ -91,6 +81,14 @@ a {
     font-family: $Montserrat-SemiBold;
     position: absolute;
     top: 200px;
+    @include mobile {
+        line-height: 0.75;
+        font-size: 65.5px;
+    }
+    @include tablet {
+        line-height: 0.75;
+        font-size: 65.5px;
+    }
 }
 
 .particles-js-canvas-el {
@@ -131,47 +129,6 @@ a {
     line-height: 1.08;
 }
 
-//rounded rects
-.round-rect {
-    position: absolute;
-    z-index: 1;
-}
-
-.rect-lg {
-    width: 171.4px;
-    height: 171.4px;
-    border-radius: 10px;
-    &-green {
-        @extend .rect-lg;
-        transform: rotate(15deg);
-        top: -16px;
-        left: 24px;
-        background-color: $green-blue;
-    }
-}
-
-.rect-sm {
-    width: 35px;
-    height: 35px;
-    border-radius: 4px;
-
-    &-pink {
-        @extend .rect-sm;
-        background-color: $medium-pink;
-        transform: rotate(20deg);
-    }
-    &-cyan {
-        @extend .rect-sm;
-        background-color: $cyan;
-        transform: rotate(20deg);
-    }
-    &-yellow {
-        background-color: $off-yellow;
-        @extend .rect-sm;
-        transform: rotate(20deg);
-    }
-}
-
 //accordion
 .panel {
     background-color: transparent;
@@ -198,6 +155,9 @@ a {
                     font-family: $Larsseit-Bold;
                     font-size: 30px;
                     color: $white;
+                    @include mobile{
+                        font-size: 24px;
+                    }
                 }
             }
         }
@@ -206,11 +166,17 @@ a {
         border-top: none!important;
         margin-left: 50px;
         padding: 30px 0;
+        @include mobile{
+            margin-left: 0;
+        }
         p {
             font-family: $OpenSans-Light;
             font-size: 18px;
             line-height: 1.67;
             margin-left: 60px;
+            @include mobile{
+                    margin-left: 20px;
+            }
         }
     }
 }
@@ -230,6 +196,10 @@ a {
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            @include mobile {
+                font-size: 56.7px;
+                height: 180px;
+            }
             .test-trans {
                 transform: translate3d(0, 0, 0);
                 top: 0;
@@ -237,6 +207,9 @@ a {
             i {
                 font-size: 50px;
                 display: inherit;
+                @include mobile {
+                    font-size: 30px;
+                }
                 &.ion-ios-arrow-thin-right {
                     margin-left: 0;
                     transition: ease 0.5s margin-left;
@@ -279,4 +252,9 @@ a {
     height: 6px;
     border-radius: 2px;
     background-color: #0edc87;
+}
+
+//wow 
+.wow {
+    visibility: hidden;
 }
