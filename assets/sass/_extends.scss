@@ -1,9 +1,17 @@
 //overall cursor
-*,
-*:hover {
-    cursor: url('../images/icons/cursor.svg'), auto !important;
-    cursor: -webkit-image-set(url('../images/icons/cursor.svg') 1x, url('../images/icons/cursorx2.svg') 2x) 0 0, pointer !important;
+* {
+     &::selection {
+        background:#81f1c2;
+        /* WebKit/Blink Browsers */
+    }
+    &::-moz-selection {
+        background: #81f1c2;
+        /* Gecko Browsers */
+    }
+
 }
+
+
 
 // typography
 h1 {
@@ -13,12 +21,14 @@ h1 {
 
 
 a {
+
     color: $primary-green;
     &:hover {
         text-decoration: none;
         color: $primary-green;
     }
 }
+
 
 //alignment
 .align-center {
@@ -35,6 +45,18 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+
+.m-flex {
+    @include mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+    @include mobile-xs {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .flex>[class^="col-"],
@@ -155,7 +177,7 @@ a {
                     font-family: $Larsseit-Bold;
                     font-size: 30px;
                     color: $white;
-                    @include mobile{
+                    @include mobile {
                         font-size: 24px;
                     }
                 }
@@ -166,7 +188,7 @@ a {
         border-top: none!important;
         margin-left: 50px;
         padding: 30px 0;
-        @include mobile{
+        @include mobile {
             margin-left: 0;
         }
         p {
@@ -174,8 +196,8 @@ a {
             font-size: 18px;
             line-height: 1.67;
             margin-left: 60px;
-            @include mobile{
-                    margin-left: 20px;
+            @include mobile {
+                margin-left: 20px;
             }
         }
     }

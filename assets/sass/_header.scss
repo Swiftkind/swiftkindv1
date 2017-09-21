@@ -23,6 +23,12 @@
         position: fixed;
         z-index: 55;
         right: 100px;
+        &:hover, &:active, &:focus{
+            color: $primary-green;
+            &:focus{
+                color: $primary-green;
+            }
+        }
         @include mobile {
             right: 20px;
             top: 0;

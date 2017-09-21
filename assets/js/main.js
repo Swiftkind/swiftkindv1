@@ -17,9 +17,8 @@ $(document).ready(function () {
 		
 	});
 
-	var scrollTop = $('.page-wrapper').scrollTop();
-		console.log('on document:',scrollTop);
-		if(scrollTop < 500){
+	var offsetTop = $('.page-wrapper').scrollTop();
+		if(offsetTop < 500){
 			$('.hd-text').addClass('todelay');
 			$('.main-nav').addClass('todelay');
 			$('.about-top').addClass('out-animate');
@@ -30,7 +29,6 @@ $(document).ready(function () {
 	//to add delay on header elements before wow triggers
 	$(window).scroll(function(){
 		var scrollTop = $('.page-wrapper').scrollTop();
-		console.log('scrollTop:',scrollTop);
 		if(scrollTop < 500){
 			$('.about-top').addClass('out-animate');
 			$('.top-text').addClass('out-animate');

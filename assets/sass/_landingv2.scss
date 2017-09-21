@@ -69,6 +69,8 @@
             }
             @include mobile {
                 width: 100%;
+                    text-align: justify;
+                    text-align-last: left;
             }
         }
         .caption {
