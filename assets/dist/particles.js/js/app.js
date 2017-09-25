@@ -23,7 +23,7 @@ particlesJS('masthead',
         }
       },
       "color": {
-        "value": "#032f20"
+        "value": "#0edc87"
       },
       "shape": {
         "type": "edge",
@@ -41,7 +41,7 @@ particlesJS('masthead',
         }
       },
       "opacity": {
-        "value": 0.05,
+        "value": 0.3,
         "random": true,
         "anim": {
           "enable": true,
@@ -143,7 +143,7 @@ particlesJS('about',
         "value": 20,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 100
         }
       },
       "color": {
@@ -165,17 +165,17 @@ particlesJS('about',
         }
       },
       "opacity": {
-        "value": 0.1,
+        "value": 0.01,
         "random": true,
         "anim": {
           "enable": true,
           "speed": 1,
-          "opacity_min": 0.1,
+          "opacity_min": 0.01,
           "sync": false
         }
       },
       "size": {
-        "value": 30,
+        "value": 20,
         "random": true,
         "anim": {
           "enable": false,
@@ -263,10 +263,10 @@ particlesJS('processPart',
   {
     "particles": {
       "number": {
-        "value": 20,
+        "value": 10,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1000
         }
       },
       "color": {
@@ -288,7 +288,7 @@ particlesJS('processPart',
         }
       },
       "opacity": {
-        "value": 1,
+        "value": 0.3,
         "random": true,
         "anim": {
           "enable": true,
@@ -298,7 +298,7 @@ particlesJS('processPart',
         }
       },
       "size": {
-        "value": 30,
+        "value": 20,
         "random": true,
         "anim": {
           "enable": false,
@@ -311,7 +311,7 @@ particlesJS('processPart',
         "enable": true,
         "distance": 150,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 0.1,
         "width": 1
       },
       "move": {

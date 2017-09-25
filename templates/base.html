@@ -15,6 +15,22 @@
     </head>
     <body class="page-wrapper">
         <div class="main-content">
+            <nav class="nav navbar main-nav">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a href="{% url 'index' %}" class="navbar-brand">
+                            <img src="{% static 'images/logo.png' %}" class="img-responsive">
+                        </a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li >
+                            <a href="#" class="navTrigger">
+                            <span class="icon ion-navicon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             {% block content %}
             {% endblock %}
             <div class="footer">
@@ -49,7 +65,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="" class="carousel vertical slide pagelinks">
+                                    <div id="" class="carousel vertical slide pagelinks hidden-xs">
                                         <div class="carousel-inner" role="listbox">
                                             <div class="item active">
                                                 <p>Transferred to new office</p>
@@ -67,7 +83,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="" class="carousel vertical slide pagelinks">
+                                    <div id="" class="carousel vertical slide pagelinks hidden-xs">
                                         <div class="carousel-inner" role="listbox">
                                             <div class="item active">
                                                 <p>Builing a search engine</p>
@@ -92,15 +108,17 @@
                                         FOLLOW US
                                         </strong>
                                     </p>
-                                    <p>
-                                        <a href="#">Github</a>
-                                    </p>
-                                    <p>
-                                        <a href="#">Behance</a>
-                                    </p>
-                                    <p>
-                                        <a href="#">Facebook</a>
-                                    </p>
+                                  <div class="m-flex">
+                                      <p>
+                                          <a href="#">Github</a>
+                                      </p>
+                                      <p>
+                                          <a href="#">Behance</a>
+                                      </p>
+                                      <p>
+                                          <a href="#">Facebook</a>
+                                      </p>
+                                  </div>
                                 </div>
                             </div>
                         </div>

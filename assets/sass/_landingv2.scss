@@ -1,53 +1,57 @@
 .page-wrapper {
     .masthead {
-        //background: linear-gradient(284deg, #26c68f, #35d9b8);
         position: relative;
         padding: 0;
         color: $black;
+        display: flex;
+        align-items: center;
+        .particles-js-canvas-el {
+            top: 0;
+        }
         .contents {
-            position: relative;
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             text-align: center;
             .text-content {
-                margin-top: 10em;
+                .sk-line {
+                    margin-bottom: 5%;
+                    margin-top: -50px;
+                }
+
                 h2 {
-                    font-family: $Larsseit-Regular;
-                    font-size: 50px;
-                    color: $dark-grey;
+                    font-family: $Montserrat-Medium;
+                    font-size: 60px;
+                    color: $black;
+                    letter-spacing: 5px;
                     margin: 50px 0 30px;
+                    text-transform: uppercase;
                 }
                 p {
-                    font-size: 18px;
+                    font-size: 21px;
                     color: $warm-grey;
                     margin-bottom: 100px;
-                }
-                .btn-top-cta {
-                    padding: 18px 80px;
-                    border-radius: 50px;
-                    background: $primary-green;
-                    color: $white;
-                    font-size: 20px;
+                    font-family: $OpenSans-Regular;
                 }
             }
         }
-        .socials {
-            display: flex;
-            margin-top: 250px;
-            justify-content: flex-end;
-            a {
-                margin: 0 15px;
-            }
+        .main-arrow-down {
+            width: 35px;
+            position: absolute;
+            bottom: 150px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
         }
     } //global
     .section-content {
         h2 {
-            font-family: $Larsseit-Regular;
-            font-size: 46px;
-            line-height: 1.25;
+            font-family: $Montserrat-Medium;
+            font-size: 56px;
+            line-height: inherit;
             color: $black;
             margin-top: 40px;
-             @include mobile {
+            letter-spacing: 0.33px;
+            @include mobile {
                 font-size: 32px;
             }
         }
@@ -63,12 +67,10 @@
             font-size: 18px;
             line-height: 1.79;
             margin: 40px 0;
-            width: 80%;
-            @include tablet {
-                width: 100%;
-            }
+            letter-spacing: 0.33px;
             @include mobile {
-                width: 100%;
+                text-align: justify;
+                text-align-last: left;
             }
         }
         .caption {
@@ -86,11 +88,12 @@
         }
         .stats {
             display: flex;
-            margin-top: 30px;
+            width: 300px;
+            margin: 30px auto 0;
+            justify-content: space-evenly;
             .item {
-                margin-right: 50px;
                 text-align: center;
-                .number {
+                .count-number {
                     font-size: 50px;
                     font-family: $Montserrat-SemiBold;
                 }
@@ -121,20 +124,22 @@
         color: $primary-green;
         margin-top: 20px;
         margin-bottom: 0;
-
+        text-align: center;
         span {
             width: 45px;
             height: 3px;
             background: $primary-green;
             position: absolute;
             left: 0;
+            right: 0;
+            margin: 0 auto;
             top: 25px;
         }
     }
     .bottom-link {
         width: auto;
         position: relative;
-            margin: 190px auto 170px;
+        margin: 190px auto 170px;
         width: fit-content;
         text-align: center;
         h3 {
@@ -148,6 +153,11 @@
             right: 0;
             text-align: right;
             width: 100%;
+            .hvr-underline-from-left{
+                &::before{
+                      background: $primary-green;
+                }
+            }
             a {
                 text-align: right;
                 font-size: 24px;
@@ -158,7 +168,7 @@
 
                     font-family: $OpenSans-Semibold;
                     position: relative;
-                    color: $primary-green;
+                    color: $black
                 }
                 i {
                     font-size: 20px;
@@ -200,27 +210,52 @@
     #about-us {
         .particles-js-canvas-el {
             position: absolute;
+            bottom: 0;
+        }
+        #aboutLink {
+            font-family: $OpenSans-Light;
+            font-size: 21px;
+            text-transform: uppercase;
+            margin: 50px 0;
         }
     }
     .services {
         position: relative;
+
         .section-content {
-            p {
-                width: 100%;
-                text-align: center;
+            h2{
+                  font-size: 56px;
             }
+            p {
+                font-size: 24px;
+                width: 80%;
+                text-align: center;
+                margin: 2em auto 4em;
+            }
+        }
+        .bottom-link{
+            margin: 40px auto 170px;
         }
         .services-links {
             a {
+                position: relative;
+                .side-box {
+                    width: 362px;
+                    height: 339px;
+                    background-color: #0edc87;
+                    position: absolute;
+                    z-index: 1;
+                }
                 .link-text {
                     position: relative;
                     padding-top: 339px;
                     width: 100%;
                     height: 100%;
                     border: solid 3px $black;
-                    color: $primary-green;
+                    color: $black;
                     transition: ease 0.2s all;
                     background: $white;
+                    z-index: 2;
                     p {
                         font-size: 117px;
                         font-family: $OpenSans-Bold;
@@ -339,37 +374,68 @@
         background: #0d0d0d;
         color: $white;
         padding: 90px 0;
+        position: relative;
+        .left-shadow {
+            position: absolute;
+            left: 0;
+            background: linear-gradient(to right, rgba(#0d0d0d, 0.9), rgba(#0d0d0d, 0.2));
+            width: 336px;
+            height: 100%;
+            top: 0;
+            z-index: 3;
+        }
+        .right-shadow {
+            position: absolute;
+            right: 0;
+            background: linear-gradient(to left, rgba(#0d0d0d, 0.9), rgba(#0d0d0d, 0.2));
+            width: 336px;
+            height: 100%;
+            top: 0;
+            z-index: 3;
+        }
         .owl-carousel {
             .item {
-                max-width: 550px;
+                width: 350px;
                 margin: 0 auto;
-                .msg {
-                    .msg-content {
-                        text-align: justify;
-                        text-align-last: center;
-                        font-family: $OpenSans-LightItalic;
-                        margin-bottom: 50px;
-                        line-height: 1.75;
-                    }
-                    .author {
-                        .avatar {
-                            width: 34px;
-                            height: 34px;
-                            margin-bottom: 15px;
-                            background: {
-                                size: cover;
-                            }
-                        }
-                        p {
-                            font-family: $OpenSans-Light;
-                        }
-                    }
-                    .company {
-                        img {
-                            width: 70px;
-                        }
+                position: relative;
+
+                .author {
+                    font-size: 14px;
+                    letter-spacing: 1.4px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    position: relative;
+                    align-items: center;
+                    display: flex;
+                    opacity: 0.5;
+                }
+                .company {
+                    font-family: $Larsseit-Medium;
+                    font-size: 32px;
+                    letter-spacing: 3.2px;
+                    text-align: left;
+                    margin-bottom: 30px;
+                }
+                .message {
+                    font-size: 18px;
+                    line-height: 1.78;
+                    text-align: left;
+                    letter-spacing: 0.4px;
+                    margin-bottom: 30px;
+                    position: relative;
+                    .quote {
+                        width: 10px;
+                        position: absolute;
+                        left: -25px;
+                        opacity: 0.9;
+                        top: 10px;
                     }
                 }
+            }
+        }
+        .owl-dot {
+            span {
+                background: #373737;
             }
         }
     }
@@ -400,20 +466,21 @@
             a {
                 width: 100%;
                 height: 100%;
-                color: $white;
+                color: $black;
                 font-family: $OpenSans-ExtraBold;
                 font-size: 16px;
-                padding: 18px 35px;
+                padding: 18px 45px;
                 letter-spacing: 0.8px;
-                background: $primary-green;
-                border: solid 1px $primary-green;
+                background: $white;
+                border: solid 2px $white;
                 text-decoration: none;
                 transition: ease 0.2s;
-                border-radius: 50px;
+                border-radius: 0;
                 &:hover {
-                    border: solid 1px $white;
+                    border: solid 2px $white;
                     color: $white;
                     background: #151515;
+                    transition: ease 0.2s;
                 }
             }
         }
@@ -424,7 +491,7 @@
         background: $black;
         padding-top: 50px;
         padding-bottom: 50px;
-        @include tablet{
+        @include tablet {
             padding: 50px;
         }
         .contact-email {
@@ -473,7 +540,7 @@
         width: 100%;
         -webkit-transition: 0.6s ease-in-out top;
         transition: 0.6s ease-in-out top;
-         @include mobile {
+        @include mobile {
             text-align: center;
         }
     }
@@ -544,7 +611,7 @@
                     position: relative;
                     text-decoration: none;
                     @include mobile {
-                            font-size: 40px;
+                        font-size: 40px;
                     }
                     span {
                         z-index: 1;
@@ -575,10 +642,10 @@
     }
     .ext-content {
         position: relative;
-        .section-text-lg{
+        .section-text-lg {
             top: 0;
         }
-        
+
         .panel-group {
             .panel {
                 border: none;

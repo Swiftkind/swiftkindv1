@@ -46,27 +46,25 @@
         opacity: 0;
         display: none;
         visibility: hidden;
-
     }
 }
 
 //animation call for welcome message
 .out-animate {
     animation-name: out-animate;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-fill-mode: both;
     animation-delay: 0.5s;
     visibility: visible !important;
-        
 }
 
 
 //animation for top-content
-@keyframes top-content{
-    0%{
+@keyframes top-content {
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
@@ -74,8 +72,8 @@
 //animation call for the top-content
 .todelay {
     animation-name: top-content;
-    animation-delay: 4s;
-     animation-duration: 1s;
+    animation-delay: 3s;
+    animation-duration: 1s;
     animation-fill-mode: both;
 }
 
@@ -168,5 +166,45 @@
         border-radius: 20px 20px 20px 20px;
         background: rgba(15, 179, 123, 0.1);
         transform: rotate(180deg);
+    }
+}
+
+
+// animation for arrow down
+.arrow-down {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
     }
 }

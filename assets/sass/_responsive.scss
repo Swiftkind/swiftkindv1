@@ -1,7 +1,15 @@
 $phone-width: 320px;
+$phone-width-sm: 425px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $desktop-lg-width:1600px;
+
+@mixin mobile-xs {
+    @media (min-width: 0px) and (max-width: #{$phone-width-sm - 1px}) {
+        @content;
+    }
+}
+
 @mixin mobile {
     @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
         @content;
