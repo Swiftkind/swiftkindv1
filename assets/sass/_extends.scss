@@ -165,6 +165,8 @@ a {
                     width: 36px;
                     height: 3px;
                     border-bottom: solid 3px $primary-green;
+                    transition: width 0.2s ease, height 0.2s ease;
+
                 }
                 .number {
                     color: $primary-green;
@@ -172,6 +174,7 @@ a {
                     font-size: 30px;
                     margin-left: 50px;
                     margin-right: 10px;
+                    transition: margin-left 0.2s ease;
                 }
                 .text {
                     font-family: $Larsseit-Bold;
@@ -180,6 +183,17 @@ a {
                     @include mobile {
                         font-size: 24px;
                     }
+                }
+            }
+            &:hover{
+                .line{
+                    width: 2px;
+                    height: 20px;
+                    transition: width 0.2s ease, height 0.2s ease;
+                }
+                .number{
+                    margin-left: 5px;
+                    transition: margin-left 0.2s ease;
                 }
             }
         }
@@ -279,4 +293,14 @@ a {
 //wow 
 .wow {
     visibility: hidden;
+}
+
+//icons
+
+.dash{
+    width: 15px;
+    height: 2px;
+    border-bottom: solid 1px $white;
+    margin-left: 5px;
+    margin-right: 5px;
 }

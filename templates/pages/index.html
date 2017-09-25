@@ -1,25 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+
 <div class="">
     <div class="masthead section" id="">
         <div id="masthead" class="particles"></div>
-            <nav class="nav navbar main-nav">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a href="{% url 'index' %}" class="navbar-brand">
-                            <img src="{% static 'images/logo.png' %}" class="img-responsive">
-                        </a>
-                    </div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li >
-                            <a href="#" class="navTrigger">
-                            <span class="icon ion-navicon"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+
         <div class="container">
             <div class="contents">
                 <div class="text-content">
@@ -27,11 +13,12 @@
                         <div class="sk-line align-center"></div>
                         <h2>Web Development Agency</h2>
                         <p>We engineer, scale and market digital products</p>
-                       
+                      
                     </div>
                 </div>
             </div>
         </div>
+         <img src="{% static 'images/icons/main-arrow-down.svg' %}" class="arrow-down main-arrow-down">
     </div>
 </div>
 <div class="section" id="about-us" data-section-name="aboutUs">
@@ -42,18 +29,18 @@
             <p class="section-title">IN A NUTSHELL
                 <span></span>
             </p>
-            <div class="row flex">
-                <div class="col-md-7 ">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center">
                     <div class="section-content">
-                        <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s" data-1500="opacity:1; transform: translate3d(0px, -0.411px, 0px); " data-2000="opacity: 0;transform: translate3d(0px, -80.411px, 0px)">Delivering strategic experiences and platforms accross the web.</h2>
-                        <p class=" wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.2s" data-1300="opacity: 1;transform: translate3d(0px, 0.411px, 0px)" data-1600="opacity:0; .2transform: translate3d(0px, -80.411px, 0px)">
+                        <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s" data-1500="opacity:1; transform: translate3d(0px, -0.411px, 0px); " data-2000="opacity: 0;transform: translate3d(0px, -80.411px, 0px)">Delivering strategic experiences and platforms accross the web.</h2>
+                        <p class=" wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s" data-1300="opacity: 1;transform: translate3d(0px, 0.411px, 0px)" data-1600="opacity:0; .2transform: translate3d(0px, -80.411px, 0px)">
                             A Web Development Team committed to deliver products that innovate the way people connect and work. We create experiences that help individuals, startups, brands and corporations improve and change lives.
                         </p>
-                        <a href="{% url 'about' %}">Know the story behind Swiftkind</a>
+                        <a href="{% url 'about' %}" id="aboutLink" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">Know the story behind Swiftkind <span class="icon ion-ios-arrow-forward"></span> </a>
                         <div class="stats">
                             <div class="item">
-                                <div>
-                                    <span class="number">
+                                <div >
+                                    <span class="count-number">
                                     12
                                     </span>
                                     <span class="icon ion-arrow-up-c"></span>
@@ -63,7 +50,7 @@
                             <div class="divider"></div>
                             <div class="item">
                                 <div>
-                                    <span class="number">
+                                    <span class="count-number">
                                     14
                                     </span>
                                     <span class="icon ion-arrow-up-c"></span>
@@ -73,9 +60,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <img src="{% static 'images/img2.png' %}" class="img-responsive">
-                </div>
             </div>
         </div>
     </div>
@@ -84,30 +68,31 @@
     <div class="container">
         <div class="default-content">
             <div class="section-content text-center">
-                <h2>Things we are good at.</h2>
-                <p class="text-center">We just thought you'd like to know :)</p>
+                <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">Things we are good at</h2>
+                <p class="text-center wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">New forms of mobility are conquering our cities, substantially changing the way we move, live and work. With our worldwide network comprising over 3,000 cities, logistica</p>
             </div>
             <div class="row services-links">
-                <div class="col-md-4 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
-                    <a href="{% url 'design' %}" class="" id="dsn">
+                <div class="col-md-4 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
+                    <a href="{% url 'design' %}" class="img-wrapper left">
+                        <div class="side-box"></div>
                         <div class="link-text">
                             <p class="text">DSN.</p>
                             <span class="help-text">Know more</span>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="1.5s">
-                    <a href="{%  url 'development' %}" class="dvt">
-
+                <div class="col-md-4 wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                    <a href="{%  url 'development' %}" class="img-wrapper center">
+                        <div class="side-box"></div>
                         <div class="link-text">
                             <p class="text">DVT.</p>
                             <span class="help-text">Know more</span>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="2s">
-                    <a href="{% url 'strategy' %}" class="sty">
-
+                <div class="col-md-4 wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <a href="{% url 'strategy' %}" class="img-wrapper right">
+                        <div class="side-box"></div>
                         <div class="link-text">
                             <p class="text">STY.</p>
                             <span class="help-text">Know more</span>
@@ -128,32 +113,50 @@
                 <span></span>
             </p>
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 ">
-                    <div class="section-content text-center">
-                        <h3 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">Builds platforms using agile methodology and leading edge technologies.</h3>
-                        <p class="text-center caption wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.2s" >
+                <div class="col-md-9">
+                    <div class="section-content">
+                        <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">Builds platforms using agile methodology and leading edge technologies.</h2>
+                        <p class=" caption wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s" >
                             Successful digital products are built through systematic processes and not by chances. Whether that’s by creating something entirely new or innovating an existing product, we remain to be agile before, during and after development.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
-                <div class="bottom-link  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
+                <div class="bottom-link  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
                     <h3>We create something amazing.</h3>
                     <div id="" class="carousel vertical slide  pagelinks">
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <a href="{% url 'services' %}">Know more about the process we <strong>live by</strong></a>
+                                <a href="{% url 'services' %}">
+                                    <span>
+                                        Know more about the process we <strong>live by</strong>
+                                        <i class="icon ion-ios-arrow-thin-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="{% url 'contact' %}">
+                                     <span>
+                                        Tell us about<strong> your project</strong>
+                                        <i class="icon ion-ios-arrow-thin-right"></i>
+                                    </span>
+                                </a>
                             </div>
                             <div class="item">
-                                <a href="{% url 'contact' %}">Tell us about <strong> your project</strong></a>
-                            </div>
-                            <div class="item">
-                                <a href="{% url 'about' %}">People <strong>behind swiftkind</strong></a>
+                                <a href="{% url 'about' %}">
+                                    <span>
+                                        People<strong> behind swiftkind</strong>
+                                        <i class="icon ion-ios-arrow-thin-right"></i>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </div>
@@ -266,78 +269,30 @@
     </div>
 </div>
 <div class="clients">
-    <div class="container">
-        <div class="owl-carousel owl-theme" id="clients">
+<div class="left-shadow"></div>
+<div class="right-shadow"></div>
+    <div class="container-fluid">
+        <div class="owl-carousel owl-theme  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s" id="clients">
             <div class="item">
                 <div class="msg">
-                    <p class="msg-content">
+                    
+                    <p class="author">First Name Lastname <span class="dash"></span>CEO</p>
+                    <h3 class="company">Trulycast</h3>
+                    <p class="message">
+                    <img src="{% static 'images/icons/quote.svg' %}" class="quote">
                         Brunch four dollar toast raclette cray. Tote bag pabst la croix readymade pinterest scenester, palo santo pork belly polaroid irony af normcore tbh dreamcatcher man bun.
                     </p>
-                    <div class="justify-flex">
-                        <div class="author">
-                            <div class="avatar img-responsive img-circle" style="background-image: url('{% static 'images/user.png' %}');" ></div>
-                            <p>
-                                User name, position
-                            </p>
-                        </div>
-                        <div class="company">
-                            <img src="{% static 'images/c-logo.png' %}" class="img-responsive">
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="item">
                 <div class="msg">
-                    <p class="msg-content">
-                        Brunch four dollar toast raclette cray. Tote bag pabst la croix readymade pinterest scenester, palo santo pork belly polaroid irony af normcore tbh dreamcatcher man bun.
+                    
+                    <p class="author">First Name Lastname <span class="dash"></span>CEO</p>
+                    <h3 class="company">Trulycast</h3>
+                    <p class="message">
+                    <img src="{% static 'images/icons/quote.svg' %}" class="quote">
+                        Brunch four dollar toast raclette cray. Tote dreamcatcher man bun.
                     </p>
-                    <div class="justify-flex">
-                        <div class="author">
-                            <div class="avatar img-responsive img-circle" style="background-image: url('{% static 'images/user.png' %}');" ></div>
-                            <p>
-                                User name, position
-                            </p>
-                        </div>
-                        <div class="company">
-                            <img src="{% static 'images/c-logo.png' %}" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="msg">
-                    <p class="msg-content">
-                        Brunch four dollar toast raclette cray. Tote bag pabst la croix readymade pinterest scenester, palo santo pork belly polaroid irony af normcore tbh dreamcatcher man bun.
-                    </p>
-                    <div class="justify-flex">
-                        <div class="author">
-                            <div class="avatar img-responsive img-circle" style="background-image: url('{% static 'images/user.png' %}');" ></div>
-                            <p>
-                                User name, position
-                            </p>
-                        </div>
-                        <div class="company">
-                            <img src="{% static 'images/c-logo.png' %}" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="msg">
-                    <p class="msg-content">
-                        Brunch four dollar toast raclette cray. Tote bag pabst la croix readymade pinterest scenester, palo santo pork belly polaroid irony af normcore tbh dreamcatcher man bun.
-                    </p>
-                    <div class="justify-flex">
-                        <div class="author">
-                            <div class="avatar img-responsive img-circle" style="background-image: url('{% static 'images/user.png' %}');" ></div>
-                            <p>
-                                User name, position
-                            </p>
-                        </div>
-                        <div class="company">
-                            <img src="{% static 'images/c-logo.png' %}" class="img-responsive">
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -349,9 +304,7 @@
         Let's talk about your project
     </h2>
     <div class="btn-cta">
-        <a href="{% url 'contact' %}">
-        Contact Us
-        </a>
+        <a href="{% url 'contact' %}">MAKE IT HAPPEN</a>
     </div>
 </div>
 {% endblock %}

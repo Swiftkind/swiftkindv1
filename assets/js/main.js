@@ -11,6 +11,16 @@ $(document).ready(function () {
 		 e.preventDefault();
 	});
 
+	// navbar show/hide
+	$('html').on('DOMMouseScroll mousewheel', function(e){
+		if(e.originalEvent.detail > 0 ||e.originalEvent.wheelDelta < 0 ){
+			$('.main-nav').addClass('hide-nav');
+		}
+		else{
+			$('.main-nav').removeClass('hide-nav');
+		}
+	});
+
 	//process trigger
 	$('#sprint-trigger').on('click', function(e){
 		$('#sprint').toggleClass('active');
@@ -35,15 +45,23 @@ $(document).ready(function () {
 		}
 	});
 
+	//number counter
+
+	$('.count-number').counterUp({
+		delay: 10,
+		time: 1000
+	});
+
 	 $('.pagelinks').carousel({
         autoplay: false
     });
 	 $('#clients').owlCarousel({
 	 	autoplay: true,
 	 	nav: false,
-    	dots: false,
+    	dots: true,
     	loop: true,
     	autoplayTimeout: 3000,
+    	
 	 	responsive : {
 	 		0 : {
 	 			items: 1
@@ -52,8 +70,16 @@ $(document).ready(function () {
 	 			items: 1
 	 		},
 	 		1000 : {
+	 			stagePadding: 300,
+	 			items: 1
+	 		},
+	 		1500 : {
+	 			stagePadding: 500,
 	 			items: 1
 	 		}
+
 	 	}
 	 });
+
+	 
 });
