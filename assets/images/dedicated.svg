@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="135" height="136" viewBox="0 0 135 136">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #0dbf75;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #0edc87;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle cx="67.297" cy="68.5" r="65.609" class="cls-1"/>
+  <path d="M31.004,65.280 L111.121,65.099 L111.109,63.220 L30.991,63.401 L31.004,65.280 Z" class="cls-2"/>
+  <path d="M67.189,72.630 L49.810,60.479 L48.748,62.040 L66.127,74.190 L67.189,72.630 Z" class="cls-2"/>
+  <path d="M93.637,68.860 L76.186,55.920 L75.020,57.430 L92.471,70.371 L93.637,68.860 Z" class="cls-2"/>
+  <path d="M55.965,103.535 L67.350,72.914 L65.599,72.252 L54.215,102.873 L55.965,103.535 Z" class="cls-2"/>
+  <path d="M76.681,58.276 L88.065,27.655 L86.314,26.993 L74.930,57.614 L76.681,58.276 Z" class="cls-2"/>
+  <path d="M50.011,62.876 L87.562,28.336 L86.329,26.987 L48.778,61.521 L50.011,62.876 Z" class="cls-2"/>
+  <path d="M55.431,103.912 L93.553,69.273 L92.338,67.904 L54.209,102.542 L55.431,103.912 Z" class="cls-2"/>
+</svg>

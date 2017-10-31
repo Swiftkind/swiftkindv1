@@ -1,368 +1,495 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load staticfiles %}
+
 {% block content %}
-<div class="">
-    <div class="masthead section" id="">
-        <div id="masthead" class="particles"></div>
-            <nav class="nav navbar main-nav">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a href="{% url 'index' %}" class="navbar-brand">
-                            <img src="{% static 'images/logo.png' %}" class="img-responsive">
-                        </a>
+<div id="page-wrapper">
+    <div class="m-nav">
+        <ul class="">
+            <li>
+                <a href="index.html" class="hvr-underline-from-center">HOME</a>
+            </li>
+            <li>
+                <a href="about.html" class="hvr-underline-from-center">OUR STORY</a>
+            </li>
+            <li>
+                <a href="process.html" class="hvr-underline-from-center">HOW WE WORK</a>
+            </li>
+            <li>
+                <a href="projects.html" class="hvr-underline-from-center">PROJECTS</a>
+            </li>
+            <li>
+                <a href="blog.swiftkind.com" class="hvr-underline-from-center">JOURNAL</a>
+            </li>
+            <li>
+                <a href="contact.html" class="hvr-underline-from-center">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar main-nav main-nav-sticky">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">
+                    <img src="{% static 'images/nav-logo.svg' %}" class="nav-logo">
+                </a>
+            </div>
+            <ul class="nav navbar navbar-nav navbar-right nav-links">
+                <li>
+                    <a href="about.html" class="hvr-underline-from-center">OUR STORY</a>
+                </li>
+                <li>
+                    <a href="process.html" class="hvr-underline-from-center">HOW WE WORK</a>
+                </li>
+                <li>
+                    <a href="projects.html" class="hvr-underline-from-center">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="blog.swiftkind.com" class="hvr-underline-from-center">JOURNAL</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="hvr-underline-from-center">CONTACT</a>
+                </li>
+            </ul>
+            <ul class="nav navbar navbar-nav navbar-right">
+                <li>
+                    <a href="#" class="mobile-nav">
+                        <span class="bar top"></span>
+                        <span class="menu">MENU</span>
+                        <span class="bar bottom"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content-wrapper">
+        <div class="masthead main-masthead section">
+            <div class="container">
+              <div class="header-content on-animate ">
+                <h2 class="intro-title">Hello. We are Swiftkind</h2>
+                  <h2 class="main-text">Web Development Agency</h2>
+                  <p>We engineer, scale and market digital products</p>
+              </div>
+              
+            </div>
+        </div>
+        <div class="intro-text section" data-section-name="about-us">
+            <div class="container">
+                <h3 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
+                    We are committed to deliver products that innovates the way people connect and work. We create experiences that help individuals, startups, brands and corporations innovate and change lives.
+                </h3>
+                <div class="item-links">
+                    <a href="#" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">KNOW <strong>OUR STORY</strong>
+                        <img src="{% static 'images/arrow-right.svg' %}">
+                    </a>
+                    <div class="link-options">
+                        <a href="#" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">GITHUB</a>
+                        <a href="#" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">BEHANCE</a>
+                        <a href="#" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.8s">FACEBOOK</a>
                     </div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li >
-                            <a href="#" class="navTrigger">
-                            <span class="icon ion-navicon"></span>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
-            </nav>
-        <div class="container">
-            <div class="contents">
-                <div class="text-content">
+            </div>
+        </div>
+        <div class="services-section section" data-section-name="services">
+            <div class="section-title">
+                <p>THINGS WE'RE GOOD AT</p>
+            </div>
+            <div class="services-carousel" >
+                <div class="item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 services-item">
+                                <div class="text-wrapper">
+                                    <div class="text-content main">
+                                       <div class="content">
+                                            <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">DVT.</h2>
+                                       </div>
+                                    </div>
+                                    <div class="text-content main lined">
+                                        <div class="content-links">
+                                            <div class="fit-content-wrapper">
+                                                <div class="owl-carousel owl-theme" id="dvt-carousel">
+                                                    <div class="item">
+                                                      <div class="services-description">
+                                                          <h3>Front-end Development</h3>
+                                                            <p>
+                                                              Sustainable dreamcatcher helvetica irony asymmetrical, cray four loko austin fanny pack normcore. Venmo activated charcoal occupy craft beer palo santo, cliche pinterest trust fund quinoa leggings.
+                                                            </p>
+                                                            <a href="#" class="next-slide">
+                                                                <div class="next-link">
+                                                                    <span class="link-text"> <div class="blink"></div><div class="blink"></div>Product Strategy</span>
+                                                                    <span class="link-line"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                      <div class="services-description">
+                                                          <h3>Product Strategy</h3>
+                                                            <p>
+                                                              Sustainable dreamcatcher helvetica irony asymmetrical, cray four loko austin fanny pack normcore. Venmo activated charcoal occupy craft beer palo santo, cliche pinterest trust fund quinoa leggings.
+                                                            </p>
+                                                            <a href="#" class="next-slide">
+                                                                <div class="next-link ">
+                                                                    <span class="link-text "><div class="blink"></div>Responsive Design</span>
+                                                                    <span class="link-line"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                      <div class="services-description">
+                                                          <h3>Prototyping</h3>
+                                                            <p>
+                                                              Sustainable dreamcatcher helvetica irony asymmetrical, cray four loko austin fanny pack normcore. Venmo activated charcoal occupy craft beer palo santo, cliche pinterest trust fund quinoa leggings.
+                                                            </p>
+                                                            <a href="#" >
+                                                                <div class="next-link next-slide">
+                                                                    <span class="link-text"> <div class="blink"></div> Wireframes</span>
+                                                                    <span class="link-line"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 services-item">
+                                <div class="text-wrapper">
+                                    <div class="text-content main">
+                                       <div class="content">
+                                            <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">DSN.</h2>
+                                       </div>
+                                    </div>
+                                    <div class="text-content main lined">
+                                        <div class="content-links">
+                                            <div class="fit-content-wrapper">
+                                                <div class="owl-carousel owl-theme" id="dsn-carousel">
+                                                    <div class="item">
+                                                      <div class="services-description">
+                                                          <h3>UI/UX Design</h3>
+                                                            <p>
+                                                              Sustainable dreamcatcher helvetica irony asymmetrical, cray four loko austin fanny pack normcore. Venmo activated charcoal occupy craft beer palo santo, cliche pinterest trust fund quinoa leggings.
+                                                            </p>
+                                                            <a href="#" class="next-slide">
+                                                                <div class="next-link">
+                                                                    <span class="link-text"> <div class="blink"></div> <div class="blink"></div>Product Strategy</span>
+                                                                    <span class="link-line"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                      <div class="services-description">
+                                                          <h3>Product Strategy</h3>
+                                                            <p>
+                                                              Sustainable dreamcatcher helvetica irony asymmetrical, cray four loko austin fanny pack normcore. Venmo activated charcoal occupy craft beer palo santo, cliche pinterest trust fund quinoa leggings.
+                                                            </p>
+                                                            <a href="" class="next-slide" >
+                                                                <div class="next-link ">
+                                                                    <span class="link-text "><div class="blink"></div><div class="blink"></div>Responsive Design</span>
+                                                                    <span class="link-line"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                      <div class="services-description">
+                                                          <h3>Prototyping</h3>
+                                                            <p>
+                                                              Sustainable dreamcatcher helvetica irony asymmetrical, cray four loko austin fanny pack normcore. Venmo activated charcoal occupy craft beer palo santo, cliche pinterest trust fund quinoa leggings.
+                                                            </p>
+                                                            <a href="#" >
+                                                                <div class="next-link next-slide">
+                                                                    <span class="link-text"><div class="blink"></div><div class="blink"></div>Wireframes</span>
+                                                                    <span class="link-line"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="hr-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen-section section" data-section-name="our-projects">
+            <div class="section-title">
+                <p>STUFF WE'RE PROUD OF</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 no-padding">
+                        <div class="img-wrapper blackpearl">
+                            <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                                <div class="img-holder">
+                                    <img src="{% static 'images/layer-4.png' %}" class="img-responsive">
+                                </div>
+                                <div class="content-wrapper">
+                                    <ul class="techs">
+                                        <li>
+                                            <a href="#">UI/UX DESIGN</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">PYTHON</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">DJANGO</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ANGULAR</a>
+                                        </li>
+                                    </ul>
+                                    <p class="title">BOOK APP</p>
+                                    <a href="bookapp.html" class="link-bordered hvr-sweep-to-right">
+                                        VIEW CASE STUDIES 
+                                        <img src="{% static 'images/arrow-right.svg' %}" class="arrow-sm">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 no-padding">
+                        <div class="img-wrapper midnight">
+                            <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                                <div class="img-holder">
+                                    <img src="{% static 'images/layer-5.png' %}" class="img-responsive">
+                                </div>
+                                <div class="content-wrapper">
+                                    <ul class="techs">
+                                        <li>
+                                            <a href="#">UI/UX DESIGN</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">PYTHON</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">DJANGO</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ANGULAR</a>
+                                        </li>
+                                    </ul>
+                                    <p class="title">TRACKR.</p>
+                                    <a href="trackr.html" class="link-bordered hvr-sweep-to-right">
+                                        VIEW CASE STUDIES 
+                                        <img src="{% static 'images/arrow-right.svg' %}" class="arrow-sm">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 no-padding">
+                        <div class="img-wrapper midnight">
+                            <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.8s">
+                                <div class="img-holder">
+                                    <img src="{% static 'images/layer-6.png' %}" class="img-responsive">
+                                </div>
+                                <div class="content-wrapper">
+                                    <ul class="techs">
+                                        <li>
+                                            <a href="#">UI/UX DESIGN</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">PYTHON</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">DJANGO</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ANGULAR</a>
+                                        </li>
+                                    </ul>
+                                    <p class="title">SWIFTLEAR</p>
+                                    <a href="learn.html" class="link-bordered hvr-sweep-to-right">
+                                        VIEW CASE STUDIES 
+                                        <img src="{% static 'images/arrow-right.svg' %}" class="arrow-sm">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 no-padding">
+                        <div class="img-wrapper blackpearl">
+                            <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
+                                <div class="img-holder">
+                                    <img src="{% static 'images/layer-7.png' %}" class="img-responsive">
+                                </div>
+                                <div class="content-wrapper">
+                                    <ul class="techs">
+                                        <li>
+                                            <a href="#">UI/UX DESIGN</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">PYTHON</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">DJANGO</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ANGULAR</a>
+                                        </li>
+                                    </ul>
+                                    <p class="title">JOBS</p>
+                                    <a href="jobs.html" class="link-bordered hvr-sweep-to-right">
+                                        VIEW CASE STUDIES 
+                                        <img src="{% static 'images/arrow-right.svg' %}" class="arrow-sm">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-link">
+                   <a href="#" class="primary-link">VIEW MORE <strong>CASE STUDIES</strong>  <img src="{% static 'images/arrow-right.svg' %}" class="arrow-sm"></a>
+                </div>
+            </div>
+        </div>
+        <div class="section testimonies" data-section-name="testimonies">
+            <div class="section-title">
+                <p>WHAT OOUR CLIENTS SAY</p>
+            </div>
+            <div class="owl-carousel owl-theme" id="testimonies">
+                <div class="item">
+                <p class="testimony">
+                    To be a consistent winner means preparing not just one day, one month, or even one year — but for a lifetime.
+                </p>
+                <div class="author">
+                    <span class="line"></span>
                     <div>
-                        <div class="sk-line align-center"></div>
-                        <h2>Web Development Agency</h2>
-                        <p>We engineer, scale and market digital products</p>
-                        <a href="#" class="btn-top-cta">DISCOVER</a>
-                    </div>
-                </div>
-            </div>
-            <div class="socials">
-                <a href="#">
-                <img src="{% static 'images/icons/fb.png' %}" class="img-responsive">
-                </a>
-                <a href="#">
-                <img src="{% static 'images/icons/github.png' %}" class="img-responsive">
-                </a>
-                <a href="#">
-                <img src="{% static 'images/icons/behance.png' %}" class="img-responsive">
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="section" id="about-us" data-section-name="aboutUs">
-    <div id="about" class="particles"></div>
-    <div class="container">
-        <p class="section-text-lg" data-1000="top:200px" data-1600="top: 200px">ABOUT</p>
-        <div class="about-text">
-            <p class="section-title">IN A NUTSHELL
-                <span></span>
-            </p>
-            <div class="row flex">
-                <div class="col-md-7 ">
-                    <div class="section-content">
-                        <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s" data-1500="opacity:1; transform: translate3d(0px, -0.411px, 0px); " data-2000="opacity: 0;transform: translate3d(0px, -80.411px, 0px)">Delivering strategic experiences and platforms accross the web.</h2>
-                        <p class=" wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.2s" data-1300="opacity: 1;transform: translate3d(0px, 0.411px, 0px)" data-1600="opacity:0; .2transform: translate3d(0px, -80.411px, 0px)">
-                            A Web Development Team committed to deliver products that innovate the way people connect and work. We create experiences that help individuals, startups, brands and corporations improve and change lives.
+                        <p class="name">
+                            Dan Red
                         </p>
-                        <a href="{% url 'about' %}">Know the story behind Swiftkind</a>
-                        <div class="stats">
-                            <div class="item">
-                                <div>
-                                    <span class="number">
-                                    12
-                                    </span>
-                                    <span class="icon ion-arrow-up-c"></span>
-                                </div>
-                                <p class="">Members</p>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="item">
-                                <div>
-                                    <span class="number">
-                                    14
-                                    </span>
-                                    <span class="icon ion-arrow-up-c"></span>
-                                </div>
-                                <p>Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <img src="{% static 'images/img2.png' %}" class="img-responsive">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="section services">
-    <div class="container">
-        <div class="default-content">
-            <div class="section-content text-center">
-                <h2>Things we are good at.</h2>
-                <p class="text-center">We just thought you'd like to know :)</p>
-            </div>
-            <div class="row services-links">
-                <div class="col-md-4 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
-                    <a href="{% url 'design' %}" class="" id="dsn">
-                        <div class="link-text">
-                            <p class="text">DSN.</p>
-                            <span class="help-text">Know more</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="1.5s">
-                    <a href="{%  url 'development' %}" class="dvt">
-
-                        <div class="link-text">
-                            <p class="text">DVT.</p>
-                            <span class="help-text">Know more</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="2s">
-                    <a href="{% url 'strategy' %}" class="sty">
-
-                        <div class="link-text">
-                            <p class="text">STY.</p>
-                            <span class="help-text">Know more</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="section" data-3200="background-color:rgb(255,255,255);" data-3500="background-color:rgb(0,0,0);">
-    <div id="processPart"></div>
-    <div class="container">
-        <p class="section-text-lg">PROCESS</p>
-        <div class="about-text">
-            <p class="section-title">
-                HOW WE WORK
-                <span></span>
-            </p>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 ">
-                    <div class="section-content text-center">
-                        <h3 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">Builds platforms using agile methodology and leading edge technologies.</h3>
-                        <p class="text-center caption wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.2s" >
-                            Successful digital products are built through systematic processes and not by chances. Whether that’s by creating something entirely new or innovating an existing product, we remain to be agile before, during and after development.
+                        <p class="designation">
+                            CEO, Company Inc.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-12">
-                <div class="bottom-link  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
-                    <h3>We create something amazing.</h3>
-                    <div id="" class="carousel vertical slide  pagelinks">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <a href="{% url 'services' %}">Know more about the process we <strong>live by</strong></a>
-                            </div>
-                            <div class="item">
-                                <a href="{% url 'contact' %}">Tell us about <strong> your project</strong></a>
-                            </div>
-                            <div class="item">
-                                <a href="{% url 'about' %}">People <strong>behind swiftkind</strong></a>
+            <div class="item">
+                <p class="testimony">
+                    To be a consistent winner means preparing not just one day, one month, or even one year — but for a lifetime.
+                </p>
+                <div class="author">
+                    <span class="line"></span>
+                    <div>
+                        <p class="name">
+                            Dan Red
+                        </p>
+                        <p class="designation">
+                            CEO, Company Inc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="contact-link">
+            <h4 class="text-bg">WORK WITH US</h4>
+            <h3 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">Let's create something amazing</h3>
+            <a href="#" class="inverted-link wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">MAKE IT HAPPEN</a>
+        </div>
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <h3>Hello@swiftkind.com</h3>
+                        <p>
+                            730-A Molave Street, Juna Subd. Matina, Davao City, Philippines
+                        </p>
+                        <p>
+                            (082) 225 - 1050
+                        </p>
+                    </div>
+                    <div class="col-md-3  col-sm-3 col-xs-6">
+                        <p>
+                            <strong>WHAT'S NEW</strong>
+                        </p>
+                        <div id="" class="carousel vertical slide pagelinks">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <p>
+                                        Looking for a <a href="#">Full-Stack Developer</a>
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p>Transferred to new office</p>
+                                </div>
+                                <div class="item">
+                                    <p>Builing a search engine</p>
+                                </div>
+                                <div class="item">
+                                    <p>Working with Safari Pages</p>
+                                </div>
                             </div>
                         </div>
+                        <div id="" class="carousel vertical slide pagelinks">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item ">
+                                    <p>
+                                        Looking for a <a href="#">Full-Stack Developer</a>
+                                    </p>
+                                </div>
+                                <div class="item active">
+                                    <p>Transferred to new office</p>
+                                </div>
+                                <div class="item">
+                                    <p>Builing a search engine</p>
+                                </div>
+                                <div class="item">
+                                    <p>Working with Safari Pages</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="" class="carousel vertical slide pagelinks">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item ">
+                                    <p>
+                                        Looking for a <a href="#">Full-Stack Developer</a>
+                                    </p>
+                                </div>
+                                <div class="item ">
+                                    <p>Transferred to new office</p>
+                                </div>
+                                <div class="item active">
+                                    <p>Builing a search engine</p>
+                                </div>
+                                <div class="item">
+                                    <p>Working with Safari Pages</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  col-sm-3 col-xs-6">
+                        <p>
+                            <strong>FOLLOW US</strong>
+                        </p>
+                        <p>
+                            <a href="#">Github</a>
+                        </p>
+                        <p>
+                            <a href="#">Behance</a>
+                        </p>
+                        <p>
+                            <a href="#">Facebook</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="section process" data-3200="background-color:rgb(255,255,255);" data-3500="background-color:rgb(0,0,0);">
-    <div class="container">
-        <p class="section-text-lg">WE ARE AGILE</p>
-        <div class="row flex">
-            <div class="col-md-5">
-                <div class="section-content">
-                    <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">We think big, but start small.</h2>
-                    <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">Right from the start.</p>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="panel-group" id="process-steps">
-                    <div class="panel ">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                <a href="#discover" data-toggle="collapse" data-parent="#process-steps" class="step-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
-                                <span class="line"></span>
-                                <span class="number">01</span>
-                                <span class="text">DISCOVER</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel-collapse collapse in wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.7s" id="discover">
-                            <div class="panel-body wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.8s">
-                                <p>
-                                    During the discovery phase our team conducts a detailed requirement analysis and creates a work-breakdown structure.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                <a href="#design" data-toggle="collapse" data-parent="#process-steps" class="step-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="2s">
-                                <span class="line"></span>
-                                <span class="number">02</span>
-                                <span class="text">DESIGN</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel-collapse collapse" id="design">
-                            <div class="panel-body">
-                                <p>
-                                    We identify the design and architecture of the project. Business case, Initial product back long, Release plan, Assemble team.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                <a data-toggle="collapse" data-parent="#process-steps" class="step-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="2.2s" id="sprint-trigger">
-                                <span class="line"></span>
-                                <span class="number">03</span>
-                                <span class="text">SPRINT PLANNING</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel-collapse collapse" id="sprint">
-                            <div class="v-line wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="2.5s"></div>
-                            <span class="iterate wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="2.2s">ITERATE</span>
-                            <div class="panel-body">
-                                <p>
-                                    The team identifies scope of work for each iteration and tracks the progress. In this phase we do the intro and retrospective.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                <a href="#developement" data-toggle="collapse" data-parent="#process-steps" class="step-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="2.4s">
-                                <span class="line"></span>
-                                <span class="number">04</span>
-                                <span class="text">DEVELOPMENT</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel-collapse collapse" id="developement">
-                            <div class="panel-body">
-                                <p>
-                                    The team work on the tickets assigned to them on the specified iteration. We follow the Scrum Process.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                <a href="#deliver" data-toggle="collapse" data-parent="#process-steps" class="step-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="2.7s">
-                                <span class="line"></span>
-                                <span class="number">05</span>
-                                <span class="text">DELIVER</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel-collapse collapse" id="deliver">
-                            <div class="panel-body">
-                                <p>We conduct a work demo during each sprint and collect any feedback received to be incorporated in the next sprint.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="copyright container-fluid">
+            <a href="#">COPYRIGHT  SWIFTKIND 2017</a>
+            <a href="#">PRIVACY POLICY</a>
         </div>
-    </div>
-</div>
-<div class="clients">
-    <div class="container">
-        <div class="owl-carousel owl-theme" id="clients">
-            <div class="item">
-                <div class="msg">
-                    <p class="msg-content">
-                        Brunch four dollar toast raclette cray. Tote bag pabst la croix readymade pinterest scenester, palo santo pork belly polaroid irony af normcore tbh dreamcatcher man bun.
-                    </p>
-                    <div class="justify-flex">
-                        <div class="author">
-                            <div class="avatar img-responsive img-circle" style="background-image: url('{% static 'images/user.png' %}');" ></div>
-                            <p>
-                                User name, position
-                            </p>
-                        </div>
-                        <div class="company">
-                            <img src="{% static 'images/c-logo.png' %}" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="msg">
-                    <p class="msg-content">
-                        Brunch four dollar toast raclette cray. Tote bag pabst la croix readymade pinterest scenester, palo santo pork belly polaroid irony af normcore tbh dreamcatcher man bun.
-                    </p>
-                    <div class="justify-flex">
-                        <div class="author">
-                            <div class="avatar img-responsive img-circle" style="background-image: url('{% static 'images/user.png' %}');" ></div>
-                            <p>
-                                User name, position
-                            </p>
-                        </div>
-                        <div class="company">
-                            <img src="{% static 'images/c-logo.png' %}" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="msg">
-                    <p class="msg-content">
-                        Brunch four dollar toast raclette cray. Tote bag pabst la croix readymade pinterest scenester, palo santo pork belly polaroid irony af normcore tbh dreamcatcher man bun.
-                    </p>
-                    <div class="justify-flex">
-                        <div class="author">
-                            <div class="avatar img-responsive img-circle" style="background-image: url('{% static 'images/user.png' %}');" ></div>
-                            <p>
-                                User name, position
-                            </p>
-                        </div>
-                        <div class="company">
-                            <img src="{% static 'images/c-logo.png' %}" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="msg">
-                    <p class="msg-content">
-                        Brunch four dollar toast raclette cray. Tote bag pabst la croix readymade pinterest scenester, palo santo pork belly polaroid irony af normcore tbh dreamcatcher man bun.
-                    </p>
-                    <div class="justify-flex">
-                        <div class="author">
-                            <div class="avatar img-responsive img-circle" style="background-image: url('{% static 'images/user.png' %}');" ></div>
-                            <p>
-                                User name, position
-                            </p>
-                        </div>
-                        <div class="company">
-                            <img src="{% static 'images/c-logo.png' %}" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="footer-cta">
-    <p class="section-text-lg">WORK WITH US</p>
-    <h2>
-        Let's talk about your project
-    </h2>
-    <div class="btn-cta">
-        <a href="{% url 'contact' %}">
-        Contact Us
-        </a>
     </div>
 </div>
 {% endblock %}
