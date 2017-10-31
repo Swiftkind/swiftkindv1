@@ -28,8 +28,68 @@
 </head>
 
 <body>
-    {% block content %}
-    {% endblock %}
+    <div id="page-wrapper">
+        <div class="m-nav">
+          <ul class="">
+              <li>
+                  <a href="index.html" class="hvr-underline-from-center">HOME</a>
+              </li>
+              <li>
+                  <a href="about.html" class="hvr-underline-from-center">OUR STORY</a>
+              </li>
+              <li>
+                  <a href="process.html" class="hvr-underline-from-center">HOW WE WORK</a>
+              </li>
+              <li>
+                  <a href="projects.html" class="hvr-underline-from-center">PROJECTS</a>
+              </li>
+              <li>
+                  <a href="blog.swiftkind.com" class="hvr-underline-from-center">JOURNAL</a>
+              </li>
+              <li>
+                  <a href="contact.html" class="hvr-underline-from-center">CONTACT</a>
+              </li>
+          </ul>
+        </div>
+        <nav class="navbar main-nav main-nav-sticky">
+              <div class="container-fluid">
+                  <div class="navbar-header">
+                      <a href="index.html" class="navbar-brand">
+                          <img src="assets/images/nav-logo.svg" class="nav-logo">
+                      </a>
+                  </div>
+                  <ul class="nav navbar navbar-nav navbar-right nav-links">
+                      <li>
+                          <a href="about.html" class="hvr-underline-from-center">OUR STORY</a>
+                      </li>
+                      <li>
+                          <a href="process.html" class="hvr-underline-from-center">HOW WE WORK</a>
+                      </li>
+                      <li>
+                          <a href="projects.html" class="hvr-underline-from-center">PROJECTS</a>
+                      </li>
+                      <li>
+                          <a href="blog.swiftkind.com" class="hvr-underline-from-center">JOURNAL</a>
+                      </li>
+                      <li>
+                          <a href="contact.html" class="hvr-underline-from-center">CONTACT</a>
+                      </li>
+                  </ul>
+                  <ul class="nav navbar navbar-nav navbar-right">
+                      <li>
+                          <a href="#" class="mobile-nav">
+                              <span class="bar top"></span>
+                              <span class="menu">MENU</span>
+                              <span class="bar bottom"></span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+        </nav>
+        {% block content %}
+        {% endblock %}
+    </div>
+    
     <script type="text/javascript" src="{% static 'js/jquery-2.1.4.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'dist/wow/js/wow.min.js' %}"></script>
