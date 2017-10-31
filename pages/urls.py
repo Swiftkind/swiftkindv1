@@ -15,4 +15,9 @@ urlpatterns = [
     url(r'^services/$', set_page("services.html"), name="services"),
     url(r'^strategy/$', set_page("strategy.html"), name="strategy"),
     url(r'^works/$', set_page("works.html"), name="works"),
+    url(r'^process/$', set_page("process.html"), name="process"),
+    url(r'^learn/$', set_page("learn.html"), name="learn"),
+    url(r'^jobs/$', set_page("jobs.html"), name="jobs"),
+    url(r'^bookapp/$', set_page("bookapp.html"), name="bookapp"),
+    url(r'^trackr/$', set_page("bookapp.html"), name="trackr"),
 ]
