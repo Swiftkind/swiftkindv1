@@ -27,52 +27,52 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body id="{% block project %}{% endblock %}" class="{% block project-details %}{% endblock %}">
     <div id="page-wrapper">
         <div class="m-nav">
           <ul class="">
               <li>
-                  <a href="index.html" class="hvr-underline-from-center">HOME</a>
+                  <a href="{% url 'index' %}" class="hvr-underline-from-center">HOME</a>
               </li>
               <li>
-                  <a href="about.html" class="hvr-underline-from-center">OUR STORY</a>
+                  <a href="{% url 'about' %}" class="hvr-underline-from-center">OUR STORY</a>
               </li>
               <li>
-                  <a href="process.html" class="hvr-underline-from-center">HOW WE WORK</a>
+                  <a href="{% url 'process' %}" class="hvr-underline-from-center">HOW WE WORK</a>
               </li>
               <li>
-                  <a href="projects.html" class="hvr-underline-from-center">PROJECTS</a>
+                  <a href="{% url 'works' %}" class="hvr-underline-from-center">PROJECTS</a>
               </li>
               <li>
                   <a href="blog.swiftkind.com" class="hvr-underline-from-center">JOURNAL</a>
               </li>
               <li>
-                  <a href="contact.html" class="hvr-underline-from-center">CONTACT</a>
+                  <a href="{% url 'contact' %}" class="hvr-underline-from-center">CONTACT</a>
               </li>
           </ul>
         </div>
         <nav class="navbar main-nav main-nav-sticky">
               <div class="container-fluid">
                   <div class="navbar-header">
-                      <a href="index.html" class="navbar-brand">
-                          <img src="assets/images/nav-logo.svg" class="nav-logo">
+                      <a href="{% url 'index' %}" class="navbar-brand">
+                          <img src="{% static 'images/nav-logo.svg' %}" class="nav-logo">
                       </a>
                   </div>
                   <ul class="nav navbar navbar-nav navbar-right nav-links">
                       <li>
-                          <a href="about.html" class="hvr-underline-from-center">OUR STORY</a>
+                          <a href="{% url 'about' %}" class="hvr-underline-from-center">OUR STORY</a>
                       </li>
                       <li>
-                          <a href="process.html" class="hvr-underline-from-center">HOW WE WORK</a>
+                          <a href="{% url 'process' %}" class="hvr-underline-from-center">HOW WE WORK</a>
                       </li>
                       <li>
-                          <a href="projects.html" class="hvr-underline-from-center">PROJECTS</a>
+                          <a href="{% url 'works' %}" class="hvr-underline-from-center">PROJECTS</a>
                       </li>
                       <li>
                           <a href="blog.swiftkind.com" class="hvr-underline-from-center">JOURNAL</a>
                       </li>
                       <li>
-                          <a href="contact.html" class="hvr-underline-from-center">CONTACT</a>
+                          <a href="{% url 'contact' %}" class="hvr-underline-from-center">CONTACT</a>
                       </li>
                   </ul>
                   <ul class="nav navbar navbar-nav navbar-right">
@@ -88,6 +88,98 @@
         </nav>
         {% block content %}
         {% endblock %}
+        <div class="footer-content">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                      <h3>Hello@swiftkind.com</h3>
+                      <p>
+                          730-A Molave Street, Juna Subd. Matina, Davao City, Philippines
+                      </p>
+                      <p>
+                          (082) 225 - 1050
+                      </p>
+                  </div>
+                  <div class="col-md-3  col-sm-3">
+                      <p>
+                          <strong>WHAT'S NEW</strong>
+                      </p>
+                      <div id="" class="carousel vertical slide pagelinks">
+                          <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                  <p>
+                                      Looking for a <a href="#">Full-Stack Developer</a>
+                                  </p>
+                              </div>
+                              <div class="item">
+                                  <p>Transferred to new office</p>
+                              </div>
+                              <div class="item">
+                                  <p>Builing a search engine</p>
+                              </div>
+                              <div class="item">
+                                  <p>Working with Safari Pages</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div id="" class="carousel vertical slide pagelinks">
+                          <div class="carousel-inner" role="listbox">
+                              <div class="item ">
+                                  <p>
+                                      Looking for a <a href="#">Full-Stack Developer</a>
+                                  </p>
+                              </div>
+                              <div class="item active">
+                                  <p>Transferred to new office</p>
+                              </div>
+                              <div class="item">
+                                  <p>Builing a search engine</p>
+                              </div>
+                              <div class="item">
+                                  <p>Working with Safari Pages</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div id="" class="carousel vertical slide pagelinks">
+                          <div class="carousel-inner" role="listbox">
+                              <div class="item ">
+                                  <p>
+                                      Looking for a <a href="#">Full-Stack Developer</a>
+                                  </p>
+                              </div>
+                              <div class="item ">
+                                  <p>Transferred to new office</p>
+                              </div>
+                              <div class="item active">
+                                  <p>Builing a search engine</p>
+                              </div>
+                              <div class="item">
+                                  <p>Working with Safari Pages</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3  col-sm-3">
+                      <p>
+                          <strong>FOLLOW US</strong>
+                      </p>
+                      <p>
+                          <a href="https://github.com/Swiftkind">Github</a>
+                      </p>
+                      <p>
+                          <a href="https://www.behance.net/restyantiqc47e">Behance</a>
+                      </p>
+                      <p>
+                          <a href="https://www.facebook.com/swiftkind/?ref=br_rs">Facebook</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright container-fluid">
+          <a href="#">COPYRIGHT  SWIFTKIND 2017</a>
+          <a href="#">PRIVACY POLICY</a>
+      </div>
     </div>
     
     <script type="text/javascript" src="{% static 'js/jquery-2.1.4.js' %}"></script>
