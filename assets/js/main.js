@@ -63,7 +63,7 @@ $(document).ready(function() {
         autoplay: false,
         autoplayTimeout: 7000,
         nav: true,
-  		navText: ["<img src='assets/images/next-slide.svg'>","<img src='assets/images/next-slide.svg'>"],
+  		navText: ["<img src='/static/images/next-slide.svg'>","<img src='/static/images/next-slide.svg'>"],
         responsive: {
             0: {
                 items: 1
