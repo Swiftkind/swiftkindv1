@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="2413" height="779" viewBox="0 0 2413 779">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect x="213" y="511.813" width="295" height="21.187" class="cls-1"/>
+  <rect x="213" y="374.094" width="295" height="21.156" class="cls-1"/>
+  <rect x="213" y="237" width="295" height="21.188" class="cls-1"/>
+  <rect x="1903" y="237" width="295" height="21.188" class="cls-1"/>
+  <rect x="1903" y="512" width="295" height="21.188" class="cls-1"/>
+  <rect x="770" y="238" width="21.188" height="295" class="cls-1"/>
+  <rect x="1903" y="238" width="21.19" height="295" class="cls-1"/>
+  <rect x="2177" y="238" width="21.19" height="295" class="cls-1"/>
+  <rect x="907.75" y="238" width="21.156" height="295" class="cls-1"/>
+  <rect x="1044.81" y="238" width="21.19" height="295" class="cls-1"/>
+  <rect x="1477.75" y="238" width="21.16" height="295" class="cls-1"/>
+  <rect x="1615" y="237" width="21" height="136" class="cls-1"/>
+  <rect x="1615" y="397" width="21" height="136" class="cls-1"/>
+  <path d="M105.000,644.000 L105.000,136.000 L613.000,136.000 L613.000,644.000 L105.000,644.000 ZM593.000,157.000 L126.000,157.000 L126.000,624.000 L593.000,624.000 L593.000,157.000 Z" class="cls-2"/>
+  <path d="M663.000,644.000 L663.000,136.000 L1171.000,136.000 L1171.000,644.000 L663.000,644.000 ZM1151.000,157.000 L684.000,157.000 L684.000,624.000 L1151.000,624.000 L1151.000,157.000 Z" class="cls-2"/>
+  <path d="M1233.000,644.000 L1233.000,136.000 L1741.000,136.000 L1741.000,644.000 L1233.000,644.000 ZM1721.000,157.000 L1254.000,157.000 L1254.000,624.000 L1721.000,624.000 L1721.000,157.000 Z" class="cls-2"/>
+  <path d="M1794.000,644.000 L1794.000,136.000 L2302.000,136.000 L2302.000,644.000 L1794.000,644.000 ZM2282.000,157.000 L1815.000,157.000 L1815.000,624.000 L2282.000,624.000 L2282.000,157.000 Z" class="cls-2"/>
+</svg>

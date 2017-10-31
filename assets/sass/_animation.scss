@@ -1,172 +1,147 @@
-@keyframes masthead {
-    0% {
-        background: rgb(0, 0, 0);
-        color: $white;
-    }
-
-    100% {
-        background: rgb(255, 255, 255);
-        color: $black;
-    }
+.blink {
+    background: $jade;
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
 }
 
-@keyframes bg-bounce {
+@-webkit-keyframes blink {
     0% {
-        background: rgb(255, 255, 255);
-        color: #0fa371;
+        opacity: 0;
     }
     50% {
-        background: rgb(0, 0, 0);
+        opacity: 1;
     }
     100% {
-        background: rgb(15, 163, 113);
-        color: $white;
+        opacity: 0;
     }
 }
 
-//animation for welcome message
-@-webkit-keyframes out-animate {
-
+@keyframes blink {
     0% {
         opacity: 0;
-    }
-
-    20% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-    80% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-
-    100% {
-        opacity: 0;
-        display: none;
-        visibility: hidden;
-
-    }
-}
-
-//animation call for welcome message
-.out-animate {
-    animation-name: out-animate;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-delay: 0.5s;
-    visibility: visible !important;
-        
-}
-
-
-//animation for top-content
-@keyframes top-content{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-//animation call for the top-content
-.todelay {
-    animation-name: top-content;
-    animation-delay: 4s;
-     animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-.masthead {
-    animation-name: masthead;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-.sf-animation {
-    visibility: visible;
-    animation-duration: 0.5s;
-    animation-delay: 1s;
-    animation-name: fadeInUp;
-    &.moved {
-        animation-name: fadeInDown;
-    }
-}
-
-.bg-bounce {
-    height: 100%;
-    animation-name: bg-bounce;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out;
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-
-
-.shape-bg,
-{
-    width: 40vh;
-    height: 40vh;
-    background-color: coral;
-    -webkit-animation: squareToCircle 7s 0s infinite alternate;
-    position: absolute;
-    right: -100px;
-    top: 25%;
-}
-
-.shape-bg-1 {
-    width: 30vh;
-    height: 30vh;
-    -webkit-animation: squareToCircle 4s 0s infinite;
-    position: absolute;
-    right: 0px;
-    top: 30%;
-}
-
-@-webkit-keyframes squareToCircle {
-    0% {
-        border-radius: 10px 10px 10px 10px;
-        background: rgba(15, 179, 123, 0.1);
-        transform: rotate(0deg);
-    }
-    25% {
-        border-radius: 10px 10px 10px 10px;
-        background: rgba(15, 179, 123, 0.1);
-        transform: rotate(45deg);
     }
     50% {
-        border-radius: 10px 10px 10px 10px;
-        background: rgba(15, 179, 123, 0.1);
-        transform: rotate(90deg);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.on-animate {
+    .intro-title {
+        animation-name: intro-animate;
+        animation-duration: 3s;
+        opacity: 0;
+        animation-delay: 1s;
+    }
+    .main-text {
+        opacity: 1;
+        animation-name: intro-animate-out;
+        animation-duration: 6s;
+        animation-delay: 0s;
+    }
+}
+
+@keyframes intro-animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes intro-animate-out {
+    0% {
+        opacity: 0;
     }
     75% {
-        border-radius: 10px 10px 10px 10px;
-        background: rgba(15, 179, 123, 0.1);
-        transform: rotate(135deg);
+        opacity: 0;
     }
+
     100% {
-        border-radius: 20px 20px 20px 20px;
-        background: rgba(15, 179, 123, 0.1);
-        transform: rotate(180deg);
+        opacity: 1;
     }
+}
+
+
+@keyframes iterate{
+    0%{
+            transform: rotate(0deg);
+    }
+    100%{
+            transform: rotate(360deg);
+    }
+}
+
+.img-iterate{
+    animation-name: iterate;
+    animation-duration: 75s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease;
+}
+.owl-carousel {
+    .owl-item {
+        .services-description {
+            h3,p {
+                margin-left: -30px;
+                opacity: 0;
+                @include transition(all,0.5s,ease-in-out);
+            width: 100%;
+            }
+        }
+        &.active{
+        	h3,p {
+                margin-left: 0;
+                opacity: 1;
+                @include transition(all,0.5s,ease-in-out);
+            }
+            p{
+            	transition-delay: 0.5s;	
+            }
+        }
+    }
+
+}
+@keyframes process-path-center{
+    0%{
+        height: 0;
+    }
+    100%{
+                height: 180px;
+
+    }
+}
+
+@keyframes process-path-side{
+    0%{
+        height: 0;
+    }
+    100%{
+                height: 211;
+
+    }
+}
+
+
+.process-path-center{
+    animation-name: process-path-center;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+
+}
+.process-path-side{
+    animation-name: process-path-side;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+
 }

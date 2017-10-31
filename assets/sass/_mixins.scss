@@ -1,0 +1,48 @@
+@mixin transition($property, $timing, $function) {
+    -webkit-transition: $property $timing $function;
+    -moz-transition: $property $timing $function;
+    -o-transition: $property $timing $function;
+    transition: $property $timing $function;
+}
+
+@mixin box-shadow($hr-offset, $vr-offser, $blur-radius, $spread-radius ) {
+    -moz-box-shadow: $hr-offset, $vr-offser, $blur-radius, $spread-radius;
+    -webkit-box-shadow:$hr-offset, $vr-offser, $blur-radius, $spread-radius;
+    box-shadow: $hr-offset, $vr-offser, $blur-radius, $spread-radius;
+}
+@mixin no-shadow{
+	 -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+}
+
+
+//responsive
+
+$phone-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1025px;
+$desktop-lg-width:1600px;
+@mixin mobile {
+    @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$desktop-lg-width - 1px}){
+        @content;
+    }
+}
+@mixin desktop-lg {
+    @media (min-width: #{$desktop-lg-width}) {
+        @content;
+    }
+}

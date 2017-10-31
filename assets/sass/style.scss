@@ -1,9 +1,10 @@
-@import 'typography';
 @import 'variables';
-@import 'responsive';
-@import 'extends';
-@import 'animation';
+@import 'typography';
+@import 'mixins';
+@import 'global';
+@import 'overrides';
 @import 'header';
 @import 'landing';
-@import 'landingv2';
 @import 'pages';
+@import 'projects';
+@import 'animation';
