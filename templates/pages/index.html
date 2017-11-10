@@ -4,6 +4,7 @@
 {% block content %}
 <div class="content-wrapper">
     <div class="masthead main-masthead section">
+        <div id="masthead" class="particles"></div>
         <div class="container">
             <div class="header-content on-animate ">
                 <h2 class="intro-title">Hello. We are Swiftkind</h2>
@@ -14,151 +15,192 @@
     </div>
     <div class="intro-text section" data-section-name="about-us">
         <div class="container">
-            <h3 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
-                We are committed to deliver products that innovates the way people connect and work. We create experiences that help individuals, startups, brands and corporations innovate and change lives.
+            <h3 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                We are committed to deliver products that innovate the way people connect and work. We create experiences that help individuals, startups, brands and corporations innovate and change lives.
             </h3>
             <div class="item-links">
-                <a href="{% url 'about' %}" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">KNOW <strong>OUR STORY</strong>
+                <a href="{% url 'about' %}" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">KNOW <strong>OUR STORY</strong>
                     <img src="{% static 'images/arrow-right.svg' %}">
                 </a>
                 <div class="link-options">
-                    <a href="https://github.com/Swiftkind" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">GITHUB</a>
-                    <a href="https://www.behance.net/restyantiqc47e" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">BEHANCE</a>
-                    <a href="https://www.facebook.com/swiftkind/?ref=br_rs" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.8s">FACEBOOK</a>
+                    <a href="https://github.com/Swiftkind" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.2s">GITHUB</a>
+                    <a href="https://www.behance.net/restyantiqc47e" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.4s">BEHANCE</a>
+                    <a href="https://www.facebook.com/swiftkind/?ref=br_rs" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.6s">FACEBOOK</a>
                 </div>
             </div>
         </div>
     </div>
         
-    <div class="services-section section" data-section-name="services">
+    <div class="services-section section">
         <div class="section-title">
-            <p>THINGS WE'RE GOOD AT</p>
+            <p>
+                <div class="bg-anim">
+                    <span class="text-anim" >THINGS WE'RE GOOD AT</span>
+                    <div class="anim"></div>
+                </div>
+            </p>
         </div>
-        <div class="services-carousel" >
+        <div class="">
             <div class="item">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 services-item">
-                            <div class="text-wrapper">
-                                <div class="text-content main">
-                                   <div class="content">
-                                        <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">DVT.</h2>
-                                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="flex-center svc-img">
+                                    <img src="{% static 'images/web-devt.svg' %}">
                                 </div>
-                                <div class="text-content main lined">
-                                    <div class="content-links">
-                                        <div class="fit-content-wrapper">
-                                            <div class="owl-carousel owl-theme" id="dvt-carousel">
-                                                <div class="item">
-                                                    <div class="services-description">
-                                                        <h3>Front-end Development</h3>
-                                                        <p>
-                                                            Sustainable dreamcatcher helvetica irony asymmetrical, cray four loko austin fanny pack normcore. Venmo activated charcoal occupy craft beer palo santo, cliche pinterest trust fund quinoa leggings.
-                                                        </p>
-                                                        <a href="#" class="next-slide">
-                                                            <div class="next-link">
-                                                                <span class="link-text"> <div class="blink"></div><div class="blink"></div>Product Strategy</span>
-                                                                <span class="link-line"></span>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <div class="services-description">
-                                                        <h3>Product Strategy</h3>
-                                                        <p>
-                                                            Sustainable dreamcatcher helvetica irony asymmetrical, cray four loko austin fanny pack normcore. Venmo activated charcoal occupy craft beer palo santo, cliche pinterest trust fund quinoa leggings.
-                                                        </p>
-                                                        <a href="#" class="next-slide">
-                                                            <div class="next-link ">
-                                                                <span class="link-text "><div class="blink"></div>Responsive Design</span>
-                                                                <span class="link-line"></span>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="flex-center svc-details">
+                                    <div>
+                                        <span class="number">01</span>
+                                        <h2 class="bg-anim">
+                                            <span class="text-anim">Web Applications</span>
+                                            <div class="anim"></div>
+                                        </h2>
+                                        <p class="svc-desc">
+                                            We develop complex web applications using cutting-edge technologies that are fully  focused on client needs and business requirements. Specializing in crafting corporate applications fully optimized to enhance productivity and user experience. 
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                 <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">Python</h4>
+                                                 <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Angular Js</h4>
+                                                 <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Django</h4>
+                                                 <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">TypeScript</h4>
+                                                 <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">JavaScript</h4>
+                                                 <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">PostgreSQL</h4>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">HTML5</h4>
+                                                 <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">CSS3</h4>
+                                                 <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">SASS/LESS</h4>
+                                                 <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Bootstrap</h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="hr-line"></div>
                             </div>
                         </div>
-                        <div class="col-md-6 services-item">
-                            <div class="text-wrapper">
-                                <div class="text-content main">
-                                    <div class="content">
-                                        <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">DSN.</h2>
-                                    </div>
-                                </div>
-                                <div class="text-content main lined">
-                                    <div class="content-links">
-                                        <div class="fit-content-wrapper">
-                                            <div class="owl-carousel owl-theme" id="dsn-carousel">
-                                                <div class="item">
-                                                    <div class="services-description">
-                                                        <h3>UI/UX Design</h3>
-                                                        <p>
-                                                            Sustainable dreamcatcher helvetica irony asymmetrical, cray four loko austin fanny pack normcore. Venmo activated charcoal occupy craft beer palo santo, cliche pinterest trust fund quinoa leggings.
-                                                        </p>
-                                                        <a href="#" class="next-slide">
-                                                            <div class="next-link">
-                                                                <span class="link-text"> <div class="blink"></div> <div class="blink"></div>Product Strategy</span>
-                                                                <span class="link-line"></span>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <div class="services-description">
-                                                        <h3>Product Strategy</h3>
-                                                        <p>
-                                                            Sustainable dreamcatcher helvetica irony asymmetrical, cray four loko austin fanny pack normcore. Venmo activated charcoal occupy craft beer palo santo, cliche pinterest trust fund quinoa leggings.
-                                                        </p>
-                                                        <a href="" class="next-slide" >
-                                                            <div class="next-link ">
-                                                                <span class="link-text "><div class="blink"></div><div class="blink"></div>Responsive Design</span>
-                                                                <span class="link-line"></span>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <div class="services-description">
-                                                        <h3>Prototyping</h3>
-                                                        <p>
-                                                            Sustainable dreamcatcher helvetica irony asymmetrical, cray four loko austin fanny pack normcore. Venmo activated charcoal occupy craft beer palo santo, cliche pinterest trust fund quinoa leggings.
-                                                        </p>
-                                                        <a href="#" >
-                                                            <div class="next-link next-slide">
-                                                                <span class="link-text"><div class="blink"></div><div class="blink"></div>Wireframes</span>
-                                                                <span class="link-line"></span>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                    </div>
+            </div> 
+            <div class="item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="flex-center svc-details">
+                                <div>
+                                    <span class="number">02</span>
+                                    <h2 class="bg-anim">
+                                        <span class="text-anim">UI/UX Design</span>
+                                        <div class="anim"></div>
+                                    </h2>
+                                    <p class="svc-desc">
+                                        Designing from Wireframes to Prototypes, our designers work together to produce top-notch user centered designs for both usability and aesthetics. 
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">Sketch</h4>
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Photoshop</h4>
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Adobe XD</h4>
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Illustrator</h4>
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Invision</h4>
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Zeplin</h4>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">Prototyping</h4>
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Responsive design</h4>
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Wireframes</h4>
                                         </div>
                                     </div>
                                 </div>
-                                    
-                                <div class="hr-line"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="flex-center svc-img">
+                                <img src="{% static 'images/web-devt.svg' %}">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="flex-center svc-img">
+                                <img src="{% static 'images/web-devt.svg' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="flex-center svc-details">
+                                <div>
+                                    <span class="number">03</span>                                    
+                                    <h2 class="bg-anim">
+                                        <span class="text-anim"> Cross-platform apps</span>
+                                        <div class="anim"></div>
+                                    </h2>
+                                    <p class="svc-desc">
+                                        We develop complex web applications using cutting-edge technologies that are fully  focused on client needs and business requirements. Specializing in crafting corporate applications entirely optimized to enhance productivity and user experience. 
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">Ionic</h4>
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Angular Js</h4>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="flex-center svc-details">
+                                <div>
+                                    <span class="number">04</span>
+                                    <h2 class="bg-anim">
+                                        <span class="text-anim">API Development</span>
+                                        <div class="anim"></div>
+                                    </h2>
+                                    <p class="svc-desc">
+                                        We develop complex web applications using cutting-edge technologies that are fully  focused on client needs and business requirements. Specializing in crafting corporate applications fully optimized to enhance productivity and user experience. 
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">Amazon AWS </h4>
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Digital Ocean</h4>
+                                             <h4 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Postman</h4>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="flex-center svc-img">
+                                <img src="{% static 'images/web-devt.svg' %}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
     </div>
     <div class="screen-section section" data-section-name="our-projects">
         <div class="section-title">
-            <p>STUFF WE'RE PROUD OF</p>
+           <div class="bg-anim">
+                <span class="text-anim">STUFF WE'RE PROUD OF</span>
+                <div class="anim"></div>
+            </div>
         </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 no-padding">
-                        <div class="img-wrapper blackpearl">
-                            <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                        <div class="img-wrapper blackpearl wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                            <div class="content-holder">
                                 <div class="img-holder">
                                     <img src="{% static 'images/layer-4.png' %}" class="img-responsive">
                                 </div>
@@ -187,8 +229,8 @@
                         </div>
                     </div>
                     <div class="col-md-6 no-padding">
-                        <div class="img-wrapper midnight">
-                            <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                        <div class="img-wrapper midnight  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                            <div class="content-holder">
                                 <div class="img-holder">
                                     <img src="{% static 'images/layer-5.png' %}" class="img-responsive">
                                 </div>
@@ -217,8 +259,8 @@
                         </div>
                     </div>
                     <div class="col-md-6 no-padding">
-                        <div class="img-wrapper midnight">
-                            <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.8s">
+                        <div class="img-wrapper midnight  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.8s">
+                            <div class="content-holder">
                                 <div class="img-holder">
                                     <img src="{% static 'images/layer-6.png' %}" class="img-responsive">
                                 </div>
@@ -247,8 +289,8 @@
                         </div>
                     </div>
                     <div class="col-md-6 no-padding">
-                        <div class="img-wrapper blackpearl">
-                            <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
+                        <div class="img-wrapper blackpearl wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
+                            <div class="content-holder">
                                 <div class="img-holder">
                                     <img src="{% static 'images/layer-7.png' %}" class="img-responsive">
                                 </div>
@@ -284,7 +326,10 @@
         </div>
         <div class="section testimonies" data-section-name="testimonies">
             <div class="section-title">
-                <p>WHAT OOUR CLIENTS SAY</p>
+                <div class="bg-anim">
+                    <span class="text-anim">WHAT OUR CLIENTS SAY</span>
+                    <div class="anim"></div>
+                </div>
             </div>
             <div class="owl-carousel owl-theme" id="testimonies">
                 <div class="item">

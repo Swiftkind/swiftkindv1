@@ -1,47 +1,33 @@
 $(document).ready(function() {
+   // Wrap every letter in a span
+  // $('.letters').each(function(){
+  //   $(this).html($(this).text().replace(/([^\s])/g, "<span class='letter'>$&</span>"));
+  // });
 
-$('.ml11 .letters').each(function(){
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-});
+  anime.timeline({loop: false})
+    .add({
+      targets: '.letter',
+      scale: [0.3,1],
+      opacity: [0,1],
+      translateZ: 0,
+      easing: "easeOutExpo",
+      duration: 40,
+      delay: function(el, i) {
+        return 40 * (i+1)
+      }
+    });
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml11 .line',
-    scaleY: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 700
-  })
-  .add({
-    targets: '.ml11 .line',
-    translateX: [0,$(".ml11 .letters").width()],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 100
-  }).add({
-    targets: '.ml11 .letter',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=775',
-    delay: function(el, i) {
-      return 34 * (i+1)
-    }
-  }).add({
-    targets: '.ml11 .line',
-    translateX: [0],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 100
-  }).add({
-    targets: '.ml11 .letter',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=775',
-    delay: function(el, i) {
-      return 34 * (i-1)
-    }
-  })
+  // anime.timeline({loop:true})
+  //   .add({
+  //     targets: '.anim',
+  //     scaleX: [1, 0],
+  //     opacity: [1,0],
+  //     easing: "easeOutExpo",
+  //     duration: 1000,
+  //     delay: 40
+  //   })
 
+  // setTimeout(function () {
+  //   $('.anim').css('transform-origin', value+"% 50% 0px");
+  // }, 1000);
 })
