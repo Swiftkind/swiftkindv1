@@ -10,16 +10,17 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    border-bottom: solid 1px #151720;
     .header-content {
         text-align: left;
         color: $white;
         h2 {
-            font-size: 56px;
+            font-size: 24px;
             margin-bottom: 26px;
             font-family: $Titillium-light;
             margin-top: -100px;
             position: absolute;
+            max-width: 35%;
+            font-weight: 100;
             @include tablet {
                 margin-left: auto;
                 margin-right: auto;
@@ -56,6 +57,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    background: $midnight;
     h3 {
         font-size: 24px;
         color: $white;
@@ -104,87 +106,86 @@
 
 
 .services-section {
-    min-height: 100vh;
-    border-bottom: solid 1px #151720;
-    border-top: solid 1px #151720;
+    min-height: 120vh;
     background: $rich-black;
-    .services-item {
-        padding: 0;
-        min-height: 100vh;
-    }
-    .img-wrapper {
-        min-height: 800px;
-        align-items: center;
-        justify-content: center;
-        .img-holder {
-            opacity: 1;
-            @include transition(all,
-            ease,
-            0.5s);
+    position: relative;
+    color: $white;
+    .item {
+        min-height: 80vh;
+        .svc-img {
+            height: 600px;
+            display: flex;
+            align-items: center;
+            img {
+                width: 300px;
+                    margin: 0 auto;
+            }
         }
-    }
-    .text-wrapper {
-        padding-top: 130px;
-        .text-content {
-            .content-links {
-                .services-description {
-                    padding-right: 100px;
-                    padding-left: 40px;
-                    @include mobile {
-                        padding: 0;
-                    }
-                    h3 {
-                        color: $jade;
-                        margin-bottom: 40px;
-                        font-size: 36px;
-                        @include mobile {
-                            font-size: 24px;
-                        }
-                    }
-                    p {
-                        color: $white;
-                        line-height: 1.63;
-                        margin-bottom: 30px;
-                        font-size: 16px;
-                        font-family: $Roboto-Mono-Thin;
-                        letter-spacing: 0.3px;
-                        @include mobile{
-                                padding-right: 18px;
-                        }
-                    }
-                    .next-slide {
-                        position: absolute;
-                        right: 0;
-                    }
+        .svc-details {
+            position: relative;
+            height: 650px;
+            align-items: center;
+            .number {
+                color: $jade;
+                position: relative;
+                display: flex;
 
-                    a {
-                        &:hover,
-                        &:visited,
-                        &:focus {
-                            text-decoration: none;
-                        }
-                        .next-link {
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-end;
-                            font-size: 14px;
-                            position: relative;
-                            .link-text {
-                                margin-right: 85px;
-                                letter-spacing: 1.2px;
-                                .blink {
-                                    top: 16.5px;
-                                    left: -10px;
-                                }
-                            }
-                            .link-line {
-                                width: 75px;
-                                height: 1px;
-                                background: $jade;
-                                position: absolute;
-                                right: 0;
-                            }
-                        }
+                &::after {
+                    content: "";
+                    width: 60px;
+                    height: 1px;
+                    position: absolute;
+                    background: $jade;
+                    top: 40%;
+                    left: 30px;
+                }
+            }
+            h2 {
+                font-size: 36px;
+                color: $jade;
+                font-family: $Maax-Sans-Regular;
+                margin-bottom: 40px;
+                margin-top: 20px;
+            }
+            .svc-desc {
+                margin-bottom: 40px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            h4 {
+                font-size: 16px;
+                line-height: 2.2;
+                position: relative;
+                &::after {
+                    content: "";
+                    border: solid 1px $jade;
+                    border-radius: 50%;
+                    width: 4px;
+                    height: 4px;
+                    background: $jade;
+                    position: absolute;
+                    top: 48%;
+                    margin-left: 5px;
+                }
+            }
+            .next-slide {
+                float: right;
+                margin-top: 100px;
+                .next-link {
+                    position: relative;
+                    .link-text {
+                        position: relative;
+                        color: $jade;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+                    &::after {
+                        content: "";
+                        width: 60px;
+                        height: 1px;
+                        position: absolute;
+                        background: $jade;
+                        top: 40%;
                     }
                 }
             }
@@ -403,8 +404,8 @@
     padding: 100px;
     background: $smoke;
     color: $rich-black;
-    @include mobile{
-            padding: 35px;
+    @include mobile {
+        padding: 35px;
     }
     @include tablet {
         padding: 80px 0;
@@ -419,7 +420,7 @@
         line-height: 1.5;
         width: 75%;
         margin-bottom: 56px;
-        @include mobile{
+        @include mobile {
             width: 100%;
         }
     }
@@ -439,7 +440,7 @@
                 }
             }
         }
-        @include mobile  {
+        @include mobile {
             display: block;
             text-align: center;
             .link-options {
@@ -465,6 +466,7 @@
 }
 
 .screen-section {
+    background: $rich-black;
     padding-top: 100px;
     .img-wrapper {
         min-height: 400px;
@@ -500,7 +502,7 @@
         width: 50%;
         margin: 0 auto;
         text-align: center;
-        @include mobile{
+        @include mobile {
             width: 75%;
         }
         .testimony {
@@ -550,13 +552,13 @@
         position: absolute;
         top: 90px;
         z-index: 1;
-        @include tablet{
-                font-size: 75px;
-                top: 121px;
+        @include tablet {
+            font-size: 75px;
+            top: 121px;
         }
-        @include mobile{
-                font-size: 60px;
-                text-align: center;
+        @include mobile {
+            font-size: 60px;
+            text-align: center;
         }
     }
     h3 {
@@ -584,12 +586,12 @@
     padding: 45px 0;
     background: #020408;
     h3 {
-        font-size: 35.2px;
+        font-size: 24px;
         @include tablet {
             font-size: 24px;
             margin-bottom: 20px;
         }
-        @include mobile{
+        @include mobile {
             font-size: 24px;
             margin-bottom: 20px;
         }

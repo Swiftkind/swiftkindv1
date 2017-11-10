@@ -3,51 +3,59 @@
 
 {% block content %}
 <div id="page-wrapper">
-    <div class="masthead main-masthead section" data-section-name="about-us">
+    <div class="masthead " data-section-name="about-us">
+      <div id="masthead" class="particles"></div>
         <div class="container">
             <div class="header-content">
-                <h2>Who we are and what we believe in</h2>
+                <h2>
+                    <span class="text-content-wrapper">
+                        <span class="letters  wow" data-wow-duration="0.5s" data-wow-delay="0s">Who we are and what we believe in.</span>
+                  </span>
+                </h2>
             </div>
         </div>
     </div>
-    <div class="about-philosphy section" data-section-name="about-us">
-        <div class="container-fluid">
-            <div class="hr-line"></div>
-            <div class="line-wrapper">
-                <div class="row">
-                    <div class="col-md-5 col-md-offset-1">
-                        <div class="main-text">
-                            <h2>Our philosophy aligns with the way we think about design</h2>
-                        </div>
+    <div class="about-philosphy wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="main-text">
+                        <h2 class="wow" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                            <span class="text-content-wrapper">
+                                <span class="letters  wow" data-wow-duration="1.5s" data-wow-delay="0s">
+                                    Everyday at Swiftkind our developers, designers and strategists work closely to identify needs, design and define functionalities, determine timelines that would allow us to deal with any contingencies and deliver on time. 
+                                </span>
+                          </span>
+                        </h2>
                     </div>
-                    <div class="col-md-6 no-padding">
-                        <div class="text-wrapper">
-                            <div class="text-content main ">
-                                <p>Palo santo pour-over bicycle rights, edison bulb kogi authentic health goth. Gastropub sustainable yr coloring book fam cred glossier craft beer hoodie blog banh mi mustache synth disrupt hella.</p>
-                            </div>
-                            <div class="text-content main ">
-                                <p>Palo santo pour-over bicycle rights, edison bulb kogi authentic health goth. </p>
-                            </div>
-                            <div class="text-content">
-                                <a href="#" class="more">VISIT OUR BLOG  <img src="assets/images/arrow-right.svg" class="arrow-sm"></a>
-                            </div>
+                </div>
+                <div class="col-md-6 no-padding">
+                    <div class="text-wrapper">
+                        <div class="text-content main ">
+                            <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">Our wide range of expertise combined with honest approach stregthen our relationship with our clients. This fuels us to work harder to come up with products that exceed expectations.</p>
+                            <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="2s">
+                                Combining creative thinking and problem solving skills, we deliver the right solutions that would allow our clients to meet objectives and user business requirements. 
+                            </p>
+                        </div>
+                        <div class="text-content">
+                            <a href="{% url 'works' %}" class="more wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="2.5s">VIEW OUR PROJECTS<img src="assets/images/arrow-right.svg" class="arrow-sm"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section" data-section-name="about-us">
+    <div class="section">
         <div class="light-section ">
             <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
-                A digital product agency committed to deliver products that innovates the way people connect and work. We create experiences that help individuals, startups, brands and corporations innovate and change lives.
+                We also take immense pride on our dedication to our clients through swift response and exceptional customer service. With full enthusiasm, we seek to build solid long term relationship based on trust.
             </p>
             <div class="item-links">
-                <a href="#" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">VISIT  <strong>OUR BLOG</strong>
+                <a href="{% url 'process' %}" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">KNOW  <strong>OUR PROCESS</strong>
                     <img src="assets/images/arrow-right.svg">
                 </a>
                 <div class="link-options">
-                    <a href="#" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">OUR PROJECTS</a>
+                    <a href="{% url 'contact' %}" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">CONTACT US</a>
                 </div>
             </div>
         </div>
@@ -55,7 +63,7 @@
             <div class="office-caption">
                 <div>
                     <p>
-                        Ethical gentrify woke fanny pack cronut lomo letterpress intelligentsia roof party single-origin coffee kombucha
+                        Our team is working together to build a positive, proactive and stimulating environment. Every team member pushes their limits to turn brave ideas into a working and fully usable products.
                     </p>
                     <a href="#" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">VISIT  <strong>OUR BLOG</strong>
                         <img src="{% static 'images/arrow-right.svg' %}">
@@ -65,12 +73,16 @@
         </div>
         <div class="people">
             <div class="section-title">
-                <p>OUR TEAM</p>
+                <p>
+                    <span class="text-content-wrapper">
+                        <span class="letters  wow">OUR TEAM</span>
+                    </span>
+                  </p>
             </div>
             <div class="caption">
                 <h3>People <strong>behind Swiftkind</strong></h3>
                 <p>
-                    Skateboard four loko hoodie disrupt viral actually man bun occupy green juice literally bitters. Schlitz selvage waistcoat venmo banh mi hammock pitchfork. 
+                   A small team of keen, specialized and diverse people believing that our works could improve people's daily lives. Fueled by our passion for our work, we pursue learing to keep up with the best practices and industry standards.
                 </p>
             </div>
             <div class="owl-carousel team-carousel" id="team-carousel">
@@ -197,31 +209,37 @@
             </div>
         </div>
 
-        <div class="principles section" data-section-name="our-vision">
+        <div class="principles section">
             <div class="section-title">
-                <p>WHAT WE BELIEVE IN</p>
+                <p>
+                    <span class="text-content-wrapper">
+                        <span class="letters wow">WHAT WE BELIEVE IN</span>
+                    </span>
+                </p>
             </div>
     
             <div class="container">
                 <div class="row flex">
                     <div class="col-md-6 col-sm-12 no-padding">
                     <div class="principles-header">
-                        <h2>Determined to deliver amazing digital products</h2>
+                        <h2>To ensure quality, we assume responsibility for the project throughout the entire process. </h2>
                     </div>
                 </div>
         
                 <div class="col-md-offset-1 col-md-5 col-sm-12">
                     <div class="principles-header">
-                        <p>Mustache intelligentsia prism drinking vinegar hell of waistcoat chartreuse austin la croix vexillologist tilde. </p>
+                        <p>Believing that quality is the core of our work, we are taking one step at time by defining what actually matters to us.</p>
                     </div>
                 </div>
         
                 <div class="row flex">
                     <div class="col-md-5">
                         <div class="principles-content">
-                            <h3>Our philosophy</h3>
-                            <p>Mustache intelligentsia prism drinking vinegar hell of waistcoat chartreuse austin la croix vexillologist tilde. Before they sold out chillwave hashtag gluten-free disrupt. </p>
-                            <p>Mustache intelligentsia prism drinking vinegar hell of waistcoat chartreuse austin la croix vexillologist tilde. Before they sold out chillwave hashtag gluten-free disrupt.</p>
+                            <div class="bg-anim">
+                                <h3 class="text-anim">Our purpose</h3>
+                                <div class="anim"></div>
+                            </div>
+                            <p>We</p>
                         </div>
                     </div>
             
