@@ -86,7 +86,7 @@ a {
     color: $white;
     font-family: $Maax-Sans-Medium;
     @include transition(all, ease, 0.5s);
-    &:hover{
+    &:hover {
         background: $white;
         color: $black-pearl;
         @include transition(all, ease, 0.5s);
@@ -209,6 +209,14 @@ a {
     display: flex;
 }
 
+.flex {
+
+    &-center {
+        display: flex;
+        align-items: center;
+    }
+}
+
 
 //color background
 .midnight {
@@ -241,11 +249,14 @@ a {
     border-left: solid 2px $jade;
     padding-left: 20px;
     z-index: 33;
-    @include mobile{
-            top: 50px; 
-            left: 18px;   }
-    p {
-        color: $jade;
-        font-family: $Roboto-Mono-Medium;
+    @include mobile {
+        top: 50px;
+        left: 18px;
     }
+     .bg-anim {
+            .text-anim{
+                color: $white;
+                font-family: $Roboto-Mono-Medium;
+            }
+        }
 }

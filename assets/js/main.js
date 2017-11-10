@@ -1,11 +1,34 @@
 $(document).ready(function() {
 
-    new WOW().init();
+    function afterReveal (el) {
+        $('.letters').each(function(){
+            $(this).html($(this).text().replace(/([^\s])/g, "<span class='letter'>$&</span>"));
+        });
+
+        anime.timeline({loop: false})
+            .add({
+              targets: '.letter',
+              scale: [0.3,1],
+              opacity: [0,1],
+              translateZ: 0,
+              easing: "easeOutExpo",
+              duration: 40,
+              delay: function(el, i) {
+                return 40 * (i+1)
+              }
+            });
+    }
+
+    new WOW({
+        callback: afterReveal
+    }).init();
+
+
 
     var dsn = $('#dsn-carousel').owlCarousel({
         loop: true,
         margin: 10,
-        dots: true,
+        dots: false,
         autoplay: false,
         autoplayTimeout: 7000,
         autoplayHoverPause: true,
@@ -16,7 +39,7 @@ $(document).ready(function() {
     var dvt = $('#dvt-carousel').owlCarousel({
         loop: true,
         margin: 10,
-        dots: true,
+        dots: false,
         autoplay: false,
         autoplayTimeout: 7000,
         autoplayHoverPause: true,
@@ -25,13 +48,11 @@ $(document).ready(function() {
     });
 
     $('#dvt-carousel .next-slide').on('click', function (e) {
-        console.log('asdsa');
         e.preventDefault();
         dvt.trigger('next.owl.carousel');
         
     });
     $('#dsn-carousel .next-slide').on('click', function (e) {
-        console.log('asdsa');
         e.preventDefault();
         dsn.trigger('next.owl.carousel');
     });
@@ -124,12 +145,12 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    $(function() {
-		$.scrollify({
-			section : ".section",
-            sectionName : false,
-		});
-	});
+ //    $(function() {
+	// 	$.scrollify({
+	// 		section : ".section",
+ //            sectionName : false,
+	// 	});
+	// });
 
 
 });
