@@ -23,40 +23,6 @@ $(document).ready(function() {
         callback: afterReveal
     }).init();
 
-
-
-    var dsn = $('#dsn-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        dots: false,
-        autoplay: false,
-        autoplayTimeout: 7000,
-        autoplayHoverPause: true,
-        items: 1,
-        nav: false
-    });
-    
-    var dvt = $('#dvt-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        dots: false,
-        autoplay: false,
-        autoplayTimeout: 7000,
-        autoplayHoverPause: true,
-        items: 1,
-        nav: false
-    });
-
-    $('#dvt-carousel .next-slide').on('click', function (e) {
-        e.preventDefault();
-        dvt.trigger('next.owl.carousel');
-        
-    });
-    $('#dsn-carousel .next-slide').on('click', function (e) {
-        e.preventDefault();
-        dsn.trigger('next.owl.carousel');
-    });
-
     $('#testimonies').owlCarousel({
         loop: true,
         dots: false,
@@ -79,7 +45,7 @@ $(document).ready(function() {
         }
     });
     $('#team-carousel').owlCarousel({
-        loop: true,
+        loop: false,
         dots: false,
         autoplay: false,
         autoplayTimeout: 7000,
