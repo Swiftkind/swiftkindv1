@@ -118,7 +118,7 @@
             align-items: center;
             img {
                 width: 300px;
-                    margin: 0 auto;
+                margin: 0 auto;
             }
         }
         .svc-details {
@@ -466,32 +466,58 @@
 }
 
 .screen-section {
-    background: $rich-black;
-    padding-top: 100px;
-    .img-wrapper {
-        min-height: 400px;
-        padding: 50px;
-
-        .content-wrapper {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+    padding-top: 150px;
+    .item {
+        
+        position: relative;
+        color: $white;
+        margin: 100px 0;
+        a{
+            height: 445px;
             color: $white;
-            .techs {
-                display: flex;
-                margin-top: 20px;
-                li {
-                    margin: 0 10px;
-                }
-            }
-            .title {
-                margin-top: 20px;
-                font-family: $Maax-Sans-Medium;
-                font-size: 24px;
-                letter-spacing: 1.2px;
-                margin: 35px 0;
+            &:hover{
+                color: $white !important;
+                margin-top: -10px;
+                transition: margin-top, ease, 0.5s;
             }
         }
+        img {
+            height: 445px;
+        }
+        .flex-center {
+            height: 450px;
+            padding-left: 85px;
+            h3 {
+                font-size: 50px;
+                font-family: $Maax-Sans-Medium;
+            }
+
+            .specs {
+                position: absolute;
+                bottom: 25px;
+
+                h4 {
+                    font-family: $Roboto-Mono-Regular;
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 14px;
+                    font-family: $Roboto-Mono-Thin;
+                }
+            }
+        }
+    }
+    .bookapp {
+        background: #011124;
+    }
+    .slearn {
+        background: #e9b702;
+    }
+    .trackr {
+        background: #151515;
+    }
+    .sjobs {
+        background: #140236;
     }
 }
 
@@ -597,6 +623,7 @@
         }
     }
     p {
+        font-family: $Roboto-Mono-Light;
         line-height: 2;
         @include tablet {
             line-height: 1.4;
@@ -606,9 +633,7 @@
             line-height: 1.4;
             margin-bottom: 15px;
         }
-        strong {
-            font-family: $Maax-Sans-Medium;
-        }
+        strong {}
         a {
             text-decoration: underline;
         }

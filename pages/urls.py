@@ -19,5 +19,5 @@ urlpatterns = [
     url(r'^learn/$', set_page("learn.html"), name="learn"),
     url(r'^jobs/$', set_page("jobs.html"), name="jobs"),
     url(r'^bookapp/$', set_page("bookapp.html"), name="bookapp"),
-    url(r'^trackr/$', set_page("bookapp.html"), name="trackr"),
+    url(r'^trackr/$', set_page("trackr.html"), name="trackr"),
 ]
