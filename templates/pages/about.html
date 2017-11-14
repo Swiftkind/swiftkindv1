@@ -55,7 +55,7 @@
                     <img src="assets/images/arrow-right.svg">
                 </a>
                 <div class="link-options">
-                    <a href="{% url 'contact' %}" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">CONTACT US</a>
+                    <a href="{% url 'contact' %}" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">START A PROJECT WITH US</a>
                 </div>
             </div>
         </div>
@@ -90,6 +90,54 @@
                 <div class="item">
                     <div class="img-holder">
                         <div class="member-img">
+                            <img src="{% static 'images/team/unknown.png' %}">
+                            <div class="details">
+                                <a href="#">Earvin Gemenez</a>
+                                <p>CEO</p>
+                                <div class="external-links">
+                                  <a href="#"><span class="ion-social-github"></span></a>
+                                  <a href="#"><span class="ion-social-linkedin"></span></a>
+                                  <a href="#"><span class="ion-ios-upload"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-holder">
+                        <div class="member-img">
+                            <img src="{% static 'images/team/unknown.png' %}">
+                            <div class="details">
+                                <a href="#">Ralph Leyga</a>
+                                <p>C0O</p>
+                                <div class="external-links">
+                                  <a href="#"><span class="ion-social-github"></span></a>
+                                  <a href="#"><span class="ion-social-linkedin"></span></a>
+                                  <a href="#"><span class="ion-ios-upload"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-holder">
+                        <div class="member-img">
+                            <img src="{% static 'images/team/unknown.png' %}">
+                            <div class="details">
+                                <a href="#">Manny Candidier</a>
+                                <p>CTO</p>
+                                <div class="external-links">
+                                  <a href="#"><span class="ion-social-github"></span></a>
+                                  <a href="#"><span class="ion-social-linkedin"></span></a>
+                                  <a href="#"><span class="ion-ios-upload"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-holder">
+                        <div class="member-img">
                             <img src="{% static 'images/team/restie.png' %}">
                             <div class="details">
                                 <a href="#">Restie Antiquin</a>
@@ -120,7 +168,6 @@
                         </div>
                     </div>
                 </div>
-        
                 <div class="item">
                     <div class="img-holder">
                         <div class="member-img">
@@ -137,13 +184,12 @@
                         </div>
                     </div>
                 </div>
-        
                 <div class="item">
                     <div class="img-holder">
                         <div class="member-img">
-                            <img src="{% static 'images/team/kolai.png' %}">
+                            <img src="{% static 'images/team/dudz.png' %}">
                             <div class="details">
-                                <a href="#">Nikolai Teves</a>
+                                <a href="#">Sanny Candidier</a>
                                 <p>Software Engineer</p>
                                 <div class="external-links">
                                     <a href="#"><span class="ion-social-github"></span></a>
@@ -154,7 +200,6 @@
                         </div>
                     </div>
                 </div>
-        
                 <div class="item">
                     <div class="img-holder">
                         <div class="member-img">
@@ -171,13 +216,12 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="item">
                     <div class="img-holder">
                         <div class="member-img">
-                            <img src="{% static 'images/img-4.jpg' %}">
+                            <img src="{% static 'images/kolai.jpg' %}">
                             <div class="details">
-                                <a href="#">Restie Antiquin</a>
+                                <a href="#">Nikolai Teves</a>
                                 <p>Software Engineer</p>
                                 <div class="external-links">
                                     <a href="#"><span class="ion-social-github"></span></a>
@@ -188,36 +232,16 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="item">
-                    <div class="img-holder">
-                        <div class="member-img">
-                            <img src="{% static 'images/img-5.jpg' %}">
-                            <div class="details">
-                                <a href="#">Restie Antiquin</a>
-                                <p>Software Engineer</p>
-                                <div class="external-links">
-                                    <a href="#"><span class="ion-social-github"></span></a>
-                                    <a href="#"><span class="ion-social-linkedin"></span></a>
-                                    <a href="#"><span class="ion-ios-upload"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
 
         <div class="principles section">
             <div class="section-title">
-                <p>
-                    <span class="text-content-wrapper">
-                        <span class="letters wow">WHAT WE BELIEVE IN</span>
-                    </span>
-                </p>
+                <div class="bg-anim">
+                    <span class="text-anim">WHAT WE BELIEVE IN</span>
+                    <div class="anim"></div>
+                </div>
             </div>
-    
             <div class="container">
                 <div class="row flex">
                     <div class="col-md-6 col-sm-12 no-padding">
@@ -225,13 +249,11 @@
                         <h2>To ensure quality, we assume responsibility for the project throughout the entire process. </h2>
                     </div>
                 </div>
-        
                 <div class="col-md-offset-1 col-md-5 col-sm-12">
                     <div class="principles-header">
                         <p>Believing that quality is the core of our work, we are taking one step at time by defining what actually matters to us.</p>
                     </div>
                 </div>
-        
                 <div class="row flex">
                     <div class="col-md-5">
                         <div class="principles-content">
@@ -242,10 +264,12 @@
                             <p>We</p>
                         </div>
                     </div>
-            
                     <div class="col-md-offset-2 col-md-5">
                         <div class="principles-content">
-                            <h3>Our mission</h3>
+                            <div class="bg-anim">
+                                <h3 class="text-anim">Our mission</h3>
+                                <div class="anim"></div>
+                            </div>
                             <p>Mustache intelligentsia prism drinking vinegar hell of waistcoat chartreuse austin la croix vexillologist tilde. Before they sold out chillwave hashtag gluten-free disrupt. </p>
                             <p>Mustache intelligentsia prism drinking vinegar hell of waistcoat chartreuse austin la croix vexillologist tilde. Before they sold out chillwave hashtag gluten-free disrupt. </p>
                         </div>

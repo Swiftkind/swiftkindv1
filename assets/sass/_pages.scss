@@ -163,6 +163,7 @@
                 }
                 img {
                     margin: 50px 0;
+                    width: 130px;
                     @include mobile {
                         width: 70px;
                         height: 70px;
@@ -202,7 +203,7 @@
             margin: 450px 0 0;
             min-height: 630px;
             @include mobile {
-                    min-height: 188px;
+                min-height: 188px;
             }
             .img-iterate {
                 margin: 0 auto;
@@ -369,37 +370,37 @@
         top: 0;
     }
     .main-text {
-            display: flex;
-            align-items: center;
-            height: auto;
-            border-left: solid 1px $rich-black;
-                padding-right: 50px;
+        display: flex;
+        align-items: center;
+        height: auto;
+        border-left: solid 1px $rich-black;
+        padding-right: 50px;
+        @include mobile {
+            height: 110px;
+            padding-left: 10px;
+        }
+        @include tablet {
+            padding-left: 0;
+            text-align: center;
+            height: 200px;
+        }
+        h2 {
+            font-size: 24px;
+            font-family: $Titillium-light;
             @include mobile {
-                height: 110px;
-                padding-left: 10px;
-            }
-            @include tablet {
-                padding-left: 0;
-                text-align: center;
-                height: 200px;
-            }
-            h2 {
                 font-size: 24px;
-                font-family: $Titillium-light;
-                @include mobile {
-                    font-size: 24px;
-                }
             }
         }
+    }
     .text-wrapper {
         padding: 0;
         min-height: 0;
         .text-content {
-            padding:0 30px;
-            p{
+            padding: 0 30px;
+            p {
                 margin-bottom: 50px;
             }
-            &.main{
+            &.main {
                 margin-bottom: 50px;
             }
             @include tablet {
@@ -689,8 +690,8 @@
             @include tablet {
                 padding: 80px;
             }
-            @include mobile{
-                    padding-left: 50px;
+            @include mobile {
+                padding-left: 50px;
             }
             .form {
                 .form-header {
@@ -751,5 +752,60 @@
                 }
             }
         }
+    }
+}
+
+.map-container {
+    position: relative;
+    height: 600px;
+    color: $white;
+    text-align: center;
+    .map-details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+        h2 {
+            z-index: 9;
+            position: relative;
+            font-size: 46px;
+            font-family: $Titillium-light;
+            position: relative;
+            &::after {
+                content: "";
+                border-bottom: solid 2px #0edc87;
+                position: absolute;
+                width: 30px;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 132px;
+            }
+        }
+        h4{
+            color: rgba($jade, 1);
+            z-index: 9;
+            position: relative;
+                margin-top: 15px;
+        }
+        h3 {
+            z-index: 9;
+            position: relative;
+            font-size: 20px;
+            font-family: $Roboto-Mono-Thin;
+            margin-top: 70px;
+        }
+    }
+    .map {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 5;
     }
 }
