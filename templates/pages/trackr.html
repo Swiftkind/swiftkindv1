@@ -26,18 +26,11 @@
                         <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
                             Freegan umami edison bulb fingerstache artisan fanny pack chambray. Biodiesel retro helvetica ramps, forage gluten-free chartreuse lo-fi blog hashtag yuccie fanny pack bushwick. Activated charcoal roof party pug post-ironic, pitchfork quinoa mumblecore live-edge man braid ugh fingerstache DIY vape poke.
                         </p>
-                         <a href="#" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">KNOW <strong>OUR STORY</strong>
-                            <img src="{% static 'images/arrow-right.svg' %}">
-                        </a>
                     </div>
                 </div>
             </div>
             <div class=" text-wrapper content-detail ">
                 <div>
-                    <div class="detail-item wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
-                        <label>client:</label>
-                        <h2>artsparkr.com</h2>
-                    </div>
                     <div class="detail-item wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
                         <label>what we did:</label>
                         <div class="project-services">
@@ -120,7 +113,7 @@
                 <div class="item-link">
                     <div>
                         <h3>SWIFT LEARN</h3>
-                        <a href="learn.html" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">VIEW CASE STUDIES
+                        <a href="{% url 'learn' %}" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">VIEW CASE STUDIES
                             <img src="{% static 'images/arrow-right.svg' %}">
                         </a>
                     </div>
@@ -130,7 +123,7 @@
                 <div class="item-link">
                     <div>
                         <h3>BOOKAPP</h3>
-                        <a href="bookapp.html" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">VIEW CASE STUDIES
+                        <a href="{% url 'bookapp' %}" class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">VIEW CASE STUDIES
                             <img src="{% static 'images/arrow-right.svg' %}">
                         </a>
                     </div>
