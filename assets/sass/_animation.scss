@@ -179,6 +179,9 @@
         transition: ease;
          position: relative;
         margin-bottom: 0;
+        &.inverted-text{
+            color: inherit;
+        }
     }
     .anim {
         
@@ -191,18 +194,22 @@
         animation-name: anim;
         animation-duration: 1s;
         transition: ease;
+        visibility: hidden;
+
     }
 }
+
 
 @keyframes anim {
     0% {
         background-color: rgb(60, 57, 205);
         transform-origin: 0% 50% 0px;
         transform: scaleX(1);
-        opacity: 1;
+        opacity: 0;
+        visibility: hidden;
     }
-    90% {
-       
+    80% {
+       visibility: visible;
         opacity: 1;
     }
     100% {
@@ -218,9 +225,11 @@
         opacity: 0;
     }
     50% {
+        visibility: hidden;
         opacity: 0;
     }
     100% {
+        visibility: visible;
         opacity: 1;
     }
 }

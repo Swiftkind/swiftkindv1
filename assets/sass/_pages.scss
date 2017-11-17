@@ -314,11 +314,15 @@
             }
         }
         h3 {
-            font-family: $Titillium-Semibold;
-            font-size: 36px;
-            text-transform: uppercase;
+            font-family: $Maax-Sans-Regular;
+            font-size: 24px;
             margin-bottom: 50px;
+            font-weight: normal;
         }
+    }
+    .values-header{
+        font-size: 24px;
+        margin-bottom: 100px;
     }
     .pv-item {
         height: 375px;
@@ -386,7 +390,7 @@
         }
         h2 {
             font-size: 24px;
-            font-family: $Titillium-light;
+            font-family: $Maax-Sans-Regular;
             @include mobile {
                 font-size: 24px;
             }
@@ -479,6 +483,7 @@
     position: relative;
     z-index: 1;
     padding-top: 400px;
+
     @include mobile {
         padding-top: 210px;
     }
