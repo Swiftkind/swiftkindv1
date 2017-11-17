@@ -9,46 +9,24 @@
     height: 600px;
     display: flex;
     align-items: center;
-    justify-content: left;
-    .header-content {
-        text-align: left;
-        color: $white;
-        h2 {
-            font-size: 24px;
-            margin-bottom: 26px;
-            font-family: $Titillium-light;
-            margin-top: -100px;
-            position: absolute;
-            max-width: 35%;
-            font-weight: 100;
-            @include tablet {
-                margin-left: auto;
-                margin-right: auto;
-                left: 0;
-                right: 0;
-                text-align: center;
-            }
-            @include mobile {
-                font-size: 30px;
-                margin-left: auto;
-                margin-right: auto;
-                left: 0;
-                right: 0;
-                text-align: center;
-            }
-        }
-        p {
-            font-size: 24px;
-            color: #989fb7;
-            @include tablet {
-                text-align: center;
-            }
-
-            @include mobile {
-                font-size: 20px;
-                text-align: center;
-            }
-        }
+    justify-content: center;
+    color: $white;
+    text-align: center;
+    h5 {
+        letter-spacing: 2.8px;
+        font-size: 14px;
+        font-family: $Roboto-Mono-Thin;
+        color: #616571;
+    }
+    h1{
+        font-size: 56px;
+        font-family: $Maax-Sans-Regular;
+        line-height: 1.4;
+        margin: 10px auto 50px;
+    }
+    h4{
+        color: #616571;
+        font-size: 20px;
     }
 }
 
@@ -240,14 +218,12 @@
         }
         &:hover {
             .img-holder {
-                opacity: 0.2;
                 @include transition (all,
                 0.3s,
                 ease);
-                -webkit-transform: scale(1.2);
-                -ms-transform: scale(1.2);
-                transform: scale(1.2);
-                opacity: 0.15;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
             }
             .content-wrapper {
                 .techs {
@@ -466,47 +442,58 @@
 }
 
 .screen-section {
+
     padding-top: 150px;
-    .item {
-        
-        position: relative;
+    a {
+        height: 445px;
         color: $white;
-        margin: 100px 0;
-        a{
-            height: 445px;
+        .item {
+            transform: scale(1);
+            @include transition(transform,
+            0.5s,
+            ease);
+            position: relative;
             color: $white;
-            &:hover{
-                color: $white !important;
-                margin-top: -10px;
-                transition: margin-top, ease, 0.5s;
+            margin: 100px 0;
+
+            img {
+                height: 445px;
+            }
+            .flex-center {
+                height: 450px;
+                padding-left: 85px;
+                h3 {
+                    font-size: 50px;
+                    font-family: $Maax-Sans-Medium;
+                }
+
+                .specs {
+                    position: absolute;
+                    bottom: 25px;
+
+                    h4 {
+                        font-family: $Roboto-Mono-Regular;
+                        font-size: 16px;
+                    }
+                    p {
+                        font-size: 14px;
+                        font-family: $Roboto-Mono-Thin;
+                    }
+                }
             }
         }
-        img {
-            height: 445px;
-        }
-        .flex-center {
-            height: 450px;
-            padding-left: 85px;
-            h3 {
-                font-size: 50px;
-                font-family: $Maax-Sans-Medium;
-            }
-
-            .specs {
-                position: absolute;
-                bottom: 25px;
-
-                h4 {
-                    font-family: $Roboto-Mono-Regular;
-                    font-size: 16px;
-                }
-                p {
-                    font-size: 14px;
-                    font-family: $Roboto-Mono-Thin;
-                }
+        &:hover {
+            color: $white !important;
+            margin-top: -10px;
+            .item {
+                transform: scale(0.95);
+                @include transition(transform,
+                0.5s,
+                ease);
             }
         }
     }
+
     .bookapp {
         background: #011124;
     }
