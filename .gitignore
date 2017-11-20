@@ -2,6 +2,8 @@
 *.pyc
 *local_settings.py
 
+env/
 media/
 static/
+migrations/
 *__pycache__

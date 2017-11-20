@@ -1,34 +1,44 @@
 from django.conf import settings
 from django.core.mail import EmailMultiAlternatives
 from django.shortcuts import render, redirect
-from django.views.generic import TemplateView
+from django.core.urlresolvers import reverse
+from django.http import JsonResponse
+from django.views.generic.edit import CreateView
 
 from .forms import ContactForm
 from .models import Contact
 
 
-class Contactview(TemplateView):
+class AjaxableResponseMixin(object):
+    """
+    Mixin to add AJAX support to a form.
+    Must be used with an object-based FormView (e.g. CreateView)
+    """
+    def form_invalid(self, form):
+        response = super(AjaxableResponseMixin, self).form_invalid(form)
+        if self.request.is_ajax():
+            return JsonResponse(form.errors, status=400)
+        else:
+            return response
+
+    def form_valid(self, form):
+        response = super(AjaxableResponseMixin, self).form_valid(form)
+        if self.request.is_ajax():
+            data = {
+                'pk': self.object.pk,
+            }
+            return JsonResponse(data)
+        else:
+            return response
+
+
+class Contactview(AjaxableResponseMixin, CreateView):
     """ View for contact us
     """
     template_name = 'pages/contact.html'
+    model = Contact
+    fields = ['name', 'email', 'subject', 'budget', 'date', 'company']
 
-    def get(self, *args, **kwargs):
-        form = ContactForm()
-        return render(self.request, self.template_name, {'form': form})
-
-    def post(self, *args, **kwargs):
-        form = ContactForm(self.request.POST)
-        if form.is_valid():
-            email = form.cleaned_data['email']
-            name = form.cleaned_data['name']
-            subject_title = form.cleaned_data['subject']
-
-            subject, from_email, to = subject_title, settings.EMAIL_HOST_USER, email
-            text_content = 'Thank you for reaching us.'
-            html_content = '<p>Hello, thank you for reaching <strong>swiftkind</strong></p>'
-            msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
-            msg.attach_alternative(html_content, "text/html")
-            msg.send()
-            form.save()
-            return redirect('contact')
-        return render(self.request, self.template_name, {'form': form})
+    def get_success_url(self):
+        return reverse('contact')
+        
