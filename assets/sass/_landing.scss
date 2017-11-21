@@ -23,6 +23,7 @@
         font-family: $Maax-Sans-Regular;
         line-height: 1.4;
         margin: 10px auto 50px;
+
     }
     h4{
         color: #616571;
@@ -94,10 +95,9 @@
             height: 600px;
             display: flex;
             align-items: center;
-            img {
-                width: 300px;
-                margin: 0 auto;
-            }
+            position: absolute;
+            right: 0;;
+            
         }
         .svc-details {
             position: relative;

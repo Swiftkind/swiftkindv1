@@ -997,13 +997,13 @@ a:hover {
   line-height: 1.4;
   margin: 10px auto 50px;
 }
-/* line 27, ../sass/_landing.scss */
+/* line 28, ../sass/_landing.scss */
 .masthead h4 {
   color: #616571;
   font-size: 20px;
 }
 
-/* line 33, ../sass/_landing.scss */
+/* line 34, ../sass/_landing.scss */
 .intro-text {
   height: 100vh;
   display: flex;
@@ -1011,7 +1011,7 @@ a:hover {
   position: relative;
   background: #04060c;
 }
-/* line 39, ../sass/_landing.scss */
+/* line 40, ../sass/_landing.scss */
 .intro-text h3 {
   font-size: 24px;
   color: #ffffff;
@@ -1021,17 +1021,17 @@ a:hover {
   letter-spacing: 0.3px;
   line-height: 1.75;
 }
-/* line 50, ../sass/_landing.scss */
+/* line 51, ../sass/_landing.scss */
 .intro-text .item-links a {
   font-size: 14px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 48, ../sass/_landing.scss */
+  /* line 49, ../sass/_landing.scss */
   .intro-text .item-links {
     display: block;
     text-align: center;
   }
-  /* line 56, ../sass/_landing.scss */
+  /* line 57, ../sass/_landing.scss */
   .intro-text .item-links .link-options {
     text-align: center;
     display: flex;
@@ -1039,19 +1039,19 @@ a:hover {
     margin: 50px auto 0;
     justify-content: space-between;
   }
-  /* line 62, ../sass/_landing.scss */
+  /* line 63, ../sass/_landing.scss */
   .intro-text .item-links .link-options a {
     margin-right: 0;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 48, ../sass/_landing.scss */
+  /* line 49, ../sass/_landing.scss */
   .intro-text .item-links {
     display: block;
     text-align: center;
     padding: 0;
   }
-  /* line 71, ../sass/_landing.scss */
+  /* line 72, ../sass/_landing.scss */
   .intro-text .item-links .link-options {
     text-align: center;
     display: flex;
@@ -1059,33 +1059,30 @@ a:hover {
     margin: 50px auto 0;
     justify-content: space-between;
   }
-  /* line 77, ../sass/_landing.scss */
+  /* line 78, ../sass/_landing.scss */
   .intro-text .item-links .link-options a {
     margin-right: 0;
   }
 }
 
-/* line 86, ../sass/_landing.scss */
+/* line 87, ../sass/_landing.scss */
 .services-section {
   min-height: 120vh;
   background: #050811;
   position: relative;
   color: #ffffff;
 }
-/* line 91, ../sass/_landing.scss */
+/* line 92, ../sass/_landing.scss */
 .services-section .item {
   min-height: 80vh;
 }
-/* line 93, ../sass/_landing.scss */
+/* line 94, ../sass/_landing.scss */
 .services-section .item .svc-img {
   height: 600px;
   display: flex;
   align-items: center;
-}
-/* line 97, ../sass/_landing.scss */
-.services-section .item .svc-img img {
-  width: 300px;
-  margin: 0 auto;
+  position: absolute;
+  right: 0;
 }
 /* line 102, ../sass/_landing.scss */
 .services-section .item .svc-details {
@@ -3197,7 +3194,7 @@ a:hover {
 /* line 176, ../sass/_animation.scss */
 .bg-anim .text-anim {
   animation-name: text-anim;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
   transition: ease;
   position: relative;
   margin-bottom: 0;
@@ -3215,7 +3212,7 @@ a:hover {
   height: 100%;
   pointer-events: none;
   animation-name: anim;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   transition: ease;
   visibility: hidden;
 }
