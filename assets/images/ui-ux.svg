@@ -1,0 +1,488 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="686" height="518" viewBox="0 0 686 518">
+    <style>
+            .am-3 {
+          fill: #fff;
+      }
+
+      .cls-1,
+      .cls-10 {
+          stroke:url(#aqua);
+      }
+
+      .cls-1 {
+          stroke-width: 4px;
+      }
+
+      .cls-1,
+      .cls-10,
+      .cls-11,
+      .cls-17,
+      .cls-9 {
+          fill: none;
+      }
+
+      .cls-15,
+      .cls-2 {
+          fill: #0edc87;
+      }
+
+      .cls-3 {
+          fill: #3d8bc7;
+      }
+
+      .cls-4,
+      .cls-8 {
+          fill: #273257;
+      }
+
+      .cls-5 {
+          fill: #c75285;
+      }
+
+      .cls-6,
+      .cls-7 {
+          fill: #6179cc;
+      }
+
+      .cls-15,
+      .cls-7 {
+          fill-rule: evenodd;
+      }
+
+      .cls-12,
+      .cls-13,
+      .cls-14,
+      .cls-8 {
+          opacity: 0.8;
+      }
+
+      .cls-9 {
+          stroke: #943a7c;
+      }
+
+      .cls-10,
+      .cls-11,
+      .cls-9 {
+          stroke-width: 2px;
+      }
+
+      .cls-11 {
+          stroke: #6179cc;
+      }
+
+      .cls-12 {
+          fill: #4bacf4;
+      }
+
+      .cls-13 {
+          fill: #303d69;
+      }
+
+      .cls-14 {
+          fill: #f764a2;
+      }
+
+      .cls-16 {
+          fill: #3cf0a6;
+      }
+
+      .cls-17 {
+          stroke: #c75285;
+          stroke-width: 1px;
+      }
+
+      .cls-18 {
+          fill: #1ba1a2;
+      }
+
+      .cls-19 {
+          fill: #1780c1;
+      }
+
+      .cls-20 {
+          fill: #993190;
+      }
+
+      .cls-21 {
+          fill: #ee2b33;
+      }
+
+      .cls-22 {
+          fill: #f89230;
+      }
+
+      .cls-23 {
+          fill: #f9e917;
+      }
+
+      .cls-24 {
+          fill: #90c446;
+      }
+
+
+      @keyframes am-2 {
+          0% {
+              opacity: 1;
+              r: 30;
+          }
+          50% {
+              opacity: 0.9;
+              r: 10;
+          }
+          100% {
+              opacity: 1;
+              r: 30;
+          }
+      }
+
+      .am-2 {
+          animation-name: am-2;
+          animation-iteration-count: infinite;
+          animation-duration: 6s;
+      }
+
+      @keyframes am-1 {
+          0% {
+              r: 22.656;
+          }
+          50% {
+              r: 12;
+          }
+          100% {
+              r: 22.656;
+          }
+      }
+
+      .am-1 {
+          animation-name: am-1;
+          animation-iteration-count: infinite;
+          animation-duration: 4s;
+      }
+
+      @keyframes am-3 {
+          0% {
+              transform: scale(1);
+          }
+
+          70% {
+              transform: scale(0.5);
+              opacity: 0;
+          }
+          100% {
+              transform: scale(0.9);
+              opacity: 1;
+          }
+      }
+
+      .am-3 {
+          animation-name: am-3;
+          animation-iteration-count: infinite;
+          animation-duration: 4s;
+          transform-origin: 583px 99px;
+      }
+
+      .venn {
+          opacity: 0.8;
+          background-blend-mode: multiply;
+          mix-blend-mode: multiply;
+      }
+
+      @keyframes venn-1 {
+          25%,
+          30% {
+              transform: translateY(-20px);
+          }
+          100% {
+              transform: translateY(0px);
+          }
+      }
+
+      .venn-1 {
+          animation-name: venn-1;
+          animation-iteration-count: infinite;
+          animation-duration: 4s;
+          background: rgba(14, 220, 135, 0.8);
+      }
+
+      @keyframes venn-2 {
+          25%,
+          30% {
+              transform: translate(30px, 0px) rotate(2deg);
+          }
+          70% {
+              transform: none;
+          }
+      }
+
+      .venn-2 {
+          animation-name: venn-2;
+          animation-iteration-count: infinite;
+          animation-duration: 4s;
+          background: rgba(48, 61, 105, 0.8);
+      }
+
+      @keyframes venn-3 {
+          25%,
+          30% {
+              transform: translate(-10px, -10px) rotate(3deg);
+          }
+          70% {
+              transform: none;
+          }
+      }
+
+      .venn-3 {
+          animation-name: venn-3;
+          animation-iteration-count: infinite;
+          animation-duration: 4s;
+          background: rgba(247, 100, 162, 0.8);
+      }
+
+      @keyframes feed-icons {
+
+          25%,
+          30% {
+              transform: translateY(-30%);
+          }
+          100% {
+              transform: translateY(0%);
+          }
+      }
+
+      .feed-icons {
+          animation-name: feed-icons;
+          animation-iteration-count: infinite;
+          animation-duration: 4s;
+      }
+
+      .box-1 {
+          animation-name: box-1;
+          animation-iteration-count: infinite;
+          animation-duration: 4s;
+          transform-origin: 0 0px;
+      }
+
+      @keyframes box-1 {
+          0%,
+          80% {
+              opacity: 1;
+              height: 58;
+          }
+          30% {
+              opacity: 0;
+              height: 5%;
+          }
+      }
+
+      .am-4 {
+          fill: transparent;
+          stroke: #c75285;
+          animation-name: am-4;
+          animation-iteration-count: infinite;
+          animation-duration: 4s;
+          stroke-width: 1px;
+      }
+
+      @keyframes am-4 {
+          25%,
+          30% {
+              r: 4;
+          }
+          100% {
+              r: 0;
+          }
+      }
+
+      .am-5 {
+          stroke: none;
+          fill: #c75285;
+          animation-name: am-5;
+          animation-iteration-count: infinite;
+          animation-duration: 4s;
+      }
+
+      @keyframes am-5 {
+          0%,
+          50% {
+              width: 188px;
+          }
+          25% {
+              width: 108px;
+          }
+      }
+
+      .am-6 {
+          animation-name: am-6;
+          animation-iteration-count: infinite;
+          animation-duration: 2s;
+      }
+
+      @keyframes am-6 {
+          0%,
+          50% {
+              width: 108px;
+          }
+          25% {
+              width: 50px;
+          }
+      }
+
+      .ch-1 {
+          animation-name: ch-1;
+          animation-iteration-count: infinite;
+          animation-duration: 4s;
+          transform-origin: 402.3px 480px;
+      }
+
+      @keyframes ch-1 {
+          0%,
+          100% {
+              transform: none;
+          }
+          25% {
+              transform: scale(0.5);
+          }
+      }
+
+      .am-8 {
+          animation-name: am-8;
+          animation-iteration-count: infinite;
+          animation-duration: 1s;
+          transform-origin: 241px 200px;
+      }
+
+      @keyframes am-8 {
+
+          0% {
+              opacity: 1;
+              r: 6.9
+          }
+          100% {
+              r: 10;
+              opacity: 0;
+          }
+      }
+
+      .am-9 {
+          animation-name: am-9;
+          animation-iteration-count: infinite;
+          animation-duration: 2s;
+          transform-origin: 241px 200px;
+      }
+
+      @keyframes am-9 {
+
+          0% {
+              opacity: 1;
+              r: 14.875;
+          }
+          100% {
+              r: 20;
+              opacity: 0;
+          }
+      }
+
+      .am-10 {
+          animation-name: am-10;
+          animation-iteration-count: infinite;
+          animation-duration: 2s;
+          animation-delay: 0.5s;
+      }
+
+      @keyframes am-10 {
+
+          0% {
+              opacity: 1;
+              r: 14.875;
+          }
+          100% {
+              r: 20;
+              opacity: 0;
+          }
+      }
+
+      @keyframes am-11 {
+
+
+          0% {
+              opacity: 1;
+              r: 8.5;
+          }
+          100% {
+              r: 15;
+              opacity: 0;
+          }
+      }
+
+      .am-11 {
+          animation-name: am-11;
+          animation-iteration-count: infinite;
+          animation-duration: 2s;
+          animation-delay: 0.5s;
+      }
+
+      .phone{
+        stroke:none;
+        fill: url(#dark);
+      }
+    </style>
+    <defs>
+      <linearGradient id="aqua">
+          <stop offset="5%" stop-color="#0edcb8" />
+          <stop offset="95%" stop-color="#20d5a0" />
+      </linearGradient>
+      
+      <linearGradient id="dark" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="25%" stop-color="#0a0c15" />
+          <stop offset="75%" stop-color="#0b0e18" />
+      </linearGradient>
+
+  </defs>
+  <g>
+    <rect x="34" y="13" width="235" height="478" rx="30" ry="30" class="cls-1 phone"/>
+    <rect x="50" y="72" width="202" height="359" class="cls-1"/>
+    <g class="feed-icons">
+      <rect x="61" y="346" width="20" height="5" class="cls-2"/>
+      <rect x="61" y="149" width="58" height="57" class="cls-3 box-1"/>
+      <rect x="61" y="212" width="58" height="57" class="cls-4"/>
+      <rect x="61" y="275" width="58" height="57" class="cls-5"/>
+      <rect x="61" y="357" width="58" height="57" class="cls-6"/>
+    </g>
+    <rect x="146" y="151" width="71" height="11" class="cls-4 "/>
+    <rect x="146" y="170" width="47" height="11" class="cls-5"/>
+    <rect x="145" y="202" width="51" height="4" class="cls-1"/>
+    <rect x="145" y="274" width="51" height="4" class="cls-2"/>
+    <path d="M150.500,290.000 L231.500,290.000 C236.747,290.000 241.000,294.253 241.000,299.500 C241.000,304.747 236.747,309.000 231.500,309.000 L150.500,309.000 C145.253,309.000 141.000,304.747 141.000,299.500 C141.000,294.253 145.253,290.000 150.500,290.000 Z" class="cls-7"/>
+    <rect x="319" y="114" width="156" height="156" class="cls-1 box-2"/>
+    <rect x="504" y="209" width="156" height="156" class="cls-1 box-2"/>
+    <rect x="504" y="27" width="156" height="156" class="cls-1 box-2"/>
+    <ellipse cx="579.469" cy="285.61" rx="34.469" ry="34.609" class="cls-8"/>
+    <circle cx="582" cy="105" r="38" class="cls-9 am-2"/>
+    <circle cx="581.282" cy="104.281" r="22.656" class="cls-3 am-1"/>
+    <path d="M573.000,103.000 L579.000,109.000 L591.000,97.000 L594.000,100.000 L579.000,114.000 L571.000,106.000 L573.000,103.000 Z" class="am-3"/>
+    <circle cx="599.75" cy="258.11" r="6.094" class="cls-11 am-8"/>
+    <circle cx="603.125" cy="313.078" r="14.875" class="cls-12 am-9"/>
+    <circle cx="603.125" cy="313.078" r="14.875" class="cls-12 am-10"/>
+    <circle cx="412.86" cy="198.828" r="24.141" class="cls-13 venn venn-2"/>
+    <ellipse cx="378.14" cy="198.828" rx="24.141" ry="24.172" class="cls-14 venn venn-3"/>
+    <circle cx="397.765" cy="179.172" r="24.141" class="cls-15 venn venn-1"/>
+    <g class="char-group">
+        <path d="M388.923,481.738 L383.555,467.469 L364.214,467.469 L358.846,481.738 L350.000,481.738 L369.462,430.000 L378.308,430.000 L397.769,481.738 L388.923,481.738 ZM373.885,441.759 L366.894,460.344 L380.875,460.344 L373.885,441.759 Z" class="cls-16"/>
+        <path d="M434.923,481.738 L434.923,477.432 C426.100,482.304 408.404,487.369 410.154,469.250 C411.426,456.073 429.200,456.564 434.923,456.776 L434.923,451.409 C423.778,442.441 419.000,453.193 419.000,453.193 L410.154,453.193 C412.925,445.659 419.247,438.329 431.385,440.704 C440.895,442.566 442.000,451.409 442.000,451.409 L442.000,481.738 L434.923,481.738 ZM434.923,463.898 C434.923,463.898 418.813,461.884 417.231,469.250 C415.649,476.616 428.192,479.446 434.923,469.250 L434.923,463.898 Z" class="cls-16 ch-1 "/>
+  </g>
+    <rect x="471" y="431" width="108" height="20.844" class="cls-6 am-6"/>
+    <rect x="471" y="462.156" width="188" height="20.844" class="cls-17 am-5"/>
+    <rect x="145" y="322" width="35" height="5" class="cls-2"/>
+    <rect x="221" y="322" width="17" height="5" class="cls-2"/>
+    <rect x="221" y="345" width="17" height="5" class="cls-2"/>
+    <rect x="145" y="347" width="20" height="5" class="cls-2"/>
+    <rect x="145" y="376" width="25" height="5" class="cls-2"/>
+    <g class="header">
+          <circle cx="70.5" cy="96.5" r="8.5" class="cls-2"/>
+    <circle cx="232.5" cy="96.5" r="8.5" class="cls-11 am-11"/>
+    <rect x="232" y="93" width="1" height="7" class="cls-11"/>
+    <rect x="229" y="96" width="7" height="1" class="cls-11"/>
+    </g>
+    
+  </g>
+</svg>

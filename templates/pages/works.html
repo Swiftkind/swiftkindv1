@@ -6,96 +6,146 @@
     <div class="masthead main-masthead section" data-section-name="projects">
         <div class="container">
             <div class="header-content">
-                <h1>
+                <h3>
                     <span class="text-content-wrapper">
-                        <p class="letters  wow" data-wow-duration="0.5s" data-wow-delay="0s">We design and develop applications that </p>
-                        <p class="letters  wow" data-wow-duration="0.5s" data-wow-delay="0.5s">improve people's lives.</p>
+                        <p class="letters  wow" data-wow-duration="0.5s" data-wow-delay="0s">We design and develop applications</p>
+                        <p class="letters  wow" data-wow-duration="0.5s" data-wow-delay="0.5s">that improve people's lives.</p>
                   </span>
-                </h1>
+                </h3>
             </div>
         </div>
     </div>
 
-    <div class="screen-section section" >
+    <div class="screen-section section" data-section-name="our-projects">
         <div class="section-title">
-           <div class="bg-anim">
-                <span class="text-anim">STUFF WE'RE PROUD OF</span>
-                <div class="anim"></div>
-            </div>
+            <p>STUFF WE'RE PROUD OF</p>
         </div>
         <div class="container">
-            <a href="{% url 'trackr' %}" >
-                <div class="row item trackr wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                    <div class="col-md-6 flex-center">
-                        <h3>Trackr.</h3>
-                        <div class="specs">
-                            <h4 class="category">WORK</h4>
-                            <p>
-                                <span>PYTHON</span>
-                                <span>DJANGO</span>
-                                <span>ANGULAR</span>
-                            </p>
+            <div class="row">
+                <div class="col-md-6 no-padding">
+                    <div class="img-wrapper blackpearl">
+                        <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                            <div class="img-holder">
+                                <img src="{% static 'images/layer-4.png' %}" class="img-responsive">
+                            </div>
+                            <div class="content-wrapper">
+                                <ul class="techs">
+                                    <li>
+                                        <a href="#">UI/UX DESIGN</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PYTHON</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DJANGO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ANGULAR</a>
+                                    </li>
+                                </ul>
+                                <p class="title">BOOK APP</p>
+                                <a href="{% url 'bookapp' %}" class="link-bordered hvr-sweep-to-right">
+                                    VIEW CASE STUDIES 
+                                    <img src="{% static 'images/arrow-right.svg' %}" class="arrow-sm">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 no-padding">
-                        <img src="{% static 'images/trackr.png' %}" class="img-responsive">
-                    </div>
                 </div>
-            </a>
-            <a href="{% url 'jobs' %}" >
-                <div class="row item sjobs wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
-                    <div class="col-md-6 flex-center">
-                        <h3>Jobs</h3>
-                        <div class="specs">
-                            <h4 class="category">WORK</h4>
-                            <p>
-                                <span>PYTHON</span>
-                                <span>DJANGO</span>
-                                <span>ANGULAR</span>
-                            </p>
+                <div class="col-md-6 no-padding">
+                    <div class="img-wrapper midnight">
+                        <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                            <div class="img-holder">
+                                <img src="{% static 'images/layer-5.png' %}" class="img-responsive">
+                            </div>
+                            <div class="content-wrapper">
+                                <ul class="techs">
+                                    <li>
+                                        <a href="#">UI/UX DESIGN</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PYTHON</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DJANGO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ANGULAR</a>
+                                    </li>
+                                </ul>
+                                <p class="title">TRACKR.</p>
+                                <a href="{% url 'trackr' %}" class="link-bordered hvr-sweep-to-right">
+                                    VIEW CASE STUDIES 
+                                    <img src="{% static 'images/arrow-right.svg' %}" class="arrow-sm">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 no-padding">
-                        <img src="{% static 'images/jobs.png' %}" class="img-responsive">
-                    </div>
                 </div>
-            </a>
-            <a href="{% url 'bookapp' %}" >
-                <div class="row item bookapp wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
-                    <div class="col-md-6 flex-center">
-                        <h3>Book</h3>
-                        <div class="specs">
-                            <h4 class="category">WORK</h4>
-                            <p>
-                                <span>PYTHON</span>
-                                <span>DJANGO</span>
-                                <span>ANGULAR</span>
-                            </p>
+                <div class="col-md-6 no-padding">
+                    <div class="img-wrapper midnight">
+                        <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.8s">
+                            <div class="img-holder">
+                                <img src="{% static 'images/layer-6.png' %}" class="img-responsive">
+                            </div>
+                            <div class="content-wrapper">
+                                <ul class="techs">
+                                    <li>
+                                        <a href="#">UI/UX DESIGN</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PYTHON</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DJANGO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ANGULAR</a>
+                                    </li>
+                                </ul>
+                                <p class="title">SWIFTLEAR</p>
+                                <a href="{% url 'learn' %}" class="link-bordered hvr-sweep-to-right">
+                                    VIEW CASE STUDIES 
+                                    <img src="{% static 'images/arrow-right.svg' %}" class="arrow-sm">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 no-padding">
-                        <img src="{% static 'images/book.png' %}" class="img-responsive">
-                    </div>
                 </div>
-            </a>
-            <a href="{% url 'learn' %}" >
-                <div class="row item slearn wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="2s">
-                    <div class="col-md-6 flex-center">
-                        <h3>Swift Learn</h3>
-                        <div class="specs">
-                            <h4 class="category">WORK</h4>
-                            <p>
-                                <span>PYTHON</span>
-                                <span>DJANGO</span>
-                                <span>ANGULAR</span>
-                            </p>
+                <div class="col-md-6 no-padding">
+                    <div class="img-wrapper blackpearl">
+                        <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
+                            <div class="img-holder">
+                                <img src="{% static 'images/layer-7.png' %}" class="img-responsive">
+                            </div>
+                            <div class="content-wrapper">
+                                <ul class="techs">
+                                    <li>
+                                        <a href="#">UI/UX DESIGN</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PYTHON</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DJANGO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ANGULAR</a>
+                                    </li>
+                                </ul>
+                                <p class="title">JOBS</p>
+                                <a href="{% url 'jobs' %}" class="link-bordered hvr-sweep-to-right">
+                                    VIEW CASE STUDIES 
+                                    <img src="{% static 'images/arrow-right.svg' %}" class="arrow-sm">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 no-padding">
-                        <img src="{% static 'images/learn.png' %}" class="img-responsive">
-                    </div>
                 </div>
-            </a>
+            </div>
+            <div class="bottom-link">
+               <a href="#" class="primary-link">VIEW MORE <strong>CASE STUDIES</strong>  <img src="{% static 'images/arrow-right.svg' %}" class="arrow-sm"></a>
+            </div>
         </div>
     </div>
     <div class="light-section">

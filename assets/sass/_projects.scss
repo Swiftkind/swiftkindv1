@@ -97,12 +97,28 @@
         height: 400px;
         margin-top: -4px;
     }
+    .content-holder{
+            &:hover{
+              .img-holder{
+                opacity: 1;
+                transform: scale(1.1);
+              }  
+            }
+        }
+    .img-holder{
 
+            &.mobile{
+                img{
+                    width: 168px;
+                }
+            }
+        }
     .text-wrapper {
         &.content-detail {
             justify-content: center;
             text-align: center;
         }
+
 
         padding: 0 70px;
         display: flex;
@@ -138,7 +154,7 @@
         p {
             font-size: 16px;
             line-height: 1.88;
-            margin-bottom: 70px;
+            margin-bottom: 30px;
         }
         label {
             line-height: 1.88;
