@@ -120,3 +120,23 @@ $(document).ready(function() {
 
 
 });
+
+$("#contactForm").submit(function(e) {
+    $.ajax({
+        type: "POST",
+        url: '/contact/',
+        data: $("#contactForm").serialize(), 
+        success: function(data) {
+            alert('Sucessfully sent message'); 
+        },
+        error: function(errorMessages) {            
+            errorMessages = JSON.parse(errorMessages.responseText);
+            var errorMessage = "";
+            for (var err in errorMessages) 
+                errorMessage += errorMessages[err][0] == 'This field is required.' ? ('The ' +err+ ' field is required!\n') : (errorMessages[err]+'\n');            
+            alert(errorMessage);
+        }
+    });
+
+    e.preventDefault(); 
+});

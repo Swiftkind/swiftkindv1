@@ -28,7 +28,8 @@
                                         <div class="anim"></div>
                                     </div>
                                 </div>
-                                <form>
+                                <form id="contactForm">
+                                    {% csrf_token %}
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
@@ -112,28 +113,4 @@
     </div>
     
 </div>
-{% endblock %}
-
-{% block js %}
-<script>
-$("#contactForm").submit(function(e) {
-    $.ajax({
-        type: "POST",
-        url: '{% url "contact" %}',
-        data: $("#contactForm").serialize(), 
-        success: function(data) {
-            alert('Sucessfully sent message'); 
-        },
-        error: function(errorMessages) {            
-            errorMessages = JSON.parse(errorMessages.responseText);
-            var errorMessage = "";
-            for (var err in errorMessages) 
-                errorMessage += errorMessages[err][0] == 'This field is required.' ? ('The ' +err+ ' field is required!\n') : (errorMessages[err]+'\n');            
-            alert(errorMessage);
-        }
-    });
-
-    e.preventDefault(); 
-});
-</script>
 {% endblock %}

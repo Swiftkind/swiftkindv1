@@ -15,7 +15,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -101,6 +100,14 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+# Email settings
+EMAIL_HOST_USER = ''
+with open(os.path.join(BASE_DIR, 'templates/emails/email_text.txt'), 'r') as fp_text:
+    EMAIL_TEXT = fp_text.read()
+with open(os.path.join(BASE_DIR, 'templates/emails/email_html.html'), 'r') as fp_html:
+    EMAIL_HTML = fp_html.read()
 
 
 # Static files (CSS, JavaScript, Images)
