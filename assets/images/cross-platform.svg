@@ -1,72 +1,325 @@
+<?xml-stylesheet type="text/css" href="style.css"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="574" height="312" viewBox="0 0 574 312">
-  <defs>
-    <style>
-      .cls-1 {
-        stroke: #0edc87;
-        stroke-width: 2px;
-        fill: none;
-      }
 
-      .cls-2 {
-        fill: #273257;
-      }
+  <style>
+    .cls-1 {
+    stroke:url(#aqua);
+    stroke-width: 2px;
+    fill: none;
+}
 
-      .cls-3 {
-        fill: #0a0e19;
-      }
+.cls-2 {
+    fill: #273257;
+}
 
-      .cls-4 {
-        fill: #c45184;
-      }
+.cls-3 {
+    fill: #0a0e19;
+}
 
-      .cls-13, .cls-5 {
-        fill: #dee1eb;
-      }
+.cls-15,
+.cls-4 {
+    fill: #c45184;
+}
 
-      .cls-6 {
-        fill: #0edcb8;
-      }
+.cls-13,
+.cls-5 {
+    fill: #dee1eb;
+}
 
-      .cls-7 {
-        fill: #3cf0a6;
-      }
+.cls-17,
+.cls-6 {
+    fill: #0edcb8;
+}
 
-      .cls-8 {
-        fill: #6179cc;
-      }
+.cls-20,
+.cls-7 {
+    fill: #3cf0a6;
+}
 
-      .cls-9 {
-        fill: #0edc87;
-      }
+.cls-14,
+.cls-8 {
+    fill: #6179cc;
+}
 
-      .cls-10 {
-        fill: #3d8bc7;
-      }
+.cls-21,
+.cls-9 {
+    fill: #0edc87;
+}
 
-      .cls-11, .cls-12 {
-        fill: #cbced8;
-      }
+.cls-10 {
+    fill: #3d8bc7;
+}
 
-      .cls-11, .cls-13 {
-        fill-rule: evenodd;
-      }
+.cls-11,
+.cls-12 {
+    fill: #cbced8;
+}
 
-      .cls-14 {
-        fill: #525b79;
-      }
+.cls-11,
+.cls-13,
+.cls-14,
+.cls-15,
+.cls-16,
+.cls-17,
+.cls-18,
+.cls-19,
+.cls-20,
+.cls-21,
+.cls-22 {
+    fill-rule: evenodd;
+}
 
-      .cls-15 {
-        fill: #596487;
-      }
+.cls-16 {
+    fill: #525b79;
+}
 
-      .cls-16 {
-        fill: #3ee39f;
-      }
+.cls-18 {
+    fill: #596487;
+}
 
-      .cls-17 {
-        fill: #20d5a0;
-      }
-    </style>
+.cls-19 {
+    fill: #3ee39f;
+}
+
+.cls-22 {
+    fill: #20d5a0;
+}
+
+.timer {
+    animation-name: timer;
+    animation-iteration-count: infinite;
+    animation-duration: 40s;
+}
+
+@keyframes timer {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 264.062px;
+    }
+}
+
+.timer-2 {
+    animation-name: timer-2;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+@keyframes timer-2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 69.094px;
+    }
+}
+
+.timer-3 {
+    animation-name: timer-3;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes timer-3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 44.687px;
+    }
+}
+
+.beat {
+    transform-origin: center;
+}
+
+.beat-1 {
+    animation-name: beat-1;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes beat-1 {
+    25%,
+    30% {
+        transform: scaleY(0.6);
+    }
+    70% {
+        transform: scaleY(1);
+    }
+}
+
+.beat-2 {
+    animation-name: beat-2;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes beat-2 {
+    25%,
+    30% {
+        transform: scaleY(0.2);
+    }
+    70% {
+        transform: scaleY(1);
+    }
+}
+
+.beat-3 {
+    animation-name: beat-3;
+    animation-iteration-count: infinite;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes beat-3 {
+    25%,
+    30% {
+        transform: scaleY(0.5);
+    }
+    70% {
+        transform: scaleY(1);
+    }
+}
+
+.beat-4 {
+    animation-name: beat-4;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes beat-4 {
+    25%,
+    30% {
+        transform: scaleY(0.7);
+    }
+    70% {
+        transform: scaleY(1);
+    }
+}
+
+.blink {}
+
+.blink-1 {
+    animation-name: blink-1;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes blink-1 {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+.blink-2 {
+    animation:  blink-2 2s ease-in-out infinite;
+    animation-delay: 0.4s;
+
+}
+
+@keyframes blink-2 {
+    0% {
+        opacity: 1;
+            }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+.blink-3 {
+    animation:  blink-3 2s ease-in-out infinite;
+    animation-delay: 0.6s;
+
+}
+
+@keyframes blink-3 {
+    0% {
+        opacity: 1;
+            }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+.blink-4 {
+    animation:  blink-4 2s ease-in-out infinite;
+    animation-delay: 0.8s;
+
+}
+
+@keyframes blink-4 {
+    0% {
+        opacity: 1;
+            }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+  </style>
+    <defs>
+    <linearGradient id="aqua">
+          <stop offset="5%" stop-color="#0edcb8" />
+          <stop offset="95%" stop-color="#20d5a0" />
+      </linearGradient>
+      
+      <linearGradient id="dark" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="25%" stop-color="#0a0c15" />
+          <stop offset="75%" stop-color="#0b0e18" />
+      </linearGradient>
   </defs>
   <g>
     <rect x="4" y="46.938" width="293.875" height="150.375" rx="10" ry="10" class="cls-1"/>
@@ -75,28 +328,28 @@
     <rect x="151.625" y="9" width="414.375" height="294" rx="5" ry="5" class="cls-3"/>
     <circle cx="176.109" cy="27.969" r="2.828" class="cls-4"/>
     <rect x="82.531" y="162.094" width="69.094" height="5.437" class="cls-5"/>
-    <rect x="82.531" y="162.094" width="24.375" height="5.437" class="cls-6"/>
+    <rect x="82.531" y="162.094" width="24.375" height="5.437" class="cls-6 timer-2"/>
     <ellipse cx="187.516" cy="27.969" rx="2.859" ry="2.719" class="cls-7"/>
     <circle cx="198.875" cy="27.969" r="2.844" class="cls-8"/>
     <rect x="24.313" y="233.906" width="119.156" height="23.032" class="cls-1"/>
     <rect x="45.969" y="216.281" width="78.562" height="59.625" class="cls-3"/>
-    <rect x="360.156" y="72.688" width="1.344" height="50.126" class="cls-6"/>
-    <rect x="373.688" y="84.875" width="1.375" height="25.75" class="cls-4"/>
-    <rect x="333.063" y="78.094" width="1.375" height="36.594" class="cls-9"/>
-    <rect x="346.625" y="84.875" width="1.344" height="25.75" class="cls-10"/>
-    <rect x="387.25" y="78.094" width="1.344" height="39.281" class="cls-6"/>
-    <rect x="87.125" y="221.719" width="0.344" height="13.531" class="cls-6"/>
-    <rect x="90.75" y="225" width="0.344" height="6.969" class="cls-4"/>
-    <rect x="79.844" y="223.188" width="0.375" height="9.875" class="cls-9"/>
-    <rect x="83.469" y="225" width="0.344" height="6.969" class="cls-10"/>
-    <rect x="94.344" y="223.188" width="0.375" height="10.593" class="cls-6"/>
-    <rect x="143.469" y="84.875" width="1.375" height="50.125" class="cls-6"/>
-    <rect x="116.406" y="90.281" width="1.344" height="36.594" class="cls-9"/>
-    <rect x="129.938" y="97.063" width="1.343" height="25.751" class="cls-10"/>
+    <rect x="360.156" y="72.688" width="4" height="50.126" class="cls-6 beat beat-3"/>
+    <rect x="373.688" y="84.875" width="4" height="25.75" class="cls-4 beat beat-4"/>
+    <rect x="333.063" y="78.094" width="4" height="36.594" class="cls-9 beat beat-1"/>
+    <rect x="346.625" y="84.875" width="4" height="25.75" class="cls-10 beat beat-2"/>
+    <rect x="387.25" y="78.094" width="4" height="39.281" class="cls-6 beat beat-2"/>
+    <rect x="87.125" y="221.719" width="0.344" height="13.531" class="cls-6 beat beat-3"/>
+    <rect x="90.75" y="225" width="0.344" height="6.969" class="cls-4 beat beat-2"/>
+    <rect x="79.844" y="223.188" width="0.375" height="9.875" class="cls-9 beat beat-3"/>
+    <rect x="83.469" y="225" width="0.344" height="6.969" class="cls-10 beat beat-4"/>
+    <rect x="94.344" y="223.188" width="0.375" height="10.593" class="cls-6 beat beat-1"/>
+    <rect x="143.469" y="84.875" width="3" height="50.125" class="cls-6 beat beat-3"/>
+    <rect x="116.406" y="90.281" width="3" height="36.594" class="cls-9 beat beat-2"/>
+    <rect x="129.938" y="97.063" width="3" height="25.751" class="cls-10 beat beat-1"/>
     <rect x="228.813" y="227.125" width="264.062" height="5.438" class="cls-5"/>
-    <rect x="228.813" y="227.125" width="24.375" height="5.438" class="cls-6"/>
+    <rect x="228.813" y="227.125" width="24.375" height="5.438" class="cls-6 timer"/>
     <rect x="63.594" y="239.313" width="44.687" height="1.375" class="cls-5"/>
-    <rect x="63.594" y="239.313" width="4.094" height="1.375" class="cls-6"/>
+    <rect x="63.594" y="239.313" width="4.094" height="1.375" class="cls-6 timer-3"/>
     <ellipse cx="361.515" cy="175.641" rx="17.609" ry="17.609" class="cls-5"/>
     <rect x="81.188" y="252.875" width="2.25" height="9.469" class="cls-5"/>
     <rect x="85.719" y="252.875" width="2.25" height="9.469" class="cls-5"/>
@@ -110,25 +363,25 @@
     <path d="M316.824,175.639 L326.289,181.064 L326.289,170.214 L316.824,175.639 Z" class="cls-13"/>
     <rect x="315.469" y="170.219" width="1.344" height="10.844" class="cls-5"/>
     <rect x="362.875" y="167.531" width="2.688" height="14.875" class="cls-2"/>
-    <rect x="190" y="77.938" width="12.188" height="13.125" class="cls-8"/>
-    <rect x="221.719" y="67.281" width="8.125" height="8.219" class="cls-4"/>
-    <rect x="235.531" y="98.438" width="11.407" height="11.469" class="cls-14"/>
-    <rect x="277.813" y="55" width="8.968" height="9" class="cls-6"/>
-    <rect x="261.563" y="81.219" width="11.375" height="11.469" class="cls-15"/>
-    <rect x="291.656" y="102.531" width="11.375" height="11.469" class="cls-16"/>
-    <rect x="59" y="80.156" width="8.188" height="8.688" class="cls-6"/>
-    <rect x="80.313" y="73.125" width="5.469" height="5.438" class="cls-16"/>
-    <rect x="89.625" y="93.719" width="7.656" height="7.562" class="cls-8"/>
-    <rect x="118.031" y="65" width="6.032" height="5.938" class="cls-4"/>
-    <rect x="107.125" y="82.344" width="7.625" height="7.563" class="cls-7"/>
-    <rect x="127.344" y="96.406" width="7.656" height="7.594" class="cls-6"/>
-    <rect x="332.313" y="58.281" width="5.687" height="5.719" class="cls-4"/>
-    <rect x="510.813" y="77.938" width="12.187" height="13.125" class="cls-7"/>
-    <rect x="483.156" y="67.281" width="8.125" height="8.219" class="cls-9"/>
-    <rect x="466.063" y="98.438" width="11.406" height="11.469" class="cls-4"/>
-    <rect x="426.219" y="55" width="8.969" height="9" class="cls-4"/>
-    <rect x="440.063" y="81.219" width="11.375" height="11.469" class="cls-6"/>
-    <rect x="409.969" y="102.531" width="11.375" height="11.469" class="cls-16"/>
-    <rect x="375" y="58.281" width="5.688" height="5.719" class="cls-17"/>
+    <path d="M212.000,93.875 L217.726,93.875 L217.726,100.125 L212.000,100.125 L212.000,93.875 Z" class="cls-14 blink-1"/>
+    <path d="M241.861,76.844 L245.678,76.844 L245.678,80.719 L241.861,80.719 L241.861,76.844 Z" class="cls-15 blink-4"/>
+    <path d="M245.369,95.625 L250.719,95.625 L250.719,101.062 L245.369,101.062 L245.369,95.625 Z" class="cls-16 blink-2"/>
+    <path d="M276.174,101.000 L280.397,101.000 L280.397,105.281 L276.174,105.281 L276.174,101.000 Z" class="cls-17 blink-4"/>
+    <path d="M310.571,93.438 L315.890,93.438 L315.890,98.875 L310.571,98.875 L310.571,93.438 Z" class="cls-18 blink-1"/>
+    <path d="M277.681,83.563 L283.000,83.563 L283.000,89.000 L277.681,89.000 L277.681,83.563 Z" class="cls-19 blink-3"/>
+    <path d="M70.000,81.881 L75.817,81.881 L75.817,88.119 L70.000,88.119 L70.000,81.881 Z" class="cls-17 blink-2"/>
+    <path d="M85.143,76.833 L89.029,76.833 L89.029,80.737 L85.143,80.737 L85.143,76.833 Z" class="cls-19 blink-4"/>
+    <path d="M91.760,91.619 L97.200,91.619 L97.200,97.048 L91.760,97.048 L91.760,91.619 Z" class="cls-14 blink-1"/>
+    <path d="M111.943,71.000 L116.229,71.000 L116.229,75.263 L111.943,75.263 L111.943,71.000 Z" class="cls-15 blink-3"/>
+    <path d="M104.194,83.452 L109.612,83.452 L109.612,88.881 L104.194,88.881 L104.194,83.452 Z" class="cls-20 blink-3"/>
+    <path d="M118.560,93.548 L124.000,93.548 L124.000,99.000 L118.560,99.000 L118.560,93.548 Z" class="cls-17 blink-1"/>
+    <path d="M344.669,72.557 L347.333,72.557 L347.333,75.271 L344.669,75.271 L344.669,72.557 Z" class="cls-15 blink-1"/>
+    <path d="M450.291,78.886 L456.000,78.886 L456.000,85.114 L450.291,85.114 L450.291,78.886 Z" class="cls-20 blink-2"/>
+    <path d="M415.334,76.828 L419.141,76.828 L419.141,80.729 L415.334,80.729 L415.334,76.828 Z" class="cls-21 blink-4"/>
+    <path d="M407.327,91.614 L412.670,91.614 L412.670,97.057 L407.327,97.057 L407.327,91.614 Z" class="cls-15 blink-2"/>
+    <path d="M388.661,71.000 L392.863,71.000 L392.863,75.271 L388.661,75.271 L388.661,71.000 Z" class="cls-15 blink-3"/>
+    <path d="M487.146,82.443 L492.475,82.443 L492.475,87.886 L487.146,87.886 L487.146,82.443 Z" class="cls-17 blink-3"/>
+    <path d="M456.048,101.557 L461.377,101.557 L461.377,107.000 L456.048,107.000 L456.048,101.557 Z" class="cls-19 blink-1"/>
+    <path d="M365.667,78.557 L368.331,78.557 L368.331,81.271 L365.667,81.271 L365.667,78.557 Z" class="cls-22 blink-2"/>
   </g>
 </svg>

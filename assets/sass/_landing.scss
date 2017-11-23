@@ -14,10 +14,17 @@
     text-align: center;
     h1{
         font-size: 56px;
-        font-family: $Maax-Sans-Regular;
+        font-family: $Maax-Sans-Medium;
         line-height: 1.4;
         margin: 10px auto 50px;
         text-transform: uppercase;
+        @include tablet{
+            font-size: 36px;
+        }
+        @include mobile{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
 
     }
     h3{
@@ -29,6 +36,9 @@
     h4{
         color: #616571;
         font-size: 20px;
+        @include mobile{
+            font-size: 16px;
+        }
     }
     h5 {
         letter-spacing: 2.8px;
@@ -59,7 +69,13 @@
         color: $white;
         text-align: center;
         line-height: 1.4;
-        margin-bottom: 50px;
+        margin-bottom: 50px;   
+        @include tablet{
+            font-size: 36px;
+        }
+        @include mobile{
+            font-size: 20px;
+        }
 
     }
     h4 {
@@ -70,6 +86,11 @@
         font-family: $Roboto-Mono-Thin;
         letter-spacing: 0.3px;
         line-height: 1.75;
+        @include mobile{
+            font-size: 16px;
+            text-align: justify;
+            text-align-last: center;
+        }
     }
     .item-links {
 
@@ -121,7 +142,8 @@
             display: flex;
             align-items: center;
             position: absolute;
-            
+            justify-content: center;
+            width: 100%;
             &.right{
                 right:0;
             }
@@ -130,6 +152,9 @@
             }
             img{
                 max-width: 500px;
+                @include tablet{
+                    max-width: 300px;
+                }
             }
             
         }
@@ -150,6 +175,7 @@
                     background: $jade;
                     top: 40%;
                     left: 30px;
+                    animation: number 2s infinite;
                 }
             }
             h2 {

@@ -251,6 +251,7 @@ a {
     border-left: solid 2px $jade;
     padding-left: 20px;
     z-index: 33;
+        width: auto;
     @include mobile {
         top: 50px;
         left: 18px;
