@@ -29,11 +29,11 @@
     .scrolling {
         background: $sjobs;
     }
-     .photo-fluid{
+    .photo-fluid {
         @include mobile {
             background-position: -95px center;
         }
-     }
+    }
 }
 
 #bookapp {
@@ -48,6 +48,9 @@
     }
     .photo-fluid {
         background-position: -28px -345px;
+        @include tablet {
+            background-position: -28px center;
+        }
     }
 }
 
@@ -73,7 +76,7 @@
             .header-content {
                 h3 {
 
-                    text-align: center;
+                    text-align: left;
                 }
             }
         }
@@ -94,8 +97,8 @@
             }
         }
     }
-    .section{
-        padding-top:0;
+    .section {
+        padding-top: 0;
     }
     .photo-fluid {
         background: {
@@ -104,26 +107,26 @@
         }
         height: 400px;
         margin-top: -4px;
-        @include mobile{
+        @include mobile {
             height: 350px;
         }
     }
-    .content-holder{
-            &:hover{
-              .img-holder{
+    .content-holder {
+        &:hover {
+            .img-holder {
                 opacity: 1;
                 transform: scale(1.1);
-              }  
             }
         }
-    .img-holder{
+    }
+    .img-holder {
 
-            &.mobile{
-                img{
-                    width: 168px;
-                }
+        &.mobile {
+            img {
+                width: 168px;
             }
         }
+    }
     .text-wrapper {
         &.content-detail {
             justify-content: center;
@@ -213,7 +216,7 @@
         align-items: center;
         justify-content: center;
         background: $smoke;
-        @include mobile{
+        @include mobile {
             min-height: 500px;
         }
     }
