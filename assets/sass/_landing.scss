@@ -150,10 +150,16 @@
             &.left{
                 left: 0;
             }
+            @include mobile{
+                height: 500px;
+            }
             img{
                 max-width: 500px;
                 @include tablet{
                     max-width: 300px;
+                }
+                @include mobile{
+                    max-width: 270px;
                 }
             }
             
@@ -162,6 +168,10 @@
             position: relative;
             height: 650px;
             align-items: center;
+            @include mobile{
+                margin-top: 500px;
+
+            }
             .number {
                 color: $jade;
                 position: relative;
@@ -184,6 +194,9 @@
                 font-family: $Maax-Sans-Regular;
                 margin-bottom: 40px;
                 margin-top: 20px;
+                @include mobile{
+                    font-size: 24px;
+                }
             }
             .svc-desc {
                 margin-bottom: 40px;
@@ -496,7 +509,7 @@
                 justify-content: center;
                 a {
                     margin: 0 10px;
-                    
+
                 }
             }
         }
