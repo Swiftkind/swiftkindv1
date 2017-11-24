@@ -113,6 +113,12 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+
+    //process link
+    $('.our-process a').on('click', function (e) {
+        e.preventDefault();
+    })
+
  //    $(function() {
 	// 	$.scrollify({
 	// 		section : ".section",

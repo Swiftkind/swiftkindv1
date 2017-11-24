@@ -40,7 +40,11 @@
             opacity: 0;
             height: 0;
             @include mobile {
-                display: none;
+                width: 250px;
+                left: 0;
+                right: 0;
+                padding: 20px;
+                margin: 0 auto;
             }
             p {
                 font-family: $Maax-Sans-Regular;
@@ -236,6 +240,9 @@
                     @include tablet {
                         top: -270px;
                     }
+                    @include mobile {
+                        left: -115px;
+                    }
                 }
             }
             .right-label {
@@ -313,14 +320,20 @@
                 margin-right: 75px;
             }
         }
+
         h3 {
             font-family: $Maax-Sans-Regular;
             font-size: 24px;
             margin-bottom: 50px;
             font-weight: normal;
+            @include mobile {
+
+                font-size: 18px;
+                text-align: justify;
+            }
         }
     }
-    .values-header{
+    .values-header {
         font-size: 24px;
         margin-bottom: 100px;
     }
@@ -382,8 +395,8 @@
         @include mobile {
             height: 110px;
             padding-left: 10px;
-            padding-right:10px;
-            margin-bottom:100px;
+            padding-right: 10px;
+            margin-bottom: 100px;
         }
         @include tablet {
             padding-left: 0;
@@ -508,7 +521,7 @@
         @include mobile {
             width: 100%;
             padding: 150px 18px 100px;
-            h3{
+            h3 {
                 font-size: 20px;
             }
         }
@@ -717,8 +730,8 @@
                 @include tablet {
                     padding-right: 0;
                 }
-                @include mobile{
-                    padding-right:20px;
+                @include mobile {
+                    padding-right: 20px;
                 }
                 label {
                     margin-bottom: 30px;
@@ -774,16 +787,16 @@
     color: $white;
     text-align: center;
     .map-details {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    padding-right: 80px;
-    @include mobile{
-        padding-right:0;
-    }
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        padding-right: 80px;
+        @include mobile {
+            padding-right: 0;
+        }
         h2 {
             z-index: 9;
             position: relative;
@@ -802,11 +815,11 @@
                 top: 132px;
             }
         }
-        h4{
+        h4 {
             color: rgba($jade, 1);
             z-index: 9;
             position: relative;
-                margin-top: 15px;
+            margin-top: 15px;
         }
         h3 {
             z-index: 9;
