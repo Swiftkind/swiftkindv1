@@ -448,7 +448,7 @@
     background: $smoke;
     color: $rich-black;
     @include mobile {
-        padding: 35px;
+        padding: 15px;
     }
     @include tablet {
         padding: 80px 0;
@@ -465,6 +465,7 @@
         margin-bottom: 56px;
         @include mobile {
             width: 100%;
+            font-size: 16px;
         }
     }
     .item-links {
@@ -480,6 +481,7 @@
                 justify-content: space-between;
                 a {
                     margin-right: 0;
+
                 }
             }
         }
@@ -489,11 +491,12 @@
             .link-options {
                 text-align: center;
                 display: flex;
-                width: 50%;
+                width: 100%;
                 margin: 50px auto 0;
-                justify-content: space-between;
+                justify-content: center;
                 a {
-                    margin-right: 0;
+                    margin: 0 10px;
+                    
                 }
             }
         }

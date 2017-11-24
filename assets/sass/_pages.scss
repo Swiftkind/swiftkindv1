@@ -229,7 +229,7 @@
                 }
                 @include mobile {
                     left: auto;
-                    right: 50px;
+                    right: 25px;
                 }
                 .block-description {
                     right: 0;
@@ -382,6 +382,8 @@
         @include mobile {
             height: 110px;
             padding-left: 10px;
+            padding-right:10px;
+            margin-bottom:100px;
         }
         @include tablet {
             padding-left: 0;
@@ -392,7 +394,7 @@
             font-size: 24px;
             font-family: $Maax-Sans-Regular;
             @include mobile {
-                font-size: 24px;
+                font-size: 18px;
             }
         }
     }
@@ -451,7 +453,7 @@
         }
         @include mobile {
             width: 100%;
-            padding: 0 40px;
+            padding: 0 10px;
         }
 
         p {
@@ -506,6 +508,9 @@
         @include mobile {
             width: 100%;
             padding: 150px 18px 100px;
+            h3{
+                font-size: 20px;
+            }
         }
     }
 }
@@ -696,9 +701,10 @@
                 padding: 80px;
             }
             @include mobile {
-                padding-left: 50px;
+                padding-left: 20px;
             }
             .form {
+
                 .form-header {
                     p {
                         color: $white;
@@ -710,6 +716,9 @@
                 padding-right: 50px;
                 @include tablet {
                     padding-right: 0;
+                }
+                @include mobile{
+                    padding-right:20px;
                 }
                 label {
                     margin-bottom: 30px;
@@ -772,6 +781,9 @@
     display: flex;
     align-items: center;
     padding-right: 80px;
+    @include mobile{
+        padding-right:0;
+    }
         h2 {
             z-index: 9;
             position: relative;
