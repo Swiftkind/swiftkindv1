@@ -9,10 +9,8 @@ class ContactForm(forms.Form):
     subject = forms.CharField(max_length=100)
     budget = forms.DecimalField(max_digits=10, decimal_places=2)
     date = forms.DateField()
+    company = forms.CharField(max_length=50)
 
     def save(self):
-        data = self.cleaned_data
-        contact = Contact(name=data['name'], email=data['email'],
-                        subject=data['subject'], budget=data['budget'],
-                        date=data['date'])
+        contact = Contact(**self.cleaned_data)
         contact.save()
