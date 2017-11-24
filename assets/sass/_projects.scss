@@ -29,6 +29,11 @@
     .scrolling {
         background: $sjobs;
     }
+     .photo-fluid{
+        @include mobile {
+            background-position: -95px center;
+        }
+     }
 }
 
 #bookapp {
@@ -42,7 +47,7 @@
         background: $bookapp;
     }
     .photo-fluid {
-        background-position: center -345px;
+        background-position: -28px -345px;
     }
 }
 
@@ -89,6 +94,9 @@
             }
         }
     }
+    .section{
+        padding-top:0;
+    }
     .photo-fluid {
         background: {
             position: center;
@@ -96,6 +104,9 @@
         }
         height: 400px;
         margin-top: -4px;
+        @include mobile{
+            height: 350px;
+        }
     }
     .content-holder{
             &:hover{
@@ -202,6 +213,9 @@
         align-items: center;
         justify-content: center;
         background: $smoke;
+        @include mobile{
+            min-height: 500px;
+        }
     }
 
     .bottom-links {
