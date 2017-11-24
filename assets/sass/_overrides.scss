@@ -33,6 +33,10 @@
             position: absolute;
             bottom: 100px;
             right: 215px;
+            @include mobile{
+                bottom:50px;
+                right: 0;
+            }
         }
     }
 }
