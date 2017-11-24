@@ -563,6 +563,9 @@
     @include mobile{
         height: 100vh;
     }
+    @include tablet{
+        height: 75vh;
+    }
     .item {
         width: 50%;
         margin: 0 auto;
