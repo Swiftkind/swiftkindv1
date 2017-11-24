@@ -532,9 +532,10 @@ a:hover {
 /* line 243, ../sass/_global.scss */
 .section {
   position: relative;
+  padding-top: 150px;
 }
 
-/* line 247, ../sass/_global.scss */
+/* line 248, ../sass/_global.scss */
 .section-title {
   position: absolute;
   top: 100px;
@@ -545,19 +546,19 @@ a:hover {
   width: auto;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 247, ../sass/_global.scss */
+  /* line 248, ../sass/_global.scss */
   .section-title {
     top: 50px;
     left: 18px;
   }
 }
-/* line 260, ../sass/_global.scss */
+/* line 261, ../sass/_global.scss */
 .section-title .bg-anim .text-anim {
   color: #ffffff;
   font-family: "Roboto Mono Medium";
 }
 
-/* line 270, ../sass/_global.scss */
+/* line 271, ../sass/_global.scss */
 .icon-bg {
   position: absolute;
   z-index: 1;
@@ -999,7 +1000,7 @@ a:hover {
 }
 /* line 15, ../sass/_landing.scss */
 .masthead h1 {
-  font-size: 56px;
+  font-size: 50px;
   font-family: "Maax-Sans-Medium";
   line-height: 1.4;
   margin: 10px auto 50px;
@@ -1616,7 +1617,7 @@ a:hover {
 
 /* line 526, ../sass/_landing.scss */
 .screen-section {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 /* line 528, ../sass/_landing.scss */
 .screen-section .img-wrapper {

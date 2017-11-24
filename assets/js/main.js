@@ -1,7 +1,4 @@
 $(document).ready(function() {
-
-    var s = skrollr.init();
-
     function afterReveal (el) {
         $('.letters').each(function(){
             $(this).html($(this).text().replace(/([^\s])/g, "<span class='letter'>$&</span>"));
