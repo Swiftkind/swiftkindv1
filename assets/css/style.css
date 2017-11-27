@@ -558,10 +558,24 @@ a:hover {
   font-family: "Roboto Mono Medium";
 }
 
-/* line 271, ../sass/_global.scss */
+/* line 270, ../sass/_global.scss */
 .icon-bg {
   position: absolute;
   z-index: 1;
+}
+
+/* line 275, ../sass/_global.scss */
+.scroll {
+  width: 3px;
+  height: 67px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 150px;
+  z-index: 9999;
+  animation: scroll-down infinite 2s;
+  margin: 0 auto;
 }
 
 /* line 2, ../sass/_overrides.scss */
@@ -3449,5 +3463,23 @@ a:hover {
   100% {
     visibility: visible;
     opacity: 1;
+  }
+}
+@keyframes scroll-down {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 0 50% 0;
+  }
+  0% {
+    transform: scaleY(0.5);
+    transform-origin: 0 50% 0;
+  }
+  50% {
+    transform: scaleY(0);
+    transform-origin: 0 100% 0;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: 0% 150% 0;
   }
 }

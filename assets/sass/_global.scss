@@ -252,23 +252,35 @@ a {
     border-left: solid 2px $jade;
     padding-left: 20px;
     z-index: 33;
-        width: auto;
+    width: auto;
     @include mobile {
         top: 50px;
         left: 18px;
     }
-     .bg-anim {
-            .text-anim{
-                color: $white;
-                font-family: $Roboto-Mono-Medium;
-            }
+    .bg-anim {
+        .text-anim {
+            color: $white;
+            font-family: $Roboto-Mono-Medium;
         }
+    }
 }
 
 
 //skrollr icons
-
-.icon-bg{
+.icon-bg {
     position: absolute;
     z-index: 1;
 }
+
+    .scroll {
+        width: 3px;
+        height: 67px;
+        background-color: $white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 150px;
+        z-index: 9999;
+        animation: scroll-down infinite 2s;
+        margin: 0 auto;
+    }

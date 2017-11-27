@@ -251,3 +251,25 @@
         opacity: 1;
     }
 }
+
+
+@keyframes scroll-down{
+    0%{
+        transform: scaleY(0);
+        transform-origin: 0 50% 0;
+    }
+    0%{
+        transform: scaleY(0.5);
+        transform-origin: 0 50% 0;
+    }
+
+    50%{
+        transform: scaleY(0);
+        transform-origin: 0 100% 0;
+    }
+    100%{
+        transform: scaleY(0);
+        transform-origin: 0% 150% 0;
+    }
+
+}
