@@ -272,15 +272,15 @@ a {
     z-index: 1;
 }
 
-    .scroll {
-        width: 3px;
-        height: 67px;
-        background-color: $white;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 150px;
-        z-index: 9999;
-        animation: scroll-down infinite 2s;
-        margin: 0 auto;
-    }
+.scroll {
+    width: 3px;
+    height: 67px;
+    background-color: $white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 150px;
+    z-index: 9999;
+    animation: scroll-down infinite 2s;
+    margin: 0 auto;
+}

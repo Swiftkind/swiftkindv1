@@ -33,12 +33,19 @@
             position: absolute;
             bottom: 100px;
             right: 215px;
-            @include mobile{
-                bottom:50px;
+            @include mobile {
+                bottom: 50px;
                 right: 0;
             }
         }
     }
+}
+
+.owl-stage-outer {
+
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
 }
 
 @media all and (transform-3d),
