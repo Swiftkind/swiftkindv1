@@ -220,7 +220,7 @@
 
 @keyframes anim {
     0% {
-        background-color: rgb(60, 57, 205);
+        background-color: $jade;
         transform-origin: 0% 50% 0px;
         transform: scaleX(1);
         opacity: 0;
@@ -231,7 +231,7 @@
         opacity: 1;
     }
     100% {
-        background-color: rgb(60, 57, 205);
+        background-color: $jade;
         transform-origin: 100% 50% 0px;
         transform: scaleX(0);
         opacity: 0;
