@@ -17,6 +17,8 @@
         }
         @include mobile {
             padding: 12px 13px;
+            z-index: 100;
+            position: relative;
         }
         .nav-logo {
             width: 120px;
@@ -38,7 +40,7 @@
         display: none;
         @include tablet {
             display: block;
-                padding: 30px 0px;
+            padding: 30px 0px;
         }
         @include mobile {
             padding: 10px 0;
@@ -65,7 +67,7 @@
 
             @include transition(all, ease, 0.5s);
             top: 8px;
-            @include tablet{
+            @include tablet {
                 top: 30px;
             }
         }
@@ -74,7 +76,7 @@
 
             @include transition(all, ease, 0.5s);
             top: 33px;
-            @include tablet{
+            @include tablet {
                 top: 50px;
             }
         }
@@ -142,7 +144,7 @@
                 color: $white;
                 &::before {
                     background: $white;
-                   opacity: 1;
+                    opacity: 1;
                 }
             }
         }
@@ -152,7 +154,7 @@
                 background: $white;
                 bottom: 35px;
                 height: 1px;
-               opacity: 0;
+                opacity: 0;
                 @include tablet {
                     bottom: 10px;
                 }
@@ -211,16 +213,16 @@
                 top: 18px;
                 @include transition(all, ease, 0.5s);
                 transition-delay: 0.2s;
-                @include tablet{
+                @include tablet {
                     top: 38px;
-                }   
+                }
             }
             .bottom {
                 transform: rotate(-45deg);
                 top: 18px;
                 @include transition(all, ease, 0.5s);
                 transition-delay: 0.2s;
-                @include tablet{
+                @include tablet {
                     top: 38px;
                 }
             }

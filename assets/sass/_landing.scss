@@ -191,6 +191,9 @@
     background: $rich-black;
     position: relative;
     color: $white;
+    @include mobile{
+        padding-top: 50px;
+    }
     .item {
         min-height: 80vh;
         @include mobile {
@@ -255,7 +258,7 @@
             height: 650px;
             align-items: center;
             @include mobile {
-                margin-top: 300px;
+                margin-top: 200px;
             }
 
             .svc-desc {
