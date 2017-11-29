@@ -353,6 +353,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
             .title {
                 margin-top: 20px;
                 opacity: 0;
@@ -370,6 +371,13 @@
                     width: auto;
                     display: initial;
                 }
+            }
+            p{
+                opacity: 0;
+                @include transition (all,
+                0.2s,
+                ease-in-out);
+
             }
         }
         &:hover, &:active, &:focus {
@@ -394,7 +402,7 @@
                     margin-bottom: 20px;
                 }
 
-                a,
+                a, p,
                 .title {
                     margin-top: 0;
                     opacity: 1;
