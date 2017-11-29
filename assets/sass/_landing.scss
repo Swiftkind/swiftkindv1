@@ -13,13 +13,13 @@
     color: $white;
     text-align: left;
     padding-top: 0;
-    @include tablet{
+    @include tablet {
         padding: 0 50px;
     }
-    @include mobile{
+    @include mobile {
         padding: 0 20px;
     }
-    .header-content{
+    .header-content {
         h3 {
             font-size: 24px;
             color: $white;
@@ -270,7 +270,7 @@
                 font-size: 16px;
                 line-height: 2.2;
                 position: relative;
-                @include mobile{
+                @include mobile {
                     padding-left: 35px;
                 }
                 &::before {
@@ -337,12 +337,20 @@
         margin: 0 auto;
         .img-holder {
             opacity: 1;
-            @include transition (all,
-            0.5s,
-            ease);
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-            transform: scale(1);
+            position: relative;
+            .img1{
+                opacity:1;
+                @include transition(opacity, 0.2s, ease-in-out);
+            }
+            .img2 {
+                position: absolute;
+                top: 0;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                @include transition(opacity, 0.2s, ease-in-out);
+            }
         }
         .content-wrapper {
             position: absolute;
@@ -372,24 +380,27 @@
                     display: initial;
                 }
             }
-            p{
+            p {
                 opacity: 0;
                 @include transition (all,
                 0.2s,
                 ease-in-out);
-
             }
         }
-        &:hover, &:active, &:focus {
+        &:hover,
+        &:active,
+        &:focus {
             .img-holder {
-                opacity: 0.2;
-                @include transition (all,
-                0.3s,
-                ease);
-                -webkit-transform: scale(1.2);
-                -ms-transform: scale(1.2);
-                transform: scale(1.2);
-                opacity: 0.15;
+                .img1{
+                    opacity: 0;
+                @include transition(opacity, 0.3s, ease-in-out);
+                }
+                .img2{
+                    opacity: 0.2;
+                    @include transition(opacity, 0.2s, ease-in-out);
+                    transition-delay: 0.2s;
+                }
+                
             }
             .content-wrapper {
                 .techs {
@@ -400,9 +411,14 @@
                     ease-in-out);
                     transition-delay: 0.3s;
                     margin-bottom: 20px;
+                    @include mobile{
+                        margin-bottom: 10px;
+                        margin-top: 0px;
+                    }
                 }
 
-                a, p,
+                a,
+                p,
                 .title {
                     margin-top: 0;
                     opacity: 1;
@@ -630,6 +646,11 @@
                 margin-top: 20px;
                 li {
                     margin: 0 10px;
+                    p{
+                        @include mobile{
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
             .title {
@@ -638,6 +659,9 @@
                 font-size: 24px;
                 letter-spacing: 1.2px;
                 margin: 35px 0;
+                @include mobile{
+                    margin: 20px 0;
+                }
             }
         }
     }
@@ -749,7 +773,7 @@
             margin-bottom: 20px;
         }
         @include mobile {
-            font-size: 24px;
+            font-size: 20px;
             margin-bottom: 20px;
         }
     }
@@ -780,6 +804,9 @@
     a {
         color: $rich-black;
         font-family: $Maax-Sans-Regular;
+        @include mobile{
+            font-size: 10px;
+        }
     }
 }
 
