@@ -1605,7 +1605,7 @@ a:hover {
   display: initial;
 }
 /* line 376, ../sass/_landing.scss */
-.img-wrapper .content-holder:hover .img-holder {
+.img-wrapper .content-holder:hover .img-holder, .img-wrapper .content-holder:active .img-holder, .img-wrapper .content-holder:focus .img-holder {
   opacity: 0.2;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1617,7 +1617,7 @@ a:hover {
   opacity: 0.15;
 }
 /* line 387, ../sass/_landing.scss */
-.img-wrapper .content-holder:hover .content-wrapper .techs {
+.img-wrapper .content-holder:hover .content-wrapper .techs, .img-wrapper .content-holder:active .content-wrapper .techs, .img-wrapper .content-holder:focus .content-wrapper .techs {
   margin-top: -20px;
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1629,7 +1629,9 @@ a:hover {
 }
 /* line 397, ../sass/_landing.scss */
 .img-wrapper .content-holder:hover .content-wrapper a,
-.img-wrapper .content-holder:hover .content-wrapper .title {
+.img-wrapper .content-holder:hover .content-wrapper .title, .img-wrapper .content-holder:active .content-wrapper a,
+.img-wrapper .content-holder:active .content-wrapper .title, .img-wrapper .content-holder:focus .content-wrapper a,
+.img-wrapper .content-holder:focus .content-wrapper .title {
   margin-top: 0;
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
