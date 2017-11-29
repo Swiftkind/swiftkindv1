@@ -57,10 +57,18 @@ p {
 a {
     text-decoration: none;
     color: $white;
+    .arrow-sm{
+        margin-left: 10px;
+        @include transition ( all, 0.3s, ease);
+    }
     &:hover {
         text-decoration: none;
         color: darken($white, 40%);
         @include transition ( all, 0.3s, ease);
+        .arrow-sm{
+            margin-left: 30px;
+             @include transition ( all, 0.3s, ease);
+        }
     }
 }
 
@@ -113,9 +121,10 @@ a {
             margin-left: 0px;
             @include transition(margin-left, 0.3s, ease);
             .arrow-sm {
+
                 width: auto;
                 display: initial;
-                margin-left: 0px;
+                margin-left: 10px;
                 @include transition(margin-left, 0.3s, ease);
             }
         }
@@ -188,6 +197,8 @@ a {
 
 //custom icons and svg
 .arrow-thin {}
+
+
 
 //paddings and margins
 .no-padding {
