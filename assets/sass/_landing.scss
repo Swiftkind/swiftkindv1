@@ -20,10 +20,16 @@
         padding: 0 20px;
     }
     .header-content {
-        h3 {
+        h5{
             font-size: 24px;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: 16px;
             color: $white;
             font-family: $DINNextLTPro-Light;
+            margin-bottom: 30px;
+            letter-spacing: 4px;
         }
     }
     .main-text {
@@ -46,15 +52,12 @@
                 text-align: center;
             }
         }
-        h3 {
-            font-size: 24px;
-            color: $white;
-        }
 
         h4 {
             color: #616571;
             font-size: 20px;
             letter-spacing: 1px;
+            line-height: 1.8;
             @include mobile {
                 font-size: 16px;
                 display: none;
