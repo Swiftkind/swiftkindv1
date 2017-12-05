@@ -4,16 +4,17 @@ $(document).ready(function() {
             $(this).html($(this).text().replace(/([^\s])/g, "<span class='letter'>$&</span>"));
         });
 
-        anime.timeline({loop: false})
+        anime
+            .timeline({loop: false})
             .add({
               targets: '.letter',
               scale: [0.3,1],
               opacity: [0,1],
               translateZ: 0,
               easing: "easeOutExpo",
-              duration: 40,
+              duration: 10,
               delay: function(el, i) {
-                return 40 * (i+1)
+                return 30 * (i+1)
               }
             });
     }
