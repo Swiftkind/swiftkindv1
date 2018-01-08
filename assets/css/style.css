@@ -1265,33 +1265,34 @@ a:hover .arrow-sm {
   font-family: "DINNextLTPro-Light";
   letter-spacing: 2px;
   font-size: 12px;
+  display: inline;
 }
-/* line 95, ../sass/_landing.scss */
+/* line 96, ../sass/_landing.scss */
 .masthead .footnote .right {
   position: absolute;
   bottom: 50px;
   right: 0;
 }
-/* line 99, ../sass/_landing.scss */
+/* line 100, ../sass/_landing.scss */
 .masthead .footnote .right a {
   font-family: "DINNextLTPro-Light";
   letter-spacing: 2px;
   font-size: 12px;
 }
 
-/* line 108, ../sass/_landing.scss */
+/* line 109, ../sass/_landing.scss */
 .intro-text {
   background: #04060c;
 }
-/* line 111, ../sass/_landing.scss */
+/* line 112, ../sass/_landing.scss */
 .intro-text .container {
   z-index: 2;
 }
-/* line 114, ../sass/_landing.scss */
+/* line 115, ../sass/_landing.scss */
 .intro-text .icon-bg {
   width: 300px;
 }
-/* line 117, ../sass/_landing.scss */
+/* line 118, ../sass/_landing.scss */
 .intro-text h3 {
   font-family: "DINNextLTPro-Medium";
   font-size: 52px;
@@ -1301,18 +1302,18 @@ a:hover .arrow-sm {
   text-transform: uppercase;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 117, ../sass/_landing.scss */
+  /* line 118, ../sass/_landing.scss */
   .intro-text h3 {
     font-size: 36px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 117, ../sass/_landing.scss */
+  /* line 118, ../sass/_landing.scss */
   .intro-text h3 {
     font-size: 20px;
   }
 }
-/* line 132, ../sass/_landing.scss */
+/* line 133, ../sass/_landing.scss */
 .intro-text h4 {
   font-size: 18px;
   color: #ffffff;
@@ -1322,7 +1323,7 @@ a:hover .arrow-sm {
   line-height: 1.75;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 132, ../sass/_landing.scss */
+  /* line 133, ../sass/_landing.scss */
   .intro-text h4 {
     font-size: 14px;
     text-align: justify;
@@ -1330,26 +1331,26 @@ a:hover .arrow-sm {
     margin-bottom: 50px;
   }
 }
-/* line 146, ../sass/_landing.scss */
+/* line 147, ../sass/_landing.scss */
 .intro-text p {
   color: #ffffff;
 }
-/* line 149, ../sass/_landing.scss */
+/* line 150, ../sass/_landing.scss */
 .intro-text .item-links {
   padding: 0;
   margin-top: 100px;
 }
-/* line 152, ../sass/_landing.scss */
+/* line 153, ../sass/_landing.scss */
 .intro-text .item-links a {
   font-size: 14px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 149, ../sass/_landing.scss */
+  /* line 150, ../sass/_landing.scss */
   .intro-text .item-links {
     display: block;
     text-align: center;
   }
-  /* line 158, ../sass/_landing.scss */
+  /* line 159, ../sass/_landing.scss */
   .intro-text .item-links .link-options {
     text-align: center;
     display: flex;
@@ -1357,20 +1358,20 @@ a:hover .arrow-sm {
     margin: 50px auto 0;
     justify-content: space-between;
   }
-  /* line 164, ../sass/_landing.scss */
+  /* line 165, ../sass/_landing.scss */
   .intro-text .item-links .link-options a {
     margin-right: 0;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 149, ../sass/_landing.scss */
+  /* line 150, ../sass/_landing.scss */
   .intro-text .item-links {
     display: block;
     text-align: center;
     padding: 0;
     margin: 50px 0;
   }
-  /* line 174, ../sass/_landing.scss */
+  /* line 175, ../sass/_landing.scss */
   .intro-text .item-links .link-options {
     text-align: center;
     display: flex;
@@ -1378,13 +1379,13 @@ a:hover .arrow-sm {
     margin: 50px auto 0;
     justify-content: space-between;
   }
-  /* line 180, ../sass/_landing.scss */
+  /* line 181, ../sass/_landing.scss */
   .intro-text .item-links .link-options a {
     margin-right: 0;
   }
 }
 
-/* line 189, ../sass/_landing.scss */
+/* line 190, ../sass/_landing.scss */
 .services-section {
   min-height: 120vh;
   background: #050811;
@@ -1392,22 +1393,22 @@ a:hover .arrow-sm {
   color: #ffffff;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 189, ../sass/_landing.scss */
+  /* line 190, ../sass/_landing.scss */
   .services-section {
     padding-top: 50px;
   }
 }
-/* line 197, ../sass/_landing.scss */
+/* line 198, ../sass/_landing.scss */
 .services-section .item {
   min-height: 80vh;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 197, ../sass/_landing.scss */
+  /* line 198, ../sass/_landing.scss */
   .services-section .item {
     padding-top: 50px;
   }
 }
-/* line 203, ../sass/_landing.scss */
+/* line 204, ../sass/_landing.scss */
 .services-section .item .svc-label .number {
   color: #0edc87;
   position: relative;
@@ -1428,7 +1429,7 @@ a:hover .arrow-sm {
 .services-section .item .svc-label h2 {
   font-size: 36px;
   color: #0edc87;
-  font-family: "Maax-Sans-Regular";
+  font-family: "Roboto Mono Light";
   margin-bottom: 40px;
   margin-top: 20px;
 }
