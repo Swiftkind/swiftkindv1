@@ -90,6 +90,7 @@
                 font-family: $DINNextLTPro-Light;
                 letter-spacing: 2px;
                 font-size: 12px;
+                display: inline;
             }
         }
         .right {
@@ -204,7 +205,6 @@
                 color: $jade;
                 position: relative;
                 display: flex;
-
                 &::after {
                     content: "";
                     width: 60px;
@@ -219,7 +219,7 @@
             h2 {
                 font-size: 36px;
                 color: $jade;
-                font-family: $Maax-Sans-Regular;
+                font-family: $Roboto-Mono-Light;
                 margin-bottom: 40px;
                 margin-top: 20px;
                 @include mobile {
