@@ -1,0 +1,72 @@
+.previewModal {
+	.modal-header{
+		padding: 0;
+		border:none;
+		a{
+			color: #616571;
+			opacity:1;
+			text-shadow:none;
+		}
+	}
+    .modal-dialog {
+        width: 892px;
+        min-rheight: 679px;
+        .modal-content {
+            background: #090e1c;
+            color: #fff;
+            width: 892px;
+            min-height: 679px;
+            border-radius: 0;
+            padding: 100px;
+            .modal-body {
+                h2 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.42;
+                    letter-spacing: normal;
+                    text-align: left;
+                    font-family: $DINNextLTPro-Medium;
+                    margin-bottom:20px;
+                }
+                .modal-thumbnail {
+                    .thumbnail-wrapper {
+                        height: 338px;
+                        display: flex;
+                        margin-bottom:20px;
+                        .img {
+
+                            background: {
+                                size: cover;
+                                position: center center;
+                            }
+                        }
+                        .featured {
+                            margin-right: 12px;
+                            .img {
+                                width: 492px;
+                                height: 338px;
+                            }
+                        }
+                        .more-thumbs {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 338px;
+                            .img {
+                                width: 154.2px;
+                                height: 103.8px;
+                            }
+                        }
+                    }
+                    .thumbnail-desc{
+                    	p{
+                    		color: $white;
+                    	}
+                    }
+                }
+            }
+        }
+    }
+}

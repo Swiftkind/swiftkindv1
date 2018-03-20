@@ -106,6 +106,17 @@
     }
 }
 
+
+.secondary-masthead{
+    margin-top:300px;
+    .s-header-text{
+        max-width: 80%;
+        p{
+            font-size: 16px;
+            color: $white;
+        }
+    }
+}
 .intro-text {
    
     background: $midnight;
@@ -674,7 +685,7 @@
 .testimonies {
     display: flex!important;
     align-items: center;
-    height: 50vh;
+    min-height: 100vh;
     position: relative;
     @include mobile {
         height: 100vh;
@@ -683,18 +694,18 @@
         height: 75vh;
     }
     .item {
-        width: 50%;
+        width: 75%;
         margin: 0 auto;
-        text-align: center;
+        text-align: justify;
         @include mobile {
             width: 75%;
         }
         .testimony {
             color: $white;
-            font-size: 24px;
+            font-size: 18px;
             font-family: $Titillium-Extralight;
             @include mobile {
-                font-size: 24px;
+                font-size: 16px;
             }
         }
         .author {
