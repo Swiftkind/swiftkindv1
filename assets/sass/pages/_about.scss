@@ -1,0 +1,356 @@
+
+//about page
+.about-philosphy {
+    background: $midnight;
+    color: $white;
+    height: 900px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .hr-line {
+        height: 100%;
+        width: 1px;
+        border: solid 0.5px $rich-black;
+        position: absolute;
+        left: 50%;
+        top: 0;
+    }
+    .main-text {
+        display: flex;
+        align-items: center;
+        height: auto;
+        border-left: solid 1px $rich-black;
+        padding-right: 50px;
+        @include mobile {
+            height: 110px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 100px;
+        }
+        @include tablet {
+            padding-left: 0;
+            text-align: center;
+            height: 200px;
+        }
+        h2 {
+            font-size: 24px;
+            font-family: $Maax-Sans-Regular;
+            @include mobile {
+                font-size: 18px;
+            }
+        }
+    }
+    .text-wrapper {
+        padding: 0;
+        min-height: 0;
+        .text-content {
+            padding: 0 30px;
+            p {
+                margin-bottom: 50px;
+            }
+            &.main {
+                margin-bottom: 50px;
+            }
+            @include tablet {
+                padding: 30px 100px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.7;
+            }
+        }
+    }
+}
+
+.office {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    background: {
+        image: url('../images/team/off4.jpg');
+        size: cover;
+        position: center center;
+    }
+    @include tablet {
+
+        height: 630px;
+        background-position: center -130px;
+    }
+    .office-caption {
+        position: absolute;
+        right: 0;
+        width: 839px;
+        height: 450px;
+        background: $rich-black;
+        color: $white;
+
+        display: flex;
+        align-items: center;
+        padding: 0 90px;
+        bottom: -200px;
+        z-index: 2;
+        @include tablet {
+            width: auto;
+        }
+        @include mobile {
+            width: 100%;
+            padding: 0 30px;
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 70px;
+            @include tablet {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            @include mobile {
+                font-size: 14px;
+                text-align: justify;
+                text-align-last: left;
+                line-height: 1.7;
+                letter-spacing: 0.3px;
+            }
+        }
+    }
+}
+
+.people {
+    background: $white;
+    height: 1174px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-top: 400px;
+
+    @include mobile {
+        padding-top: 210px;
+    }
+    .caption {
+        text-align: justify;
+        text-align-last: left;
+        width: 41.66666667%;
+        margin: 0 auto;
+        @include tablet{
+            width: 75%;
+        }
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            strong {
+                font-family: $Maax-Sans-Medium;
+            }
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+        @include mobile {
+            width: 100%;
+            padding: 150px 30px 100px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.team-carousel {
+    margin-top: 100px;
+    @include mobile {
+        margin-top: 0;
+    }
+    .owl-stage {
+        display: flex;
+        align-items: center;
+        .owl-item {
+            .item {
+                max-width: 250px;
+                margin: 0 auto;
+                .img-holder {
+                    position: relative;
+                    .member-img {
+                        position: relative;
+                        img {
+                            
+                        }
+                        .img1{
+                            position: absolute;
+                            opacity: 1;
+                             @include transition( all,
+                            ease,
+                            0.2s)
+
+                        }
+                        .img2{
+                            opacity: 0;
+                            @include transition( all,
+                            ease,
+                            0.2s);
+                        }
+                        .details {
+                            position: absolute;
+                            bottom: 0;
+                            height: 0;
+                            width: 100%;
+                            background: $jade;
+                            padding-top: 10px;
+                            padding-left: 10px;
+                            opacity: 0;
+                            @include transition( all,
+                            ease,
+                            0.2s);
+
+                            a {
+                                color: $white;
+                                opacity: 0;
+                                font-family: $Maax-Sans-Medium;
+                                margin: 30px 10px 10px;
+                            }
+                            p {
+
+                                opacity: 0;
+                                color: $white;
+                                margin-left: 10px;
+                                font-family: $Maax-Sans-Regular;
+                            }
+                            .external-links {
+                                opacity: 0;
+                                margin-left: 10px;
+                                a{
+                                    margin: 30px 10px 10px 0px;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        .member-img {
+                            .img1 {
+                                opacity: 0;
+                                @include transition( all,
+                                ease,
+                                0.5s);
+                            }
+                            .img2 {
+                                opacity: 1;
+                                @include transition( all,
+                                ease,
+                                0.5s);
+                            }
+                            .details {
+                                height: 80px;
+                                opacity: 1;
+                                @include transition( all,
+                                ease,
+                                0.5s);
+                                transition-delay: 0.2s;
+                                a {
+                                    opacity: 1;
+                                    @include transition( all,
+                                    ease,
+                                    0.5s);
+                                    transition-delay: 0.2s;
+                                }
+                                p {
+                                    opacity: 1;
+                                    @include transition( all,
+                                    ease,
+                                    0.5s);
+                                    transition-delay: 0.4s;
+                                }
+                                .external-links {
+                                    opacity: 1;
+                                    @include transition( all,
+                                    ease,
+                                    0.5s);
+                                    transition-delay: 0.4s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.principles {
+    background: $midnight;
+    color: $white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    @include tablet {
+        height: auto !important;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 1.2;
+        @include tablet {
+            font-size: 36px;
+        }
+        @include mobile {
+            font-size: 20px;
+            line-height: 1.5;
+            padding: 15px;
+            text-align: left;
+        }
+    }
+    h3 {
+        font-size: 24px;
+        font-family: $Maax-Sans-Medium;
+        margin-bottom: 40px;
+        @include tablet {
+            width: 75%;
+            margin: 0 auto 30px;
+        } 
+        @include mobile {
+            text-align: left;
+        }
+    }
+    p {
+        line-height: 1.75;
+        font-size: 16px;
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+    .principles-header {
+        @include tablet {
+            width: 100%;
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    .principles-content {
+        @include tablet {
+            margin-bottom: 50px;
+        }
+        @include mobile {
+            padding: 15px;
+        }
+        p {
+            margin-bottom: 40px;
+            @include tablet {
+                width: 75%;
+                margin: 0 auto;
+                text-align: left;
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+    .flex>[class^="col-"],
+    .flex>[class*=" col-"] {
+        min-height: 300px;
+        @include tablet {
+            min-height: 200px;
+        }
+        @include mobile {
+            min-height: 150px;
+        }
+    }
+}
+

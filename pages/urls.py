@@ -20,4 +20,7 @@ urlpatterns = [
     url(r'^jobs/$', set_page("jobs.html"), name="jobs"),
     url(r'^bookapp/$', set_page("bookapp.html"), name="bookapp"),
     url(r'^trackr/$', set_page("trackr.html"), name="trackr"),
+    url(r'^journal/$', set_page("journal.html"), name="journal"),
+    url(r'^blog/$', set_page("blog.html"), name="blog"),
+    url(r'^gallery/$', set_page("gallery.html"), name="gallery"),
 ]

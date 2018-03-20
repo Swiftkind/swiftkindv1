@@ -1,0 +1,67 @@
+.gallery-section {
+    position: relative;
+    padding-top: 150px;
+    min-height:100vh;
+}
+
+.gallery-thumbnail {
+    .gl-card {
+
+        .card-info {
+            position: relative;
+            display: block;
+
+            .image {
+                width: 273.5px;
+                height: 176.2px;
+                position: relative;
+                background: {
+                    size: cover;
+                    position: center;
+                }
+            }
+            .card-desc {
+            	opacity:0;
+                -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+                background-color: rgba($dark-grey, 0.9);
+                color: $white;
+                position: absolute;
+                top:0;
+                width: 273.5px;
+                height: 176.2px;
+                padding:20px;
+                transition: 0.3s ease all;
+                p{
+                	font-family: $Maax-Sans-Regular;
+                	&.card-date{
+                		position: absolute;
+                		bottom:10px;
+                		color: #7a84a0;
+                	}
+
+                }
+            }
+            &:hover{
+            	.card-desc{
+            		opacity:1;
+            		transition: 0.3s ease all;
+            	}
+            }
+            &:hover, &:active, &:focus{
+            	outline:none;
+            	&:focus{
+            		outline:none;
+            	}
+            }
+        }
+        .card-name {
+            width: 273.5px;
+            height: 54px;
+            background: $dark-grey;
+            color: $white;
+            padding-left: 20px;
+            margin-bottom:70px;
+        }
+    }
+}

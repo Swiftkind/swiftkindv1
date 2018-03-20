@@ -70,6 +70,9 @@ a {
              @include transition ( all, 0.3s, ease);
         }
     }
+    .back-arrow{
+        transform: rotate(180deg);
+    }
 }
 
 .sk-btn-primary {
